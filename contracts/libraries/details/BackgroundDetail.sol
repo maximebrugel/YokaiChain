@@ -7,200 +7,23 @@ import "base64-sol/base64.sol";
 
 /// @title Background SVG generator
 library BackgroundDetail {
-    /// @dev background N°1 => Ordinary
+    /// @dev Background N°1 => Border
     function item_1() public pure returns (string memory) {
         return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" cx="211.7163" cy="4015.5737" r="210.042" gradientTransform="matrix(0.9998 0 0 0.9998 -1.274 -3805.2708)" gradientUnits="userSpaceOnUse">',
-                        '<stop offset="0" style="stop-color:#917D87"/>',
-                        '<stop offset="0.028" style="stop-color:#8C7983"/>',
-                        '<stop offset="0.344" style="stop-color:#5D525F"/>',
-                        '<stop offset="0.622" style="stop-color:#3A3544"/>',
-                        '<stop offset="0.850" style="stop-color:#252334"/>',
-                        '<stop offset="1" style="stop-color:#1D1D2E"/>',
-                        "</radialGradient>"
-                    )
-                )
-            );
+            '<g id="BloodMoon_Edition_Gold" xmlns="http://www.w3.org/2000/svg"><g id="Border_Gold"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-826" x2="419.9006" y2="-826" gradientTransform="matrix(1 0 0 -1 0 -616)"><stop offset="4.155676e-07" style="stop-color:#FF8519" /><stop offset="0.66" style="stop-color:#FAF299" /><stop offset="1" style="stop-color:#FF9D21" /></linearGradient><path fill="url(#SVGID_1_)" d="M392.1,4.1c13.1,0,23.8,10.7,23.8,23.7V392c0,13.1-10.7,23.8-23.7,23.8H27.9c-13.1,0-23.8-10.7-23.8-23.7V27.9c0-13.1,10.7-23.8,23.8-23.8L392.1,4.1 M392.1,0H27.9C12.5,0,0,12.4,0,27.9v364.2C0,407.6,12.5,420,27.9,420h364.2c15.3,0,27.8-12.4,27.8-27.9V27.8C420,12.5,407.5,0,392.1,0L392.1,0z" /></g><g id="BloodMoon_Gold"><linearGradient id="Blood_Moon_00000016767164249006246410000016471970404587739302_" gradientUnits="userSpaceOnUse" x1="377.3576" y1="-660.9059" x2="402.2337" y2="-660.9059" gradientTransform="matrix(1 0 0 -1 0 -270)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path id="Blood_Moon_00000102515349086926897730000010745504850122815106_" fill="url(#Blood_Moon_00000016767164249006246410000016471970404587739302_)" d="M402.2,390.3c0.1-4.2-1.9-8.1-5.1-10.4c1.6,1.8,2.7,4,2.5,6.6c-0.1,5.2-4.6,9.3-10,9.2s-9.7-4.5-9.5-9.7c0.1-2.5,1.2-4.9,2.9-6.5c-3.3,2.2-5.5,5.9-5.7,10.1c-0.1,6.9,5.3,12.6,12.2,12.7C396.2,402.6,402,397.2,402.2,390.3z" /><linearGradient id="SVGID_00000181054814986366516440000005414660411872757925_" gradientUnits="userSpaceOnUse" x1="386.735" y1="1076.9" x2="392.7652" y2="1076.9" gradientTransform="matrix(1 0 0 1 0 -692)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path fill="url(#SVGID_00000181054814986366516440000005414660411872757925_)" d="M389.8,379.3c0,0,3,6.5,3,8.2s-1.3,3-3,3s-3-1.3-3-3C386.7,385.9,389.8,379.3,389.8,379.3z" /></g><g><linearGradient id="SVGID_00000176722307267390341230000005143327737964554885_" gradientUnits="userSpaceOnUse" x1="21.4346" y1="-663.2" x2="52.6611" y2="-663.2" gradientTransform="matrix(1 0 0 -1 0 -270)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path fill="url(#SVGID_00000176722307267390341230000005143327737964554885_)" d="M24.4,385.5c0.5,0.6,1.2,1.3,1.8,2.2l-1.3,0.9h1.9v1.8c-0.5,0.9-0.9,1.7-1.5,2.5v0.3c0.2,0.1,0.4,0.3,0.5,0.4c0.5-0.7,0.9-1.3,1.3-1.9l1.4,0.9c-0.5,0.6-1,1.3-1.5,1.9c0.4,0.3,0.7,0.6,1.1,0.9l-1.1,1.3c-0.6-0.5-1.1-1-1.6-1.5v5.7h-1.9v-5.4c-0.4,0.5-0.9,1-1.4,1.5c-0.2-0.8-0.4-1.6-0.6-2.3c1.2-1,2.3-2.3,3.1-4h-3v-2h2.7c-0.4-0.6-0.9-1.3-1.5-2L24.4,385.5z M30.9,400.5c-0.1-0.7-0.3-1.5-0.5-2.3c0.7,0.1,1.5,0.1,2.1,0.1c0.7,0,1.1-0.4,1.2-1.2c0.1-0.8,0.1-3.6,0.2-8.6h-2.5c-0.1,2.5-0.2,4.3-0.3,5.4c-0.1,1.1-0.4,2.3-1,3.5c-0.5,1.3-1.3,2.4-2.4,3.4c-0.5-0.5-1-1-1.8-1.6c0.9-0.7,1.5-1.6,2-2.5s0.8-1.9,0.9-2.9s0.2-2.8,0.3-5.4h-1.8v-1.9H36l-0.2,8.9l-0.1,2.1c0,0.9-0.2,1.6-0.5,2s-0.9,0.7-1.5,0.8C33.1,400.4,32.1,400.5,30.9,400.5z" /><linearGradient id="SVGID_00000077312355485199142210000007790796883208703121_" gradientUnits="userSpaceOnUse" x1="21.4346" y1="-663.3" x2="52.6611" y2="-663.3" gradientTransform="matrix(1 0 0 -1 0 -270)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path fill="url(#SVGID_00000077312355485199142210000007790796883208703121_)" d="M41.2,385.7H43v4.7h0.8v1.7h-3.7v1.4H43v7.1h-1.8v-5.3h-1.1c0,2.2-0.4,4.1-1.2,5.6c-0.5-0.4-1.1-0.8-1.6-1.3c0.7-1.3,1.1-3.3,1-6.2v-7.3h1.8v4.3h1.1V385.7z M51.9,385.8l0.6,2c-1.6,0.3-3.7,0.6-6.3,0.8v1.5H52v1.8c-0.3,1.9-0.9,3.6-1.9,5.1c0.7,0.8,1.6,1.4,2.6,1.8l-1.3,2c-1-0.6-1.8-1.3-2.5-2.2c-0.7,0.8-1.5,1.5-2.4,2.2c-0.2-0.4-0.6-0.9-1.1-1.7c0.9-0.6,1.7-1.3,2.4-2.1c-0.6-1-1.1-2.2-1.4-3.5l1.4-1.3c0.3,1.2,0.7,2.2,1.2,3.1c0.5-0.9,0.9-2,1.1-3.2h-3.7v0.8c0,3.6-0.6,6.3-1.9,7.9c-0.4-0.6-0.8-1.2-1.3-1.8c0.9-1.3,1.3-3.5,1.2-6.5v-5.8C47.6,386.5,50.2,386.2,51.9,385.8z" /></g></g><g id="BloodMoon" xmlns="http://www.w3.org/2000/svg"><g id="Border_Blood"><linearGradient id="SVGID_00000085932806107615477390000004269205392953116066_" gradientUnits="userSpaceOnUse" x1="0" y1="902" x2="419.9006" y2="902" gradientTransform="matrix(1 0 0 1 0 -692)"><stop offset="4.928550e-09" style="stop-color:#C44569" /><stop offset="0.2155" style="stop-color:#DD85A1" /><stop offset="0.5127" style="stop-color:#FFDAEA" /><stop offset="0.6576" style="stop-color:#EAA5BC" /><stop offset="0.8152" style="stop-color:#D5718F" /><stop offset="0.9343" style="stop-color:#C95173" /><stop offset="1" style="stop-color:#C44569" /></linearGradient><path fill="url(#SVGID_00000085932806107615477390000004269205392953116066_)" d="M392.1,4.1c13.1,0,23.8,10.7,23.8,23.7V392c0,13.1-10.7,23.8-23.7,23.8H27.9c-13.1,0-23.8-10.7-23.8-23.7V27.9c0-13.1,10.7-23.8,23.8-23.8L392.1,4.1 M392.1,0H27.9C12.5,0,0,12.4,0,27.9v364.2C0,407.6,12.5,420,27.9,420h364.2c15.3,0,27.8-12.4,27.8-27.9V27.8C420,12.5,407.5,0,392.1,0L392.1,0z" /></g><g id="Blood_Moon"><path id="Blood_Moon_00000108277078646533401290000000555676321857852078_" fill="#FFFFFF" d="M402.2,390.3c0.1-4.2-1.9-8.1-5.1-10.4c1.6,1.8,2.7,4,2.5,6.6c-0.1,5.2-4.6,9.3-10,9.2s-9.7-4.5-9.5-9.7c0.1-2.5,1.2-4.9,2.9-6.5c-3.3,2.2-5.5,5.9-5.7,10.1c-0.1,6.9,5.3,12.6,12.2,12.7C396.2,402.6,402,397.2,402.2,390.3z" /><path fill="#E31466" d="M389.8,379.3c0,0,3,6.5,3,8.2s-1.3,3-3,3s-3-1.3-3-3C386.7,385.9,389.8,379.3,389.8,379.3z" /></g></g>';
     }
 
-    /// @dev background N°2 => Unusual
-    function item_2() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" cx="211.3162" cy="4015.6736" r="210.042" gradientTransform="matrix(0.9998 0 0 0.9998 -1.274 -3805.2708)" gradientUnits="userSpaceOnUse">',
-                        '<stop offset="0" style="stop-color:#00C765"/>',
-                        '<stop offset="0.2542" style="stop-color:#0A8D52"/>',
-                        '<stop offset="0.4977" style="stop-color:#125D43"/>',
-                        '<stop offset="0.711" style="stop-color:#183A37"/>',
-                        '<stop offset="0.8856" style="stop-color:#1C2530"/>',
-                        '<stop offset="1" style="stop-color:#1D1D2E"/>',
-                        "</radialGradient>"
-                    )
-                )
-            );
-    }
-
-    /// @dev background N°3 => Surprising
-    function item_3() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" cx="211.3162" cy="4015.6736" r="210.042" gradientTransform="matrix(0.9998 0 0 0.9998 -1.274 -3805.2708)" gradientUnits="userSpaceOnUse">',
-                        '<stop offset="0" style="stop-color:#3BAFC4"/>',
-                        '<stop offset="0.1886" style="stop-color:#33899D"/>',
-                        '<stop offset="0.4518" style="stop-color:#2A5B6E"/>',
-                        '<stop offset="0.6845" style="stop-color:#23394B"/>',
-                        '<stop offset="0.8752" style="stop-color:#1F2436"/>',
-                        '<stop offset="1" style="stop-color:#1D1D2E"/>',
-                        "</radialGradient>"
-                    )
-                )
-            );
-    }
-
-    /// @dev background N°4 => Impressive
-    function item_4() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" cx="211.3162" cy="4015.6736" r="210.042" gradientTransform="matrix(0.9998 0 0 0.9998 -1.274 -3805.2708)" gradientUnits="userSpaceOnUse">',
-                        '<stop offset="0" style="stop-color:#D20AFF"/>',
-                        '<stop offset="0.1242" style="stop-color:#B30DDB"/>',
-                        '<stop offset="0.3543" style="stop-color:#7E139E"/>',
-                        '<stop offset="0.5652" style="stop-color:#54176E"/>',
-                        '<stop offset="0.7498" style="stop-color:#361A4B"/>',
-                        '<stop offset="0.901" style="stop-color:#241C36"/>',
-                        '<stop offset="1" style="stop-color:#1D1D2E"/>',
-                        "</radialGradient>"
-                    )
-                )
-            );
-    }
-
-    /// @dev background N°5 => Bloody
-    function item_5() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" cx="211.3162" cy="4015.6736" r="210.042" gradientTransform="matrix(0.9998 0 0 0.9998 -1.274 -3805.2708)" gradientUnits="userSpaceOnUse">',
-                        '<stop offset="0" style="stop-color:#FF2865"/>',
-                        '<stop offset="0.1708" style="stop-color:#CA2558"/>',
-                        '<stop offset="0.3885" style="stop-color:#8D2249"/>',
-                        '<stop offset="0.5882" style="stop-color:#5D203E"/>',
-                        '<stop offset="0.763" style="stop-color:#3A1E35"/>',
-                        '<stop offset="0.9063" style="stop-color:#251D30"/>',
-                        '<stop offset="1" style="stop-color:#1D1D2E"/>',
-                        "</radialGradient>"
-                    )
-                )
-            );
-    }
-
-    /// @dev background N°6 => Phenomenal
-    function item_6() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" cx="211.3162" cy="4015.6736" r="210.042" gradientTransform="matrix(0.9998 0 0 0.9998 -1.274 -3805.2708)" gradientUnits="userSpaceOnUse">',
-                        '<stop offset="0" style="stop-color:#FFC640"/>',
-                        '<stop offset="0.1708" style="stop-color:#CA9E3C"/>',
-                        '<stop offset="0.3885" style="stop-color:#8D7137"/>',
-                        '<stop offset="0.5882" style="stop-color:#5D4D33"/>',
-                        '<stop offset="0.763" style="stop-color:#3A3330"/>',
-                        '<stop offset="0.9063" style="stop-color:#25232F"/>',
-                        '<stop offset="1" style="stop-color:#1D1D2E"/>',
-                        "</radialGradient>"
-                    )
-                )
-            );
-    }
-
-    /// @dev background N°7 => Unreal
-    function item_7() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" cx="213.7361" cy="-3247.4888" r="210.059" gradientTransform="matrix(0.9994 0 0 -0.9998 -3.5579 -3037.3394)" gradientUnits="userSpaceOnUse">',
-                        '<stop offset="6.926127e-07" style="stop-color:#CCCC75"/>',
-                        '<stop offset="0.66" style="stop-color:#54054D"/>',
-                        '<stop offset="1" style="stop-color:#001E2E"/>',
-                        "</radialGradient>"
-                    )
-                )
-            );
-    }
-
-    /// @dev background N°8 => Divine
-    function item_8() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<radialGradient id="background" >',
-                        '<stop offset="0" style="stop-color:#DE4A00"/>',
-                        '<stop offset="0.0773" style="stop-color:#E0550C"/>',
-                        '<stop offset="0.2159" style="stop-color:#E5732B"/>',
-                        '<stop offset="0.3995" style="stop-color:#EDA25D"/>',
-                        '<stop offset="0.6191" style="stop-color:#F8E4A1"/>',
-                        '<stop offset="0.66" style="stop-color:#FAF1AF"/>',
-                        '<stop offset="0.6778" style="stop-color:#D9D19B"/>',
-                        abi.encodePacked(
-                            '<stop offset="0.7046" style="stop-color:#ADA782"/>',
-                            '<stop offset="0.7334" style="stop-color:#86826B"/>',
-                            '<stop offset="0.7639" style="stop-color:#656358"/>',
-                            '<stop offset="0.7966" style="stop-color:#4B4949"/>',
-                            '<stop offset="0.8323" style="stop-color:#36353D"/>',
-                            '<stop offset="0.8725" style="stop-color:#282834"/>',
-                            '<stop offset="0.921" style="stop-color:#201F2F"/>',
-                            '<stop offset="1" style="stop-color:#1D1D2E"/>',
-                            "</radialGradient>"
-                        )
-                    )
-                )
-            );
-    }
-
-    /// @notice Return the background name of the given id
-    /// @param id The background Id
+    /// @notice Return the skin name of the given id
+    /// @param id The skin Id
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "Ordinary";
-        } else if (id == 2) {
-            name = "Unusual";
-        } else if (id == 3) {
-            name = "Surprising";
-        } else if (id == 4) {
-            name = "Impressive";
-        } else if (id == 5) {
-            name = "Bloody";
-        } else if (id == 6) {
-            name = "Phenomenal";
-        } else if (id == 7) {
-            name = "Unreal";
-        } else if (id == 8) {
-            name = "Divine";
+            name = "Border";
         }
     }
 
-    /// @dev The base SVG for the background
+    /// @dev The base SVG for the body
     function base(string memory children) private pure returns (string memory) {
-        return string(abi.encodePacked('<g id="Background">', children, getPath(), "</g>"));
-    }
-
-    /// @dev Get the background path (end)
-    function getPath() private pure returns (string memory) {
-        return
-            '<path fill="url(#background)" d="M390.4,419.5h-360c-16.6,0-30-13.4-30-30v-360c0-16.6,13.4-30,30-30h360c16.6,0,30,13.4,30,30v360 C420.4,406.1,407,419.5,390.4,419.5z"/>';
+        return string(abi.encodePacked('<g id="background">', children, "</g>"));
     }
 }
