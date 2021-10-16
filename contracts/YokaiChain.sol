@@ -39,10 +39,44 @@ contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
         return IYokaiChainDescriptor(_tokenDescriptor).tokenURI(this, tokenId);
     }
 
+    function createTest(
+        uint8 hair,
+        uint8 eye,
+        uint8 eyeBrow,
+        uint8 nose,
+        uint8 mouth,
+        uint8 mark,
+        uint8 earrings,
+        uint8 accessory,
+        uint8 mask,
+        uint8 skin
+    ) public payable nonReentrant {
+        uint256 seed = block.timestamp << (1);
+        uint256 nextTokenId = totalSupply() + 1;
+        Detail memory newDetail = Detail({
+            hair: hair,
+            eye: eye,
+            eyebrow: eyeBrow,
+            nose: nose,
+            mouth: mouth,
+            mark: mark,
+            earrings: earrings,
+            accessory: accessory,
+            mask: mask,
+            skin: skin,
+            timestamp: block.timestamp,
+            creator: msg.sender
+        });
+        _detail[nextTokenId] = newDetail;
+        _safeMint(msg.sender, nextTokenId);
+    }
+
     /// @notice Create randomly an Yokai
     /// @param qty The quantity to buy
     function create(uint256 qty) public payable nonReentrant {
-        require(msg.value >= getUnitPrice() * qty, "Ether sent is not correct");
+        require(msg.value >= getUnitPrice() * qty, "FTM sent is not correct");
+        require(totalSupply() + qty <= 8753, "Cant mint more than 8753 Yokai");
+        require(qty <= 99, "Yokai max mintable quantity is 99");
 
         for (uint256 i; i < qty; i++) {
             uint256 seed = block.timestamp << (i + 1);
@@ -76,8 +110,8 @@ contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
     /// @notice Send funds from sales to the team
     function withdrawAll() public payable onlyOwner {
         uint256 amount = address(this).balance;
-        require(payable(0x838D23a8A17adaa6866969b86D35Ac0941C67510).send((amount * 45) / 100));
-        require(payable(0x29B862E8c25e7f0fa5b2A89b65b186d18D45f54e).send((amount * 55) / 100));
+        // TODO add multisig address
+        require(payable(0x838D23a8A17adaa6866969b86D35Ac0941C67510).send(amount));
     }
 
     /// @inheritdoc IYokaiChain

@@ -7,10 +7,126 @@ import "base64-sol/base64.sol";
 
 /// @title Background SVG generator
 library BackgroundDetail {
-    /// @dev Background N°1 => Border
+    /// @dev Background N°1 => Unreal
     function item_1() public pure returns (string memory) {
         return
-            '<g id="BloodMoon_Edition_Gold" xmlns="http://www.w3.org/2000/svg"><g id="Border_Gold"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="-826" x2="419.9006" y2="-826" gradientTransform="matrix(1 0 0 -1 0 -616)"><stop offset="4.155676e-07" style="stop-color:#FF8519" /><stop offset="0.66" style="stop-color:#FAF299" /><stop offset="1" style="stop-color:#FF9D21" /></linearGradient><path fill="url(#SVGID_1_)" d="M392.1,4.1c13.1,0,23.8,10.7,23.8,23.7V392c0,13.1-10.7,23.8-23.7,23.8H27.9c-13.1,0-23.8-10.7-23.8-23.7V27.9c0-13.1,10.7-23.8,23.8-23.8L392.1,4.1 M392.1,0H27.9C12.5,0,0,12.4,0,27.9v364.2C0,407.6,12.5,420,27.9,420h364.2c15.3,0,27.8-12.4,27.8-27.9V27.8C420,12.5,407.5,0,392.1,0L392.1,0z" /></g><g id="BloodMoon_Gold"><linearGradient id="Blood_Moon_00000016767164249006246410000016471970404587739302_" gradientUnits="userSpaceOnUse" x1="377.3576" y1="-660.9059" x2="402.2337" y2="-660.9059" gradientTransform="matrix(1 0 0 -1 0 -270)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path id="Blood_Moon_00000102515349086926897730000010745504850122815106_" fill="url(#Blood_Moon_00000016767164249006246410000016471970404587739302_)" d="M402.2,390.3c0.1-4.2-1.9-8.1-5.1-10.4c1.6,1.8,2.7,4,2.5,6.6c-0.1,5.2-4.6,9.3-10,9.2s-9.7-4.5-9.5-9.7c0.1-2.5,1.2-4.9,2.9-6.5c-3.3,2.2-5.5,5.9-5.7,10.1c-0.1,6.9,5.3,12.6,12.2,12.7C396.2,402.6,402,397.2,402.2,390.3z" /><linearGradient id="SVGID_00000181054814986366516440000005414660411872757925_" gradientUnits="userSpaceOnUse" x1="386.735" y1="1076.9" x2="392.7652" y2="1076.9" gradientTransform="matrix(1 0 0 1 0 -692)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path fill="url(#SVGID_00000181054814986366516440000005414660411872757925_)" d="M389.8,379.3c0,0,3,6.5,3,8.2s-1.3,3-3,3s-3-1.3-3-3C386.7,385.9,389.8,379.3,389.8,379.3z" /></g><g><linearGradient id="SVGID_00000176722307267390341230000005143327737964554885_" gradientUnits="userSpaceOnUse" x1="21.4346" y1="-663.2" x2="52.6611" y2="-663.2" gradientTransform="matrix(1 0 0 -1 0 -270)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path fill="url(#SVGID_00000176722307267390341230000005143327737964554885_)" d="M24.4,385.5c0.5,0.6,1.2,1.3,1.8,2.2l-1.3,0.9h1.9v1.8c-0.5,0.9-0.9,1.7-1.5,2.5v0.3c0.2,0.1,0.4,0.3,0.5,0.4c0.5-0.7,0.9-1.3,1.3-1.9l1.4,0.9c-0.5,0.6-1,1.3-1.5,1.9c0.4,0.3,0.7,0.6,1.1,0.9l-1.1,1.3c-0.6-0.5-1.1-1-1.6-1.5v5.7h-1.9v-5.4c-0.4,0.5-0.9,1-1.4,1.5c-0.2-0.8-0.4-1.6-0.6-2.3c1.2-1,2.3-2.3,3.1-4h-3v-2h2.7c-0.4-0.6-0.9-1.3-1.5-2L24.4,385.5z M30.9,400.5c-0.1-0.7-0.3-1.5-0.5-2.3c0.7,0.1,1.5,0.1,2.1,0.1c0.7,0,1.1-0.4,1.2-1.2c0.1-0.8,0.1-3.6,0.2-8.6h-2.5c-0.1,2.5-0.2,4.3-0.3,5.4c-0.1,1.1-0.4,2.3-1,3.5c-0.5,1.3-1.3,2.4-2.4,3.4c-0.5-0.5-1-1-1.8-1.6c0.9-0.7,1.5-1.6,2-2.5s0.8-1.9,0.9-2.9s0.2-2.8,0.3-5.4h-1.8v-1.9H36l-0.2,8.9l-0.1,2.1c0,0.9-0.2,1.6-0.5,2s-0.9,0.7-1.5,0.8C33.1,400.4,32.1,400.5,30.9,400.5z" /><linearGradient id="SVGID_00000077312355485199142210000007790796883208703121_" gradientUnits="userSpaceOnUse" x1="21.4346" y1="-663.3" x2="52.6611" y2="-663.3" gradientTransform="matrix(1 0 0 -1 0 -270)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path fill="url(#SVGID_00000077312355485199142210000007790796883208703121_)" d="M41.2,385.7H43v4.7h0.8v1.7h-3.7v1.4H43v7.1h-1.8v-5.3h-1.1c0,2.2-0.4,4.1-1.2,5.6c-0.5-0.4-1.1-0.8-1.6-1.3c0.7-1.3,1.1-3.3,1-6.2v-7.3h1.8v4.3h1.1V385.7z M51.9,385.8l0.6,2c-1.6,0.3-3.7,0.6-6.3,0.8v1.5H52v1.8c-0.3,1.9-0.9,3.6-1.9,5.1c0.7,0.8,1.6,1.4,2.6,1.8l-1.3,2c-1-0.6-1.8-1.3-2.5-2.2c-0.7,0.8-1.5,1.5-2.4,2.2c-0.2-0.4-0.6-0.9-1.1-1.7c0.9-0.6,1.7-1.3,2.4-2.1c-0.6-1-1.1-2.2-1.4-3.5l1.4-1.3c0.3,1.2,0.7,2.2,1.2,3.1c0.5-0.9,0.9-2,1.1-3.2h-3.7v0.8c0,3.6-0.6,6.3-1.9,7.9c-0.4-0.6-0.8-1.2-1.3-1.8c0.9-1.3,1.3-3.5,1.2-6.5v-5.8C47.6,386.5,50.2,386.2,51.9,385.8z" /></g></g><g id="BloodMoon" xmlns="http://www.w3.org/2000/svg"><g id="Border_Blood"><linearGradient id="SVGID_00000085932806107615477390000004269205392953116066_" gradientUnits="userSpaceOnUse" x1="0" y1="902" x2="419.9006" y2="902" gradientTransform="matrix(1 0 0 1 0 -692)"><stop offset="4.928550e-09" style="stop-color:#C44569" /><stop offset="0.2155" style="stop-color:#DD85A1" /><stop offset="0.5127" style="stop-color:#FFDAEA" /><stop offset="0.6576" style="stop-color:#EAA5BC" /><stop offset="0.8152" style="stop-color:#D5718F" /><stop offset="0.9343" style="stop-color:#C95173" /><stop offset="1" style="stop-color:#C44569" /></linearGradient><path fill="url(#SVGID_00000085932806107615477390000004269205392953116066_)" d="M392.1,4.1c13.1,0,23.8,10.7,23.8,23.7V392c0,13.1-10.7,23.8-23.7,23.8H27.9c-13.1,0-23.8-10.7-23.8-23.7V27.9c0-13.1,10.7-23.8,23.8-23.8L392.1,4.1 M392.1,0H27.9C12.5,0,0,12.4,0,27.9v364.2C0,407.6,12.5,420,27.9,420h364.2c15.3,0,27.8-12.4,27.8-27.9V27.8C420,12.5,407.5,0,392.1,0L392.1,0z" /></g><g id="Blood_Moon"><path id="Blood_Moon_00000108277078646533401290000000555676321857852078_" fill="#FFFFFF" d="M402.2,390.3c0.1-4.2-1.9-8.1-5.1-10.4c1.6,1.8,2.7,4,2.5,6.6c-0.1,5.2-4.6,9.3-10,9.2s-9.7-4.5-9.5-9.7c0.1-2.5,1.2-4.9,2.9-6.5c-3.3,2.2-5.5,5.9-5.7,10.1c-0.1,6.9,5.3,12.6,12.2,12.7C396.2,402.6,402,397.2,402.2,390.3z" /><path fill="#E31466" d="M389.8,379.3c0,0,3,6.5,3,8.2s-1.3,3-3,3s-3-1.3-3-3C386.7,385.9,389.8,379.3,389.8,379.3z" /></g></g>';
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="unreal"><radialGradient id="radial-gradient" cx="210.05" cy="209.5" r="209.98" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#634363"/><stop offset="1" stop-color="#04061c"/></radialGradient>',
+                        background("410824"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function item_2() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Artistic"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0.47" stop-color="#ed6aff"/> <stop offset="0.76" stop-color="#ffc574"/> <stop offset="1" stop-color="#3fecff"/> </radialGradient>',
+                        background("ff9fd7"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function item_3() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Phenomenal"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#fff38d"/> <stop offset="1" stop-color="#d68e4b"/> </radialGradient>',
+                        background("bd4e4a"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function item_4() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Bloody"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#8c134f"/> <stop offset="1" stop-color="#6d0738"/> </radialGradient>',
+                        background("410824"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function item_5() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Impressive"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#991fc4"/> <stop offset="1" stop-color="#61147d"/> </radialGradient>',
+                        background("470f5c"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function item_6() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Surprising"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#4195ad"/> <stop offset="1" stop-color="#2b6375"/> </radialGradient>',
+                        background("204b59"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function item_7() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Unusual"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#2fa675"/> <stop offset="1" stop-color="#106c48"/> </radialGradient>',
+                        background("125443"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function item_8() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Ordinary"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#726680"/> <stop offset="1" stop-color="#4a4a4a"/> </radialGradient>',
+                        background("323232"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    function background(string memory color) private pure returns (string memory) {
+        return
+            string(
+                abi.encodePacked(
+                    '<path d="M389.9,419.5H30.1a30,30,0,0,1-30-30V29.5a30,30,0,0,1,30-30H390a30,30,0,0,1,30,30v360A30.11,30.11,0,0,1,389.9,419.5Z" transform="translate(0 0.5)" fill="url(#radial-gradient)"/> <g> <path id="Main_Spin" fill="#',
+                    color,
+                    '" stroke="#',
+                    color,
+                    '" stroke-miterlimit="10" d="M210,63.3c-192.6,3.5-192.6,290,0,293.4 C402.6,353.2,402.6,66.7,210,63.3z M340.8,237.5c-0.6,2.9-1.4,5.7-2.2,8.6c-43.6-13.6-80.9,37.8-54.4,75.1 c-4.9,3.2-10.1,6.1-15.4,8.8c-33.9-50.6,14.8-117.8,73.3-101.2C341.7,231.7,341.4,234.6,340.8,237.5z M331.4,265.5 c-7.9,17.2-19.3,32.4-33.3,44.7c-15.9-23.3,7.6-55.7,34.6-47.4C332.3,263.7,331.8,264.6,331.4,265.5z M332.5,209.6 C265,202.4,217,279,252.9,336.5c-5.8,1.9-11.7,3.5-17.7,4.7c-40.3-73.8,24.6-163.5,107.2-148c0.6,6,1.2,12.2,1.1,18.2 C339.9,210.6,336.2,210,332.5,209.6z M87.8,263.9c28.7-11.9,56,24,36.3,48.4C108.5,299.2,96.2,282.5,87.8,263.9z M144.3,312.7 c17.8-38.8-23.4-81.6-62.6-65.5c-1.7-5.7-2.9-11.5-3.7-17.4c60-20.6,112.7,49.4,76,101.5c-5.5-2.4-10.7-5.3-15.6-8.5 C140.7,319.6,142.7,316.3,144.3,312.7z M174.2,330.4c32.6-64-28.9-138.2-97.7-118c-0.3-6.1,0.4-12.4,0.9-18.5 c85-18.6,151.7,71.7,110.8,147.8c-6.1-1-12.2-2.4-18.1-4.1C171.6,335.3,173,332.9,174.2,330.4z M337,168.6c-7-0.7-14.4-0.8-21.4-0.2 c-43.1-75.9-167.4-75.9-210.7-0.2c-7.3-0.6-14.9,0-22.1,0.9C118.2,47.7,301.1,47.3,337,168.6z M281.1,175.9c-3,1.1-5.9,2.3-8.7,3.6 c-29.6-36.1-93.1-36.7-123.4-1.2c-5.8-2.5-11.9-4.5-18-6.1c36.6-50.4,122.9-50,159,0.7C286.9,173.8,284,174.8,281.1,175.9z M249.6,193.1c-2.4,1.8-4.7,3.6-7,5.6c-16.4-15.6-46-16.4-63.2-1.5c-4.7-3.8-9.6-7.3-14.7-10.5c23.9-24.1,69.1-23.5,92.2,1.3 C254.4,189.6,252,191.3,249.6,193.1z M211.9,239.2c-5.2-10.8-11.8-20.7-19.7-29.4c10.7-8.1,27.9-7.3,37.9,1.6 C222.8,219.7,216.7,229.1,211.9,239.2z"> <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="-360 210 210" to="0 210 210" repeatCount="indefinite" /> </path> <g id="Spin_Inverse"> <circle fill="none" stroke="#',
+                    color,
+                    '" stroke-width="7" stroke-dasharray="22.2609,22.2609" cx="210" cy="210" r="163"> <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="360 210 210" to="0 210 210" repeatCount="indefinite" /> </circle> </g> <g id="Spin"> <circle fill="none" stroke="#',
+                    color,
+                    '" stroke-width="7" stroke-dasharray="22.2041,22.2041" cx="210" cy="210" r="183.8"> <animateTransform attributeName="transform" begin="0s" dur="20s" type="rotate" from="-360 210 210" to="0 210 210" repeatCount="indefinite" /> </circle> </g> </g>'
+                )
+            );
     }
 
     /// @notice Return the skin name of the given id
@@ -18,7 +134,7 @@ library BackgroundDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "Border";
+            name = "Unreal";
         }
     }
 

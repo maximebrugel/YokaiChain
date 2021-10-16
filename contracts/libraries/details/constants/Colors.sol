@@ -17,4 +17,6 @@ library Colors {
     string internal constant SAIKI = "F02AB6";
     string internal constant WHITE = "F7F7F7";
     string internal constant YELLOW = "EFED8F";
+    string internal constant BLOODY = "E31466";
+    string internal constant WHITEITEM = "FFDAEA";
 }

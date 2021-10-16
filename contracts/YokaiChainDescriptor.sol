@@ -15,17 +15,175 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
     /// @dev Max value for defining probabilities
     uint256 internal constant MAX = 100000;
 
-    uint256[] internal BACKGROUND_ITEMS = [0];
-    uint256[] internal SKIN_ITEMS = [0];
-    uint256[] internal NOSE_ITEMS = [0];
-    uint256[] internal MARK_ITEMS = [0];
-    uint256[] internal EYEBROW_ITEMS = [0];
-    uint256[] internal MASK_ITEMS = [0];
-    uint256[] internal EARRINGS_ITEMS = [0];
-    uint256[] internal ACCESSORY_ITEMS = [0];
-    uint256[] internal MOUTH_ITEMS = [0];
-    uint256[] internal HAIR_ITEMS = [0];
-    uint256[] internal EYE_ITEMS = [0];
+    uint256[] internal BACKGROUND_ITEMS = [85000, 75000, 65000, 55000, 40000, 20000, 10000, 0];
+    uint256[] internal SKIN_ITEMS = [75000, 50000, 25000, 0];
+    uint256[] internal NOSE_ITEMS = [85000, 60000, 45000, 30000, 15000, 5000, 0];
+    uint256[] internal MARK_ITEMS = [
+        95000,
+        90000,
+        85000,
+        80000,
+        75000,
+        70000,
+        65000,
+        60000,
+        55000,
+        50000,
+        45000,
+        40000,
+        35000,
+        30000,
+        25000,
+        20000,
+        15000,
+        10000,
+        5000,
+        2000,
+        1000,
+        0
+    ];
+    uint256[] internal EYEBROW_ITEMS = [
+        95000,
+        90000,
+        85000,
+        80000,
+        75000,
+        70000,
+        65000,
+        60000,
+        55000,
+        50000,
+        45000,
+        40000,
+        35000,
+        30000,
+        25000,
+        20000,
+        15000,
+        10000,
+        5000,
+        2000,
+        0
+    ];
+    uint256[] internal MASK_ITEMS = [
+        95000,
+        90000,
+        85000,
+        80000,
+        75000,
+        70000,
+        65000,
+        60000,
+        55000,
+        50000,
+        45000,
+        40000,
+        35000,
+        30000,
+        25000,
+        20000,
+        15000,
+        10000,
+        5000,
+        0
+    ];
+    uint256[] internal EARRINGS_ITEMS = [
+        85000,
+        70000,
+        60000,
+        40000,
+        45000,
+        35000,
+        30000,
+        20000,
+        15000,
+        10000,
+        5000,
+        2000,
+        1000,
+        0
+    ];
+    uint256[] internal ACCESSORY_ITEMS = [
+        90000,
+        85000,
+        70000,
+        60000,
+        40000,
+        45000,
+        35000,
+        30000,
+        20000,
+        15000,
+        10000,
+        5000,
+        2000,
+        1000,
+        0
+    ];
+    uint256[] internal MOUTH_ITEMS = [
+        95000,
+        90000,
+        85000,
+        80000,
+        75000,
+        70000,
+        65000,
+        60000,
+        55000,
+        50000,
+        45000,
+        40000,
+        35000,
+        30000,
+        25000,
+        20000,
+        15000,
+        0
+    ];
+    uint256[] internal HAIR_ITEMS = [
+        95000,
+        90000,
+        85000,
+        80000,
+        75000,
+        70000,
+        65000,
+        60000,
+        55000,
+        50000,
+        45000,
+        40000,
+        35000,
+        30000,
+        25000,
+        20000,
+        0
+    ];
+    uint256[] internal EYE_ITEMS = [
+        95000,
+        90000,
+        85000,
+        80000,
+        75000,
+        70000,
+        65000,
+        60000,
+        55000,
+        50000,
+        45000,
+        40000,
+        35000,
+        30000,
+        25000,
+        20000,
+        15000,
+        10000,
+        6000,
+        5000,
+        2000,
+        1000,
+        0
+    ];
 
     /// @inheritdoc IYokaiChainDescriptor
     function tokenURI(IYokaiChain yokaiChain, uint256 tokenId) external view override returns (string memory) {

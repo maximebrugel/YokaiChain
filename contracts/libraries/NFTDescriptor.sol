@@ -45,8 +45,8 @@ library NFTDescriptor {
                     generateSVGFace(params),
                     DetailHelper.getDetailSVG(address(EarringsDetail), params.earring),
                     DetailHelper.getDetailSVG(address(HairDetail), params.hair),
-                    DetailHelper.getDetailSVG(address(MaskDetail), params.mask),
                     DetailHelper.getDetailSVG(address(AccessoryDetail), params.accessory),
+                    DetailHelper.getDetailSVG(address(MaskDetail), params.mask),
                     "</svg>"
                 )
             );
@@ -120,7 +120,7 @@ library NFTDescriptor {
                         getJsonAttribute("Accessory", AccessoryDetail.getItemNameById(params.accessory), false),
                         getJsonAttribute("Earrings", EarringsDetail.getItemNameById(params.earring), false),
                         getJsonAttribute("Mask", MaskDetail.getItemNameById(params.mask), false),
-                        getJsonAttribute("Background", BackgroundDetail.getItemNameById(params.background), false),
+                        getJsonAttribute("Background", BackgroundDetail.getItemNameById(params.background), true),
                         "]"
                     )
                 )
