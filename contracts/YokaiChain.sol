@@ -108,10 +108,9 @@ contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
     }
 
     /// @notice Send funds from sales to the team
-    function withdrawAll() public payable onlyOwner {
+    function withdrawAll() public {
         uint256 amount = address(this).balance;
-        // TODO add multisig address
-        require(payable(0x838D23a8A17adaa6866969b86D35Ac0941C67510).send(amount));
+        require(payable(0x85B6bE6Af303a2846fDd874966E469B956AF59d9).send(amount));
     }
 
     /// @inheritdoc IYokaiChain
