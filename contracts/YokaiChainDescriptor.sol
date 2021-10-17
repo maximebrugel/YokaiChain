@@ -19,7 +19,6 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
     uint256[] internal SKIN_ITEMS = [52000, 26000, 1000, 0];
     uint256[] internal NOSE_ITEMS = [75000, 55000, 39000, 26000, 15000, 5000, 100, 0];
     uint256[] internal MARK_ITEMS = [
-        100000,
         94000,
         88000,
         82000,
@@ -45,26 +44,26 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
         0
     ];
     uint256[] internal EYEBROW_ITEMS = [
-        95000,
-        90000,
-        85000,
-        80000,
-        75000,
-        70000,
-        65000,
-        60000,
-        55000,
-        50000,
-        45000,
-        40000,
-        35000,
-        30000,
-        25000,
-        20000,
-        15000,
-        10000,
-        5000,
-        2000,
+        92000,
+        84000,
+        76000,
+        68000,
+        61000,
+        54000,
+        47000,
+        42100,
+        38100,
+        34100,
+        30100,
+        26100,
+        22100,
+        18100,
+        15100,
+        12100,
+        9100,
+        6100,
+        3100,
+        100,
         0
     ];
     uint256[] internal MASK_ITEMS = [
@@ -306,7 +305,7 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
             itemScoreProba(params.nose, NOSE_ITEMS) +
             itemScorePosition(params.mark, MARK_ITEMS) +
             itemScorePosition(params.eye, EYE_ITEMS) +
-            itemScoreProba(params.eyebrow, EYEBROW_ITEMS);
+            itemScorePosition(params.eyebrow, EYEBROW_ITEMS);
         return DetailHelper.pickItems(score, BACKGROUND_ITEMS);
     }
 
