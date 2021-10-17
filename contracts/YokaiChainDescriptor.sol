@@ -304,7 +304,7 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
             (itemScoreProba(params.skin, SKIN_ITEMS) * 2) +
             itemScoreProba(params.skin, SKIN_ITEMS) +
             itemScoreProba(params.nose, NOSE_ITEMS) +
-            itemScoreProba(params.mark, MARK_ITEMS) +
+            itemScorePosition(params.mark, MARK_ITEMS) +
             itemScorePosition(params.eye, EYE_ITEMS) +
             itemScoreProba(params.eyebrow, EYEBROW_ITEMS);
         return DetailHelper.pickItems(score, BACKGROUND_ITEMS);
