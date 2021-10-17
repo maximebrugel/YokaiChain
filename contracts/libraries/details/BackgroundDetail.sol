@@ -7,73 +7,36 @@ import "base64-sol/base64.sol";
 
 /// @title Background SVG generator
 library BackgroundDetail {
-    /// @dev Background N°1 => Unreal
+    /// @dev Background N°1 => Ordinary
     function item_1() public pure returns (string memory) {
         return
             base(
                 string(
                     abi.encodePacked(
-                        '<g id="unreal"><radialGradient id="radial-gradient" cx="210.05" cy="209.5" r="209.98" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#634363"/><stop offset="1" stop-color="#04061c"/></radialGradient>',
-                        background("410824"),
+                        '<g id="Ordinary"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#726680"/> <stop offset="1" stop-color="#4a4a4a"/> </radialGradient>',
+                        background("323232"),
                         "</g>"
                     )
                 )
             );
     }
 
+    /// @dev Background N°2 => Uncommon
     function item_2() public pure returns (string memory) {
         return
             base(
                 string(
                     abi.encodePacked(
-                        '<g id="Artistic"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0.47" stop-color="#ed6aff"/> <stop offset="0.76" stop-color="#ffc574"/> <stop offset="1" stop-color="#3fecff"/> </radialGradient>',
-                        background("ff9fd7"),
+                        '<g id="Uncommon"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#2fa675"/> <stop offset="1" stop-color="#106c48"/> </radialGradient>',
+                        background("125443"),
                         "</g>"
                     )
                 )
             );
     }
 
+    /// @dev Background N°3 => Surprising
     function item_3() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<g id="Phenomenal"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#fff38d"/> <stop offset="1" stop-color="#d68e4b"/> </radialGradient>',
-                        background("bd4e4a"),
-                        "</g>"
-                    )
-                )
-            );
-    }
-
-    function item_4() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<g id="Bloody"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#8c134f"/> <stop offset="1" stop-color="#6d0738"/> </radialGradient>',
-                        background("410824"),
-                        "</g>"
-                    )
-                )
-            );
-    }
-
-    function item_5() public pure returns (string memory) {
-        return
-            base(
-                string(
-                    abi.encodePacked(
-                        '<g id="Impressive"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#991fc4"/> <stop offset="1" stop-color="#61147d"/> </radialGradient>',
-                        background("470f5c"),
-                        "</g>"
-                    )
-                )
-            );
-    }
-
-    function item_6() public pure returns (string memory) {
         return
             base(
                 string(
@@ -86,26 +49,70 @@ library BackgroundDetail {
             );
     }
 
-    function item_7() public pure returns (string memory) {
+    /// @dev Background N°4 => Impressive
+    function item_4() public pure returns (string memory) {
         return
             base(
                 string(
                     abi.encodePacked(
-                        '<g id="Unusual"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#2fa675"/> <stop offset="1" stop-color="#106c48"/> </radialGradient>',
-                        background("125443"),
+                        '<g id="Impressive"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#991fc4"/> <stop offset="1" stop-color="#61147d"/> </radialGradient>',
+                        background("470f5c"),
                         "</g>"
                     )
                 )
             );
     }
 
+    /// @dev Background N°5 => Bloody
+    function item_5() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Bloody"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#8c134f"/> <stop offset="1" stop-color="#6d0738"/> </radialGradient>',
+                        background("410824"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    /// @dev Background N°6 => Phenomenal
+    function item_6() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Phenomenal"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#fff38d"/> <stop offset="1" stop-color="#d68e4b"/> </radialGradient>',
+                        background("bd4e4a"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    /// @dev Background N°7 => Artistic
+    function item_7() public pure returns (string memory) {
+        return
+            base(
+                string(
+                    abi.encodePacked(
+                        '<g id="Artistic"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0.47" stop-color="#ed6aff"/> <stop offset="0.76" stop-color="#ffc574"/> <stop offset="1" stop-color="#3fecff"/> </radialGradient>',
+                        background("ff9fd7"),
+                        "</g>"
+                    )
+                )
+            );
+    }
+
+    /// @dev Background N°8 => Unreal
     function item_8() public pure returns (string memory) {
         return
             base(
                 string(
                     abi.encodePacked(
-                        '<g id="Ordinary"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#726680"/> <stop offset="1" stop-color="#4a4a4a"/> </radialGradient>',
-                        background("323232"),
+                        '<g id="Unreal"><radialGradient id="radial-gradient" cx="210.05" cy="209.5" r="209.98" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#634363"/><stop offset="1" stop-color="#04061c"/></radialGradient>',
+                        background("410824"),
                         "</g>"
                     )
                 )
