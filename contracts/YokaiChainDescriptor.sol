@@ -19,11 +19,11 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
     uint256[] internal SKIN_ITEMS = [52000, 26000, 1000, 0];
     uint256[] internal NOSE_ITEMS = [75000, 55000, 39000, 26000, 15000, 5000, 100, 0];
     uint256[] internal MARK_ITEMS = [
-        95000,
-        90000,
-        85000,
-        80000,
-        75000,
+        100000,
+        94000,
+        88000,
+        82000,
+        76000,
         70000,
         65000,
         60000,
@@ -34,12 +34,14 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
         35000,
         30000,
         25000,
-        20000,
-        15000,
-        10000,
-        5000,
-        2000,
+        21000,
+        17000,
+        13000,
+        9500,
+        6000,
+        2500,
         1000,
+        100,
         0
     ];
     uint256[] internal EYEBROW_ITEMS = [
