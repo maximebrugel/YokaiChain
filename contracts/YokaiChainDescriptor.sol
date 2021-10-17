@@ -67,25 +67,25 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
         0
     ];
     uint256[] internal MASK_ITEMS = [
-        95000,
-        90000,
-        85000,
-        80000,
+        91000,
+        83000,
         75000,
-        70000,
-        65000,
-        60000,
-        55000,
-        50000,
+        67000,
+        59000,
+        52000,
         45000,
-        40000,
-        35000,
-        30000,
-        25000,
+        38000,
+        31000,
+        24000,
         20000,
-        15000,
-        10000,
+        16000,
+        12000,
+        8000,
         5000,
+        3010,
+        2010,
+        1010,
+        10,
         0
     ];
     uint256[] internal EARRINGS_ITEMS = [
@@ -298,7 +298,7 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
         uint256 score = itemScorePosition(params.hair, HAIR_ITEMS) +
             itemScoreProba(params.accessory, ACCESSORY_ITEMS) +
             itemScoreProba(params.earring, EARRINGS_ITEMS) +
-            itemScoreProba(params.mask, MASK_ITEMS) +
+            itemScorePosition(params.mask, MASK_ITEMS) +
             itemScorePosition(params.mouth, MOUTH_ITEMS) +
             (itemScoreProba(params.skin, SKIN_ITEMS) * 2) +
             itemScoreProba(params.skin, SKIN_ITEMS) +
