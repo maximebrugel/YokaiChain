@@ -106,20 +106,21 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
         0
     ];
     uint256[] internal ACCESSORY_ITEMS = [
-        90000,
-        85000,
-        70000,
-        60000,
-        40000,
-        45000,
+        86000,
+        77000,
+        68000,
+        59000,
+        51000,
+        43000,
         35000,
-        30000,
-        20000,
-        15000,
-        10000,
-        5000,
+        28000,
+        22000,
+        17000,
+        12000,
+        7000,
         2000,
-        1000,
+        300,
+        100,
         0
     ];
     uint256[] internal MOUTH_ITEMS = [
@@ -297,7 +298,7 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
 
     function getBackgroundId(NFTDescriptor.SVGParams memory params) private view returns (uint8) {
         uint256 score = itemScorePosition(params.hair, HAIR_ITEMS) +
-            itemScoreProba(params.accessory, ACCESSORY_ITEMS) +
+            itemScorePosition(params.accessory, ACCESSORY_ITEMS) +
             itemScorePosition(params.earring, EARRINGS_ITEMS) +
             itemScorePosition(params.mask, MASK_ITEMS) +
             itemScorePosition(params.mouth, MOUTH_ITEMS) +
