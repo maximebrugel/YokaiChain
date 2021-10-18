@@ -133,15 +133,15 @@ library EyesDetail {
         } else if (id == 2) {
             name = "Dubu";
         } else if (id == 3) {
-            name = "Love";
-        } else if (id == 4) {
             name = "Pupils White-Red";
-        } else if (id == 5) {
+        } else if (id == 4) {
             name = "Tomoe White";
-        } else if (id == 6) {
+        } else if (id == 5) {
             name = "Stitch";
-        } else if (id == 7) {
+        } else if (id == 6) {
             name = "Tomoe Red";
+        } else if (id == 7) {
+            name = "00";
         } else if (id == 8) {
             name = "Shine";
         } else if (id == 9) {
