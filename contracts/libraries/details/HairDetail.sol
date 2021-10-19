@@ -7,47 +7,44 @@ import "base64-sol/base64.sol";
 
 /// @title Hair SVG generator
 library HairDetail {
-    /// @dev Hair N°1 => Tattoo kin
+    /// @dev Hair N°1 => No Hair
     function item_1() public pure returns (string memory) {
-        return
-            base(
-                '<g id="Flame" display="inline" ><linearGradient id="SVGID_00000011722690206770933430000008680616382255612556_" gradientUnits="userSpaceOnUse" x1="210.6601" y1="-54.3" x2="210.6601" y2="11.1777" gradientTransform="matrix(1 0 0 -1 0 76)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.4231" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_00000011722690206770933430000008680616382255612556_)" d="M192.1,67.4c-6.5,21.1,2,49.3,5.5,62.9c0,0,6.9-39.2,34-63.9C220.8,63.6,198.1,64.9,192.1,67.4z" /></g>'
-            );
+        return base("");
     }
 
-    /// @dev Hair N°2 => White Long Hair
+    /// @dev Hair N°2 => Tattoo Red
     function item_2() public pure returns (string memory) {
-        return base(longHair("FFEDED"));
+        return base(tattoo("B50D5E"));
     }
 
-    /// @dev Hair N°3 => Long Hair
+    /// @dev Hair N°3 => Tattoo Black
     function item_3() public pure returns (string memory) {
-        return base(longHair("33333D"));
+        return base(tattoo("000000"));
     }
 
-    /// @dev Hair N°4 => Blood Long Hair
+    /// @dev Hair N°4 => Tattoo White
     function item_4() public pure returns (string memory) {
-        return base(longHair("B50D5E"));
+        return base(tattoo("FFEDED"));
     }
 
-    /// @dev Hair N°5 => Spike White
+    /// @dev Hair N°5 => Short Red
     function item_5() public pure returns (string memory) {
-        return base(spike("FFEDED"));
+        return base(shortHair("B50D5E"));
     }
 
-    /// @dev Hair N°6 => Spike Red x2F Black x2F White
+    /// @dev Hair N°6 => Short Black
     function item_6() public pure returns (string memory) {
-        return base(spike("000000"));
+        return base(shortHair("001015"));
     }
 
-    /// @dev Hair N°7 => Spike Red
+    /// @dev Hair N°7 => Short White
     function item_7() public pure returns (string memory) {
-        return base(spike("B50D5E"));
+        return base(shortHair("FFEDED"));
     }
 
-    /// @dev Hair N°8 => Flame White
+    /// @dev Hair N°8 => Flame Red
     function item_8() public pure returns (string memory) {
-        return base(flame("FFDAEA"));
+        return base(flame("E31466"));
     }
 
     /// @dev Hair N°9 => Flame Black
@@ -55,44 +52,47 @@ library HairDetail {
         return base(flame("2A2C38"));
     }
 
-    /// @dev Hair N°10 => Flame Red
+    /// @dev Hair N°10 => Flame White
     function item_10() public pure returns (string memory) {
-        return base(flame("E31466"));
+        return base(flame("FFDAEA"));
     }
 
-    /// @dev Hair N°11 => Short White
+    /// @dev Hair N°11 => Spike Red
     function item_11() public pure returns (string memory) {
-        return base(shortHair("FFEDED"));
+        return base(spike("B50D5E"));
     }
 
-    /// @dev Hair N°12 => Short Black
+    /// @dev Hair N°12 => Spike Red x2F Black x2F White
     function item_12() public pure returns (string memory) {
-        return base(shortHair("001015"));
+        return base(spike("000000"));
     }
 
-    /// @dev Hair N°13 => Short Red
+    /// @dev Hair N°13 => Spike White
     function item_13() public pure returns (string memory) {
-        return base(shortHair("B50D5E"));
+        return base(spike("FFEDED"));
     }
 
-    /// @dev Hair N°14 => Tattoo White
+    /// @dev Hair N°14 => Blood Long Hair
     function item_14() public pure returns (string memory) {
-        return base(tattoo("FFEDED"));
+        return base(longHair("B50D5E"));
     }
 
-    /// @dev Hair N°15 => Tattoo Black
+    /// @dev Hair N°15 => Long Hair
     function item_15() public pure returns (string memory) {
-        return base(tattoo("000000"));
+        return base(longHair("33333D"));
     }
 
-    /// @dev Hair N°16 => Tattoo Red
+    /// @dev Hair N°16 => White Long Hair
     function item_16() public pure returns (string memory) {
-        return base(tattoo("B50D5E"));
+        return base(longHair("FFEDED"));
     }
 
-    /// @dev Hair N°17 => No Hair
+    /// @dev Hair N°17 => Tattoo kin
     function item_17() public pure returns (string memory) {
-        return base("");
+        return
+            base(
+                '<g id="Flame" display="inline" ><linearGradient id="SVGID_00000011722690206770933430000008680616382255612556_" gradientUnits="userSpaceOnUse" x1="210.6601" y1="-54.3" x2="210.6601" y2="11.1777" gradientTransform="matrix(1 0 0 -1 0 76)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.4231" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_00000011722690206770933430000008680616382255612556_)" d="M192.1,67.4c-6.5,21.1,2,49.3,5.5,62.9c0,0,6.9-39.2,34-63.9C220.8,63.6,198.1,64.9,192.1,67.4z" /></g>'
+            );
     }
 
     function flame(string memory color) private pure returns (string memory) {
@@ -160,39 +160,39 @@ library HairDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "Tatoo Kin";
+            name = "No Hair";
         } else if (id == 2) {
-            name = "White Long Hair";
+            name = "Tattoo Red";
         } else if (id == 3) {
-            name = "Long Hair";
+            name = "Tattoo Black";
         } else if (id == 4) {
-            name = "Blood Long Hair";
+            name = "Tattoo White";
         } else if (id == 5) {
-            name = "Spike White";
+            name = "Short Red";
         } else if (id == 6) {
-            name = "Spike Black";
+            name = "Short Black";
         } else if (id == 7) {
-            name = "Spike Red";
+            name = "Short White";
         } else if (id == 8) {
-            name = "Flame White";
+            name = "Flame Red";
         } else if (id == 9) {
             name = "Flame Black";
         } else if (id == 10) {
-            name = "Flame Red";
+            name = "Flame White";
         } else if (id == 11) {
-            name = "Short White";
+            name = "Spike Red";
         } else if (id == 12) {
-            name = "Short Black";
+            name = "Spike Black";
         } else if (id == 13) {
-            name = "Short Red";
+            name = "Spike White";
         } else if (id == 14) {
-            name = "Tattoo White";
+            name = "Blood Long Hair";
         } else if (id == 15) {
-            name = "Tattoo Black";
+            name = "Long Hair";
         } else if (id == 16) {
-            name = "Tattoo Red";
+            name = "White Long Hair";
         } else if (id == 17) {
-            name = "No Hair";
+            name = "Tatoo Kin";
         }
     }
 
