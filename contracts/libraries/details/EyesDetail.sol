@@ -9,59 +9,59 @@ import "./Eyes/EyesParts2.sol";
 
 /// @title Eyes SVG generator
 library EyesDetail {
-    /// @dev Eyes N°1 => Moon Gold
+    /// @dev Eyes N°1 => Kitsune Eye
     function item_1() public pure returns (string memory) {
-        return base(EyesParts1.item_1());
+        return base(EyesParts1.item_13());
     }
 
-    /// @dev Eyes N°2 => Dubu
+    /// @dev Eyes N°2 => Moon
     function item_2() public pure returns (string memory) {
-        return base(EyesParts2.item_1());
+        return base(EyesParts1.item_12());
     }
 
-    /// @dev Eyes N°3 => Love
+    /// @dev Eyes N°3 => Pupils Red
     function item_3() public pure returns (string memory) {
-        return base(EyesParts2.item_2());
+        return base(EyesParts1.item_11());
     }
 
-    /// @dev Eyes N°4 => Pupils White-Red
+    /// @dev Eyes N°4 => Spiral
     function item_4() public pure returns (string memory) {
-        return base(EyesParts1.item_2());
+        return base(EyesParts1.item_10());
     }
 
-    /// @dev Eyes N°5 => Tomoe White
+    /// @dev Eyes N°5 => Pupils Kuro
     function item_5() public pure returns (string memory) {
-        return base(EyesParts1.item_3());
+        return base(EyesParts1.item_9());
     }
 
-    /// @dev Eyes N°6 => Stitch
+    /// @dev Eyes N°6 => Rip
     function item_6() public pure returns (string memory) {
-        return base(EyesParts2.item_3());
+        return base(EyesParts2.item_10());
     }
 
-    /// @dev Eyes N°7 => Tomoe Red
+    /// @dev Eyes N°7 => Annoyed
     function item_7() public pure returns (string memory) {
-        return base(EyesParts1.item_4());
+        return base(EyesParts2.item_9());
     }
 
-    /// @dev Eyes N°8 => Shine
+    /// @dev Eyes N°8 => Akuma Eye
     function item_8() public pure returns (string memory) {
-        return base(EyesParts1.item_5());
+        return base(EyesParts1.item_8());
     }
 
-    /// @dev Eyes N°9 => Feels
+    /// @dev Eyes N°9 => Scribble
     function item_9() public pure returns (string memory) {
-        return base(EyesParts2.item_4());
+        return base(EyesParts2.item_8());
     }
 
-    /// @dev Eyes N°10 => Happy
+    /// @dev Eyes N°10 => Arrow
     function item_10() public pure returns (string memory) {
-        return base(EyesParts2.item_5());
+        return base(EyesParts2.item_7());
     }
 
-    /// @dev Eyes N°11 => Closed
+    /// @dev Eyes N°11 => Globes
     function item_11() public pure returns (string memory) {
-        return base(EyesParts2.item_6());
+        return base(EyesParts1.item_7());
     }
 
     /// @dev Eyes N°12 => Stitch Eyes
@@ -69,59 +69,59 @@ library EyesDetail {
         return base(EyesParts1.item_6());
     }
 
-    /// @dev Eyes N°13 => Globes
+    /// @dev Eyes N°13 => Closed
     function item_13() public pure returns (string memory) {
-        return base(EyesParts1.item_7());
+        return base(EyesParts2.item_6());
     }
 
-    /// @dev Eyes N°14 => Arrow
+    /// @dev Eyes N°14 => Happy
     function item_14() public pure returns (string memory) {
-        return base(EyesParts2.item_7());
+        return base(EyesParts2.item_5());
     }
 
-    /// @dev Eyes N°15 => Scribble
+    /// @dev Eyes N°15 => Feels
     function item_15() public pure returns (string memory) {
-        return base(EyesParts2.item_8());
+        return base(EyesParts2.item_4());
     }
 
-    /// @dev Eyes N°16 => Akuma Eye
+    /// @dev Eyes N°16 => Shine
     function item_16() public pure returns (string memory) {
-        return base(EyesParts1.item_8());
+        return base(EyesParts1.item_5());
     }
 
-    /// @dev Eyes N°17 => Annoyed
+    /// @dev Eyes N°17 => 0-0
     function item_17() public pure returns (string memory) {
-        return base(EyesParts2.item_9());
+        return base(EyesParts2.item_2());
     }
 
-    /// @dev Eyes N°18 => Rip
+    /// @dev Eyes N°18 => Tomoe Red
     function item_18() public pure returns (string memory) {
-        return base(EyesParts2.item_10());
+        return base(EyesParts1.item_4());
     }
 
-    /// @dev Eyes N°19 => Pupils Kuro
+    /// @dev Eyes N°19 => Stitch
     function item_19() public pure returns (string memory) {
-        return base(EyesParts1.item_9());
+        return base(EyesParts2.item_3());
     }
 
-    /// @dev Eyes N°20 => Spiral
+    /// @dev Eyes N°20 => Tomoe White
     function item_20() public pure returns (string memory) {
-        return base(EyesParts1.item_10());
+        return base(EyesParts1.item_3());
     }
 
-    /// @dev Eyes N°21 => Pupils Red
+    /// @dev Eyes N°21 => Pupils White-Red
     function item_21() public pure returns (string memory) {
-        return base(EyesParts1.item_11());
+        return base(EyesParts1.item_2());
     }
 
-    /// @dev Eyes N°22 => Moon
+    /// @dev Eyes N°22 => Dubu
     function item_22() public pure returns (string memory) {
-        return base(EyesParts1.item_12());
+        return base(EyesParts2.item_1());
     }
 
-    /// @dev Eyes N°23 => Kitsune Eye
+    /// @dev Eyes N°23 => Moon Gold
     function item_23() public pure returns (string memory) {
-        return base(EyesParts1.item_13());
+        return base(EyesParts1.item_1());
     }
 
     /// @notice Return the skin name of the given id
@@ -129,51 +129,51 @@ library EyesDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "Moon Gold";
+            name = "Kitsune Eye";
         } else if (id == 2) {
-            name = "Dubu";
+            name = "Moon";
         } else if (id == 3) {
-            name = "Pupils White-Red";
+            name = "Pupils Red";
         } else if (id == 4) {
-            name = "Tomoe White";
+            name = "Spiral";
         } else if (id == 5) {
-            name = "Stitch";
+            name = "Pupils Kuro";
         } else if (id == 6) {
-            name = "Tomoe Red";
+            name = "Rip";
         } else if (id == 7) {
-            name = "00";
+            name = "Annoyed";
         } else if (id == 8) {
-            name = "Shine";
+            name = "Akuma Eye";
         } else if (id == 9) {
-            name = "Feels";
+            name = "Scribble";
         } else if (id == 10) {
-            name = "Happy";
+            name = "Arrow";
         } else if (id == 11) {
-            name = "Closed";
+            name = "Globes";
         } else if (id == 12) {
             name = "Stitch Eyes";
         } else if (id == 13) {
-            name = "Globes";
+            name = "Closed";
         } else if (id == 14) {
-            name = "Arrow";
+            name = "Happy";
         } else if (id == 15) {
-            name = "Scribble";
+            name = "Feels";
         } else if (id == 16) {
-            name = "Akuma Eye";
+            name = "Shine";
         } else if (id == 17) {
-            name = "Annoyed";
+            name = "0-0";
         } else if (id == 18) {
-            name = "Rip";
+            name = "Tomoe Red";
         } else if (id == 19) {
-            name = "Pupils Kuro";
+            name = "Stitch";
         } else if (id == 20) {
-            name = "Spiral";
+            name = "Tomoe White";
         } else if (id == 21) {
-            name = "Pupils Red";
+            name = "Pupils White-Red";
         } else if (id == 22) {
-            name = "Moon";
+            name = "Dubu";
         } else if (id == 23) {
-            name = "Kitsune Eye";
+            name = "Moon Gold";
         }
     }
 
