@@ -97,7 +97,7 @@ library BackgroundDetail {
             base(
                 string(
                     abi.encodePacked(
-                        '<g id="Artistic"><radialGradient id="radial-gradient" cx="210" cy="212" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, 422)" gradientUnits="userSpaceOnUse"> <stop offset="0.47" stop-color="#ed6aff"/> <stop offset="0.76" stop-color="#ffc574"/> <stop offset="1" stop-color="#3fecff"/> </radialGradient>',
+                        '<g id="Artistic"><radialGradient id="radial-gradient" cx="210" cy="-1171.6" r="210" gradientTransform="matrix(1, 0, 0, -1, 0, -961.6)" gradientUnits="userSpaceOnUse"> <stop offset="0.5" stop-color="#fff9ab"/> <stop offset="1" stop-color="#16c7b5"/> </radialGradient>',
                         background("ff9fd7"),
                         "</g>"
                     )
@@ -112,7 +112,7 @@ library BackgroundDetail {
                 string(
                     abi.encodePacked(
                         '<g id="Unreal"><radialGradient id="radial-gradient" cx="210.05" cy="209.5" r="209.98" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#634363"/><stop offset="1" stop-color="#04061c"/></radialGradient>',
-                        background("410824"),
+                        background("000"),
                         "</g>"
                     )
                 )
@@ -141,6 +141,20 @@ library BackgroundDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
+            name = "Ordinary";
+        } else if (id == 2) {
+            name = "Unusual";
+        } else if (id == 3) {
+            name = "Surprising";
+        } else if (id == 4) {
+            name = "Impressive";
+        } else if (id == 5) {
+            name = "Bloody";
+        } else if (id == 6) {
+            name = "Phenomenal";
+        } else if (id == 7) {
+            name = "Artistic";
+        } else if (id == 8) {
             name = "Unreal";
         }
     }
