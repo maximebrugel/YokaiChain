@@ -1,4 +1,4 @@
-import hre from "hardhat";
+import hre, { network } from "hardhat";
 import fs from "fs";
 import { Contract, utils } from "ethers";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
@@ -99,6 +99,8 @@ describe("Unit tests", function () {
 async function svgTest(loop: number, yokaiChain: Contract) {
   let count = 1;
   while (count <= loop) {
+    await network.provider.send("evm_increaseTime", [Math.floor(Math.random() * 10000000)]);
+    await network.provider.send("evm_mine");
     await yokaiChain.create(1, { value: utils.parseEther("48") });
     const detail = await yokaiChain.details(count);
     const nft = await yokaiChain.tokenURI(count);
