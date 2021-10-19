@@ -273,7 +273,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
 
     /// @dev Get SVGParams from YokaiChain.Detail
     function getSVGParams(IYokaiChain yokaiChain, uint256 tokenId)
-        private
+        public
         view
         returns (NFTDescriptor.SVGParams memory)
     {
@@ -308,6 +308,20 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
             itemScorePosition(params.eye, EYE_ITEMS) +
             itemScorePosition(params.eyebrow, EYEBROW_ITEMS);
         return DetailHelper.pickItems(score, BACKGROUND_ITEMS);
+    }
+
+    function getScore(NFTDescriptor.SVGParams memory params) external view returns (uint256) {
+        return
+            itemScorePosition(params.hair, HAIR_ITEMS) +
+            itemScorePosition(params.accessory, ACCESSORY_ITEMS) +
+            itemScorePosition(params.earring, EARRINGS_ITEMS) +
+            itemScorePosition(params.mask, MASK_ITEMS) +
+            itemScorePosition(params.mouth, MOUTH_ITEMS) +
+            (itemScoreProba(params.skin, SKIN_ITEMS) * 2) +
+            itemScoreProba(params.nose, NOSE_ITEMS) +
+            itemScorePosition(params.mark, MARK_ITEMS) +
+            itemScorePosition(params.eye, EYE_ITEMS) +
+            itemScorePosition(params.eyebrow, EYEBROW_ITEMS);
     }
 
     /// @dev Get item score based on his probability
