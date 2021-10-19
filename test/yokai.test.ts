@@ -1,15 +1,9 @@
-import hre, { network } from "hardhat";
-//import chai from "chai";
+import hre from "hardhat";
 import fs from "fs";
 import { Contract, utils } from "ethers";
-//import chaiAsPromised from "chai-as-promised";
-//chai.use(chaiAsPromised);
-// import { promise } from "chai-as-promised";
 import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
 
-import { Signers } from "../types";
-
-//const expect = chai.expect;
+import { Signers } from "./types";
 
 describe("Unit tests", function () {
   before(async function () {
@@ -80,7 +74,7 @@ describe("Unit tests", function () {
       this.yokaiChain = await YokaiChain.deploy(YokaiChainDescriptor.address);
     });
 
-    it("Mint specific Item", async function () {
+    it.skip("Mint specific Item", async function () {
       this.timeout(4000000);
       await this.yokaiChain.createTest(17, 1, 1, 1, 14, 22, 10, 1, 6, 1);
       const detail = await this.yokaiChain.details(1);
@@ -95,10 +89,10 @@ describe("Unit tests", function () {
       console.log("= > at ", detail.timestamp.toString());
     });
 
-    // it("Mint one NFT", async function () {
-    //   this.timeout(400000000); // Big timeout
-    //   await svgTest(10, this.yokaiChain);
-    // });
+    it("Mint one NFT", async function () {
+      this.timeout(400000000); // Big timeout
+      await svgTest(100, this.yokaiChain);
+    });
   });
 });
 
@@ -110,7 +104,6 @@ async function svgTest(loop: number, yokaiChain: Contract) {
     const nft = await yokaiChain.tokenURI(count);
 
     const bufJson = Buffer.from(nft.substring(29), "base64");
-    //console.log(bufJson.toString());
     const jsonObj = JSON.parse(bufJson.toString());
     const bufSvg = Buffer.from(jsonObj.image.substring(26), "base64");
     await fs.writeFileSync("yokais/" + count + "_yokai.svg", bufSvg.toString());
