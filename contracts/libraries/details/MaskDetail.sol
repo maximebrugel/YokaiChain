@@ -7,117 +7,124 @@ import "base64-sol/base64.sol";
 
 /// @title Mask SVG generator
 library MaskDetail {
-    /// @dev Mask N°1 => ???
+    /// @dev Mask N°1 => None
     function item_1() public pure returns (string memory) {
-        return
-            base(
-                '<path display="inline" fill="#F5F4F3" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M290.1,166.9c0,71-20.4,132.3-81.2,133.3c-60.9,0.9-77.5-59.4-77.5-130.4s15-107.6,75.8-107.6C270.4,62.3,290.1,96,290.1,166.9z" /><path display="inline" opacity="8.000000e-02" enable-background="new    " d="M290,165.9c0,71-20.2,132.7-81.3,134.4c28.3-18.3,29.5-51.1,29.5-121.9S263,89,206.9,62.4C270.2,62.4,290,95,290,165.9z" /><ellipse display="inline" cx="245.9" cy="169.9" rx="17.6" ry="6.4" /><path display="inline" d="M233.7,266.5c0.3-7.5-12.6-6.4-28.3-6.4s-28.6-1.5-28.3,6.4c0.1,3.5,12.6,6.4,28.3,6.4S233.6,270,233.7,266.5z"  /><ellipse display="inline" cx="161.5" cy="169.7" rx="17" ry="6.3"  /><path display="inline" fill="#F2EDED" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M148.5,181c0,0,7,6,21.4,0.6"  /><path display="inline" fill="#F2EDED" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M235.2,180.9c0,0,6.9,5.9,21.3,0.6"  /><path display="inline" fill="#F2EDED" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M193.4,278.5c0,0,9.6,3.6,22.5,0"  /><path display="inline" fill="#996DAD" d="M149.8,190.5c1.6-3.8,17.9-3.5,19.6-0.4c1.9,3.3-5,47.5-6.9,47.8C159.2,238.6,146.9,201.5,149.8,190.5z"  /><path display="inline" fill="#996DAD" d="M236.3,189.8c1.6-3.8,18.8-2.8,20.5,0.3c3.9,6.7-6.8,47.3-9.7,47.2C243.6,237,233.4,200.8,236.3,189.8z"  /><path display="inline" fill="#996DAD" d="M233.6,149c1.4,2.4,15.3,2.2,16.8,0.2c1.7-2.1-4.3-28.8-7.5-29.3C239.4,119.5,231.1,142.3,233.6,149z"  /><path display="inline" fill="#996DAD" d="M151.9,151.7c1.4,2.4,15.3,2.2,16.8,0.2c1.7-2.1-4.3-28.8-7.5-29.3C157.8,122.1,149.5,144.9,151.9,151.7z"  />'
-            );
+        return base("");
     }
 
-    /// @dev Mask N°2 => Power Sticks White
+    /// @dev Mask N°2 => Blood Uni Horn
     function item_2() public pure returns (string memory) {
-        return base(powerStick("FFEDED"));
+        return base(horn("E31466"));
     }
 
-    /// @dev Mask N°3 => Bandage Tomoe White
+    /// @dev Mask N°3 => Power Sticks
     function item_3() public pure returns (string memory) {
-        return base(blindfold("FFEDED", "B50D5E"));
+        return base(powerStick("000000"));
     }
 
-    /// @dev Mask N°4 => Nihon
+    /// @dev Mask N°4 => Lunar Uni Horn
     function item_4() public pure returns (string memory) {
-        return
-            base(
-                '<path id="Nihon" display="inline" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M175.3,307.1c0,0,21.5,15.8,85.9,0.3c0.3-0.1,0.4-0.3,0.4-0.5c0-2.7,0-17.9,4.6-46.5c0-0.1,0.1-0.2,0.1-0.3c1.1-1.6,13.5-17.6,15.9-20.6c0.2-0.3,0.1-0.6-0.2-0.8c-5.3-3.2-47.8-29-83-38c-1.1-0.3-3.1-0.7-4.2-0.2c-17.5,7.4-46.3,28.9-52.8,33.9c-0.8,0.6-0.9,1.7-0.7,2.7c1.5,5.3,8.2,19.9,10.2,21.8c1.8,1.7,23.1,18.5,23.1,18.5s0.7,0.2,0.7,0.3C175.8,278.6,177.7,287,175.3,307.1z" /><path display="inline" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M175.8,277.7c0,0,21.3,17.6,29.6,17.9s15.7-4,16.6-4.5c0.9-0.4,19-9.1,33.1-20.7 M267,259.4c-3.2,3.5-7.3,7.3-11.9,11" /><path display="inline" fill="#696969" d="M199.5,231.6l-8.2-3.6c-0.4-0.2-0.5-0.7-0.2-1.1l3.3-3.4c0.4-0.4,1-0.5,1.6-0.3l13.2,4.8c0.6,0.2,0.6,1.1-0.1,1.4l-9.1,2.5C199.8,231.7,199.5,231.7,199.5,231.6z M175.5,278.2c0,0,26.5,36.4,43.2,32c16.8-4.4,43.7-21.8,43.7-21.8c1.3-9.1,2.2-19.7,3.3-28.7c-4.8,4.9-13.3,13.8-21.8,19.1c-5.2,3.2-22.1,15.1-36.4,16.7C200,296.3,175.5,278.2,175.5,278.2z"  /><ellipse display="inline" opacity="0.87" fill="#FF0057" enable-background="new    " cx="239.4" cy="248.4" rx="14" ry="15.1"  />'
-            );
+        return base(horn("2A2C38"));
     }
 
-    /// @dev Mask N°5 => Heart
+    /// @dev Mask N°5 => Power Neck
     function item_5() public pure returns (string memory) {
-        return
-            base(
-                '<path id="Heart" d="M185,360.8c1.1-10.4,9.9-19.1,21.7-18c9.6,0.8,16.1,10.8,15,21.2c-1.1,10.4-11.2,18.3-20.9,17.3S183.8,371.2,185,360.8z"/>'
-            );
-    }
-
-    /// @dev Mask N°6 => Eye Patch
-    function item_6() public pure returns (string memory) {
-        return
-            base(
-                '<g id="MASK EYE" display="inline"><g><path fill="#FCFEFF" d="M257.9,210.4h-36.1c-4.9,0-8.9-4-8.9-8.9v-21.7c0-4.9,4-8.9,8.9-8.9h36.1c4.9,0,8.9,4,8.9,8.9v21.8C266.6,206.4,262.8,210.4,257.9,210.4z"/><path d="M257.9,210.4l-10.7,0.1l-10.7,0.2c-3.6,0.1-7.1,0.1-10.7,0.1h-2.7h-1.3c-0.5,0-0.9,0-1.4-0.1c-1.9-0.3-3.6-1.2-4.9-2.5c-1.4-1.3-2.3-3-2.6-4.8c-0.2-0.9-0.2-1.9-0.2-2.7V198c0.1-3.6,0.1-7.1,0.1-10.7v-5.4c0-0.9,0-1.8,0-2.7c0.1-0.9,0.2-1.8,0.6-2.7c0.6-1.7,1.8-3.2,3.3-4.3c0.8-0.5,1.6-0.9,2.4-1.2c0.9-0.3,1.8-0.4,2.7-0.4l21.4-0.2l10.7-0.1h2.7h1.3c0.5,0,0.9,0,1.4,0.1c1.9,0.3,3.6,1.2,5,2.5s2.3,3,2.7,4.9c0.2,0.9,0.2,1.9,0.2,2.8v2.7l-0.1,10.7l-0.1,5.4c0,0.9,0,1.8-0.1,2.7s-0.3,1.8-0.7,2.6c-0.7,1.7-1.8,3.2-3.3,4.2c-0.7,0.5-1.6,0.9-2.4,1.2C259.7,210.3,258.8,210.4,257.9,210.4z M257.9,210.3c0.9,0,1.8-0.2,2.6-0.4c0.8-0.3,1.6-0.7,2.4-1.2c1.4-1,2.6-2.5,3.2-4.2c0.3-0.8,0.5-1.7,0.5-2.6c0.1-0.9,0-1.8,0-2.7l-0.1-5.4l-0.1-10.7v-2.7c0-0.9,0-1.7-0.2-2.6c-0.4-1.6-1.2-3.2-2.5-4.3c-1.2-1.2-2.8-1.9-4.5-2.2c-0.4-0.1-0.8-0.1-1.3-0.1h-1.3h-2.7l-10.7-0.1l-21.4-0.2c-3.5-0.1-6.9,2.2-8.1,5.5c-0.7,1.6-0.6,3.4-0.6,5.2v5.4c0,3.6,0,7.1,0.1,10.7v2.7c0,0.9,0,1.7,0.2,2.6c0.4,1.7,1.3,3.2,2.5,4.4s2.8,2,4.5,2.2c0.8,0.1,1.7,0.1,2.6,0.1h2.7c3.6,0,7.1,0,10.7,0.1l10.7,0.2L257.9,210.3z"/></g><g><path d="M254.2,206.4c-5.7,0-11.4,0.1-17,0.2c-2.8,0.1-5.7,0.1-8.5,0.1h-2.1c-0.7,0-1.4,0-2.2-0.1c-1.5-0.2-2.9-0.9-4-1.9s-1.8-2.4-2.2-3.8c-0.2-0.7-0.2-1.5-0.2-2.2v-2.1c0-2.8,0.1-5.7,0.1-8.5v-4.3c0-0.7,0-1.4,0-2.1c0.1-0.7,0.2-1.4,0.5-2.1c0.5-1.4,1.5-2.5,2.6-3.4c0.6-0.4,1.3-0.7,2-1c0.7-0.2,1.4-0.3,2.2-0.3l17-0.1h8.5h2.1c0.7,0,1.4,0,2.2,0.1c1.5,0.2,2.9,0.9,4,1.9s1.9,2.4,2.2,3.8c0.2,0.7,0.2,1.5,0.2,2.2v2.1l-0.1,8.5l-0.1,4.3c0,0.7,0,1.4-0.1,2.1c-0.1,0.7-0.2,1.4-0.5,2.1c-0.5,1.3-1.5,2.5-2.7,3.3C257.1,206,255.6,206.4,254.2,206.4z M254.2,206.4c1.4,0,2.8-0.4,4-1.2s2.1-1.9,2.6-3.3c0.2-0.7,0.4-1.4,0.4-2c0-0.7,0-1.4,0-2.1l-0.1-4.3L261,185v-2.1c0-0.7,0-1.4-0.2-2c-0.3-1.3-1-2.5-2-3.4s-2.3-1.5-3.6-1.7c-0.7-0.1-1.3-0.1-2.1-0.1H251h-8.5l-17-0.1c-2.8-0.1-5.5,1.7-6.5,4.3c-0.3,0.6-0.4,1.3-0.5,2s0,1.4,0,2.1v4.3c0,2.8,0,5.7,0.1,8.5v2.1c0,0.7,0,1.4,0.2,2.1c0.3,1.3,1,2.6,2.1,3.5c1,0.9,2.3,1.5,3.6,1.7c0.7,0.1,1.4,0.1,2.1,0.1h2.1c2.8,0,5.7,0,8.5,0.1C242.8,206.3,248.5,206.4,254.2,206.4z"/></g><g><path d="M214.4,174.8c-7-0.5-13.9-1.1-20.8-1.8c-3.5-0.4-6.9-0.8-10.4-1.1s-7-0.5-10.4-0.6c-7-0.3-13.9-0.5-20.9-0.9c-7-0.3-13.9-0.7-20.9-1.2c0,0,0,0,0-0.1l0,0c7-0.1,13.9,0,20.9,0.3s13.9,0.7,20.9,1.3c3.5,0.3,6.9,0.6,10.4,0.8l10.4,0.6C200.6,172.8,207.5,173.6,214.4,174.8C214.4,174.8,214.5,174.8,214.4,174.8C214.4,174.8,214.4,174.9,214.4,174.8z"/></g><g><path d="M265.2,175c2.8,0,5.5,0.3,8.2,0.7c1.4,0.3,2.7,0.6,4,0.8c1.4,0.2,2.7,0.4,4.1,0.5c2.7,0.2,5.5,0.6,8.2,1.1s5.4,1.2,8,2.1c0,0,0,0,0,0.1c0,0,0,0-0.1,0c-2.7-0.3-5.4-0.7-8.1-1.2s-5.4-1-8.1-1.6c-1.3-0.3-2.7-0.6-4.1-0.7c-1.4-0.2-2.7-0.2-4.1-0.3C270.6,176.2,267.9,175.8,265.2,175L265.2,175L265.2,175z"/></g><g><path d="M263.6,208.2c1.7,2.6,3.3,5.3,4.7,8.1c0.7,1.4,1.3,2.8,2.1,4.2c0.8,1.4,1.6,2.7,2.5,4c1.8,2.6,3.4,5.2,5.1,7.9c1.6,2.7,3.2,5.3,4.7,8.1v0.1c0,0,0,0-0.1,0c-2-2.4-3.8-5-5.6-7.6c-1.7-2.6-3.3-5.4-4.7-8.1c-0.7-1.4-1.5-2.8-2.3-4.1s-1.7-2.6-2.5-4C266,214,264.7,211.2,263.6,208.2C263.5,208.2,263.6,208.2,263.6,208.2C263.6,208.1,263.6,208.2,263.6,208.2z"/></g><g><path d="M213.9,206.7c-5.8,2.8-11.7,5.2-17.7,7.4l-4.5,1.5c-1.5,0.5-3,1-4.5,1.5c-3,1-6,2.1-9,3.2c-6,2.2-12.1,4.1-18.2,5.8c-6.1,1.7-12.3,3.2-18.6,4.4h-0.1v-0.1l36.7-10.7c3.1-0.9,6.1-1.9,9.1-3s5.9-2.3,8.9-3.5C201.9,211,207.9,208.8,213.9,206.7C213.9,206.6,213.9,206.7,213.9,206.7C214,206.7,213.9,206.7,213.9,206.7z"/></g></g>'
-            );
-    }
-
-    /// @dev Mask N°7 => Strap White
-    function item_7() public pure returns (string memory) {
-        return base(strap("#F2F2F2"));
-    }
-
-    /// @dev Mask N°8 => Bouc
-    function item_8() public pure returns (string memory) {
-        return
-            '<path id="Bouc" fill-rule="evenodd" clip-rule="evenodd" d="M189.4,279c0,0,8.8,9.2,9.8,10c0.7-0.7,6.4-14.7,6.4-14.7l5.8,14.7l10.4-10l-16.3,71L189.4,279z"/>';
-    }
-
-    /// @dev Mask N°9 => BlindFold Tomoe Black
-    function item_9() public pure returns (string memory) {
-        return base(blindfold("000000", "B50D5E"));
-    }
-
-    /// @dev Mask N°10 => Strap Dark
-    function item_10() public pure returns (string memory) {
-        return base(strap("#575673"));
-    }
-
-    /// @dev Mask N°11 => Horn White
-    function item_11() public pure returns (string memory) {
-        return base(horn("FFDAEA"));
-    }
-
-    /// @dev Mask N°12 => Sun Glasses
-    function item_12() public pure returns (string memory) {
-        return
-            '<g display="inline" opacity="0.95"><ellipse stroke="#000000" stroke-miterlimit="10" cx="164.6" cy="189.5" rx="24.9" ry="24.8" /><ellipse stroke="#000000" stroke-miterlimit="10" cx="236.3" cy="188.5" rx="24.9" ry="24.8" /></g><path display="inline" fill="none" stroke="#000000" stroke-miterlimit="10" d="M261.1,188.6l32.2-3.6 M187,188.6c0,0,15.3-3.2,24.5,0 M140.6,189l-7.1-3" />';
-    }
-
-    /// @dev Mask N°13 => Strap Red
-    function item_13() public pure returns (string memory) {
-        return (base(strap("D9005E")));
-    }
-
-    /// @dev Mask N°14 => BlindFold Tomoe Red
-    function item_14() public pure returns (string memory) {
-        return base(blindfold("D4004D", "FFEDED"));
-    }
-
-    /// @dev Mask N°15 => Stitch
-    function item_15() public pure returns (string memory) {
-        return
-            '<g display="inline"><path d="M175.8,299.3c7.2,1.8,14.4,2.9,21.7,3.9c1.9,0.2,3.5,0.5,5.4,0.7s3.6,0.3,5.4,0.5c3.6,0.2,7.2,0.2,10.9,0.1c3.6-0.1,7.2-0.5,10.9-0.7l5.4-0.6c0.9-0.1,1.9-0.2,2.7-0.3l2.7-0.4c7.2-1,14.4-2.9,21.5-4.8v0.1l-5.5,1.9l-2.7,0.8c-0.9,0.3-1.8,0.5-2.7,0.7l-5.4,1.4c-1.9,0.4-3.5,0.6-5.4,1c-3.5,0.7-7.2,0.9-10.9,1.4c-3.6,0.2-7.2,0.4-10.9,0.3c-7.2-0.1-14.6-0.3-21.8-0.9C190.1,303.1,182.8,301.8,175.8,299.3L175.8,299.3z" /></g><path display="inline" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M206.9,304.5c0,0,5.3-2.1,11.8,0.2C218.8,304.7,212.8,307.6,206.9,304.5z" /><g display="inline"><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M222.1,301c0,0,0.7-3.4,1.9-1c0,0,0.3,5.3-0.5,9.9c0,0-0.7,2.2-1-0.6C222.1,306.5,222.7,306.2,222.1,301z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M227.4,301.2c0,0,0.7-3.1,1.7-0.9c0,0,0.3,4.7-0.4,8.9c0,0-0.6,1.9-0.9-0.5C227.4,306.1,228.2,305.8,227.4,301.2z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M231.8,301.1c0,0,0.6-2.7,1.5-0.8c0,0,0.3,4.1-0.3,7.7c0,0-0.5,1.7-0.7-0.4C231.8,305.3,232.3,305.1,231.8,301.1z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M235.5,300.8c0,0,0.5-2.4,1.4-0.7c0,0,0.3,3.6-0.3,6.9c0,0-0.5,1.5-0.7-0.4C235.6,304.6,236,304.4,235.5,300.8z" /></g><g display="inline"><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M203.8,300.5c0,0-0.7-3.4-1.9-1c0,0-0.3,5.3,0.5,9.9c0,0,0.7,2.2,1-0.6C203.8,306,203.1,305.8,203.8,300.5z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M198.5,300.8c0,0-0.7-3.1-1.7-0.9c0,0-0.3,4.7,0.4,8.9c0,0,0.6,1.9,0.9-0.5C198.5,305.8,197.7,305.3,198.5,300.8z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M194.1,300.6c0,0-0.6-2.7-1.5-0.8c0,0-0.3,4.1,0.3,7.7c0,0,0.5,1.7,0.7-0.4C193.9,305,193.6,304.7,194.1,300.6z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M190.4,300.3c0,0-0.5-2.4-1.4-0.7c0,0-0.3,3.6,0.3,6.9c0,0,0.5,1.5,0.7-0.4C190.4,304.2,189.9,304,190.4,300.3z" /></g>';
-    }
-
-    /// @dev Mask N°16 => Power Neck
-    function item_16() public pure returns (string memory) {
         return
             base(
                 '<g display="inline"><path stroke="#000000" stroke-miterlimit="10" d="M254,291l22.2-0.1c0.3,0.4,2.5,4.3,0,9H254C252.1,296.7,251.9,293.7,254,291z" /><g><path d="M251.9,289.3c-1,2-1.8,4-1.9,6c0,1,0,2.1,0.3,3.1c0.1,0.5,0.3,1,0.4,1.6c0.2,0.5,0.4,1,0.6,1.6c-0.4-0.4-0.7-0.8-1-1.4c-0.3-0.5-0.6-0.9-0.7-1.6c-0.4-1-0.6-2.2-0.6-3.4c0-1.1,0.3-2.3,0.8-3.3C250.4,290.9,251.1,289.9,251.9,289.3z" /></g></g><g display="inline"><path stroke="#000000" stroke-miterlimit="10" d="M177.4,292.4l-20-0.1c-0.3,0.4-2.3,4.3,0,9h20C179.2,298.1,179.5,295.2,177.4,292.4z" /><g><path d="M179.5,290.7c0.8,0.7,1.6,1.7,2.1,2.7s0.8,2.2,0.8,3.3s-0.1,2.3-0.6,3.4c-0.2,0.5-0.5,1-0.7,1.6c-0.3,0.5-0.7,0.9-1,1.4c0.2-0.5,0.4-1,0.6-1.6c0.1-0.5,0.3-1,0.4-1.6c0.3-1,0.3-2.1,0.3-3.1C181.3,294.7,180.5,292.7,179.5,290.7z" /></g></g>'
             );
     }
 
-    /// @dev Mask N°17 => Lunar Uni Horn
+    /// @dev Mask N°6 => Stitch
+    function item_6() public pure returns (string memory) {
+        return
+            base(
+                '<g display="inline"><path d="M175.8,299.3c7.2,1.8,14.4,2.9,21.7,3.9c1.9,0.2,3.5,0.5,5.4,0.7s3.6,0.3,5.4,0.5c3.6,0.2,7.2,0.2,10.9,0.1c3.6-0.1,7.2-0.5,10.9-0.7l5.4-0.6c0.9-0.1,1.9-0.2,2.7-0.3l2.7-0.4c7.2-1,14.4-2.9,21.5-4.8v0.1l-5.5,1.9l-2.7,0.8c-0.9,0.3-1.8,0.5-2.7,0.7l-5.4,1.4c-1.9,0.4-3.5,0.6-5.4,1c-3.5,0.7-7.2,0.9-10.9,1.4c-3.6,0.2-7.2,0.4-10.9,0.3c-7.2-0.1-14.6-0.3-21.8-0.9C190.1,303.1,182.8,301.8,175.8,299.3L175.8,299.3z" /></g><path display="inline" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M206.9,304.5c0,0,5.3-2.1,11.8,0.2C218.8,304.7,212.8,307.6,206.9,304.5z" /><g display="inline"><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M222.1,301c0,0,0.7-3.4,1.9-1c0,0,0.3,5.3-0.5,9.9c0,0-0.7,2.2-1-0.6C222.1,306.5,222.7,306.2,222.1,301z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M227.4,301.2c0,0,0.7-3.1,1.7-0.9c0,0,0.3,4.7-0.4,8.9c0,0-0.6,1.9-0.9-0.5C227.4,306.1,228.2,305.8,227.4,301.2z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M231.8,301.1c0,0,0.6-2.7,1.5-0.8c0,0,0.3,4.1-0.3,7.7c0,0-0.5,1.7-0.7-0.4C231.8,305.3,232.3,305.1,231.8,301.1z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M235.5,300.8c0,0,0.5-2.4,1.4-0.7c0,0,0.3,3.6-0.3,6.9c0,0-0.5,1.5-0.7-0.4C235.6,304.6,236,304.4,235.5,300.8z" /></g><g display="inline"><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M203.8,300.5c0,0-0.7-3.4-1.9-1c0,0-0.3,5.3,0.5,9.9c0,0,0.7,2.2,1-0.6C203.8,306,203.1,305.8,203.8,300.5z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M198.5,300.8c0,0-0.7-3.1-1.7-0.9c0,0-0.3,4.7,0.4,8.9c0,0,0.6,1.9,0.9-0.5C198.5,305.8,197.7,305.3,198.5,300.8z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M194.1,300.6c0,0-0.6-2.7-1.5-0.8c0,0-0.3,4.1,0.3,7.7c0,0,0.5,1.7,0.7-0.4C193.9,305,193.6,304.7,194.1,300.6z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M190.4,300.3c0,0-0.5-2.4-1.4-0.7c0,0-0.3,3.6,0.3,6.9c0,0,0.5,1.5,0.7-0.4C190.4,304.2,189.9,304,190.4,300.3z" /></g>'
+            );
+    }
+
+    /// @dev Mask N°7 => BlindFold Tomoe Red
+    function item_7() public pure returns (string memory) {
+        return base(blindfold("D4004D", "FFEDED"));
+    }
+
+    /// @dev Mask N°8 => Strap Red
+    function item_8() public pure returns (string memory) {
+        return (base(strap("D9005E")));
+    }
+
+    /// @dev Mask N°9 => Sun Glasses
+    function item_9() public pure returns (string memory) {
+        return
+            '<g display="inline" opacity="0.95"><ellipse stroke="#000000" stroke-miterlimit="10" cx="164.6" cy="189.5" rx="24.9" ry="24.8" /><ellipse stroke="#000000" stroke-miterlimit="10" cx="236.3" cy="188.5" rx="24.9" ry="24.8" /></g><path display="inline" fill="none" stroke="#000000" stroke-miterlimit="10" d="M261.1,188.6l32.2-3.6 M187,188.6c0,0,15.3-3.2,24.5,0 M140.6,189l-7.1-3" />';
+    }
+
+    /// @dev Mask N°10 => Horn White
+    function item_10() public pure returns (string memory) {
+        return base(horn("FFDAEA"));
+    }
+
+    /// @dev Mask N°11 => Strap Dark
+    function item_11() public pure returns (string memory) {
+        return base(strap("575673"));
+    }
+
+    /// @dev Mask N°12 => BlindFold Tomoe Black
+    function item_12() public pure returns (string memory) {
+        return base(blindfold("000000", "B50D5E"));
+    }
+
+    /// @dev Mask N°13 => Bouc
+    function item_13() public pure returns (string memory) {
+        return
+            '<path id="Bouc" fill-rule="evenodd" clip-rule="evenodd" d="M189.4,279c0,0,8.8,9.2,9.8,10c0.7-0.7,6.4-14.7,6.4-14.7l5.8,14.7l10.4-10l-16.3,71L189.4,279z"/>';
+    }
+
+    /// @dev Mask N°14 => Strap White
+    function item_14() public pure returns (string memory) {
+        return base(strap("F2F2F2"));
+    }
+
+    /// @dev Mask N°15 => Eye Patch
+    function item_15() public pure returns (string memory) {
+        return
+            base(
+                '<g id="MASK EYE" display="inline"><g><path fill="#FCFEFF" d="M257.9,210.4h-36.1c-4.9,0-8.9-4-8.9-8.9v-21.7c0-4.9,4-8.9,8.9-8.9h36.1c4.9,0,8.9,4,8.9,8.9v21.8C266.6,206.4,262.8,210.4,257.9,210.4z"/><path d="M257.9,210.4l-10.7,0.1l-10.7,0.2c-3.6,0.1-7.1,0.1-10.7,0.1h-2.7h-1.3c-0.5,0-0.9,0-1.4-0.1c-1.9-0.3-3.6-1.2-4.9-2.5c-1.4-1.3-2.3-3-2.6-4.8c-0.2-0.9-0.2-1.9-0.2-2.7V198c0.1-3.6,0.1-7.1,0.1-10.7v-5.4c0-0.9,0-1.8,0-2.7c0.1-0.9,0.2-1.8,0.6-2.7c0.6-1.7,1.8-3.2,3.3-4.3c0.8-0.5,1.6-0.9,2.4-1.2c0.9-0.3,1.8-0.4,2.7-0.4l21.4-0.2l10.7-0.1h2.7h1.3c0.5,0,0.9,0,1.4,0.1c1.9,0.3,3.6,1.2,5,2.5s2.3,3,2.7,4.9c0.2,0.9,0.2,1.9,0.2,2.8v2.7l-0.1,10.7l-0.1,5.4c0,0.9,0,1.8-0.1,2.7s-0.3,1.8-0.7,2.6c-0.7,1.7-1.8,3.2-3.3,4.2c-0.7,0.5-1.6,0.9-2.4,1.2C259.7,210.3,258.8,210.4,257.9,210.4z M257.9,210.3c0.9,0,1.8-0.2,2.6-0.4c0.8-0.3,1.6-0.7,2.4-1.2c1.4-1,2.6-2.5,3.2-4.2c0.3-0.8,0.5-1.7,0.5-2.6c0.1-0.9,0-1.8,0-2.7l-0.1-5.4l-0.1-10.7v-2.7c0-0.9,0-1.7-0.2-2.6c-0.4-1.6-1.2-3.2-2.5-4.3c-1.2-1.2-2.8-1.9-4.5-2.2c-0.4-0.1-0.8-0.1-1.3-0.1h-1.3h-2.7l-10.7-0.1l-21.4-0.2c-3.5-0.1-6.9,2.2-8.1,5.5c-0.7,1.6-0.6,3.4-0.6,5.2v5.4c0,3.6,0,7.1,0.1,10.7v2.7c0,0.9,0,1.7,0.2,2.6c0.4,1.7,1.3,3.2,2.5,4.4s2.8,2,4.5,2.2c0.8,0.1,1.7,0.1,2.6,0.1h2.7c3.6,0,7.1,0,10.7,0.1l10.7,0.2L257.9,210.3z"/></g><g><path d="M254.2,206.4c-5.7,0-11.4,0.1-17,0.2c-2.8,0.1-5.7,0.1-8.5,0.1h-2.1c-0.7,0-1.4,0-2.2-0.1c-1.5-0.2-2.9-0.9-4-1.9s-1.8-2.4-2.2-3.8c-0.2-0.7-0.2-1.5-0.2-2.2v-2.1c0-2.8,0.1-5.7,0.1-8.5v-4.3c0-0.7,0-1.4,0-2.1c0.1-0.7,0.2-1.4,0.5-2.1c0.5-1.4,1.5-2.5,2.6-3.4c0.6-0.4,1.3-0.7,2-1c0.7-0.2,1.4-0.3,2.2-0.3l17-0.1h8.5h2.1c0.7,0,1.4,0,2.2,0.1c1.5,0.2,2.9,0.9,4,1.9s1.9,2.4,2.2,3.8c0.2,0.7,0.2,1.5,0.2,2.2v2.1l-0.1,8.5l-0.1,4.3c0,0.7,0,1.4-0.1,2.1c-0.1,0.7-0.2,1.4-0.5,2.1c-0.5,1.3-1.5,2.5-2.7,3.3C257.1,206,255.6,206.4,254.2,206.4z M254.2,206.4c1.4,0,2.8-0.4,4-1.2s2.1-1.9,2.6-3.3c0.2-0.7,0.4-1.4,0.4-2c0-0.7,0-1.4,0-2.1l-0.1-4.3L261,185v-2.1c0-0.7,0-1.4-0.2-2c-0.3-1.3-1-2.5-2-3.4s-2.3-1.5-3.6-1.7c-0.7-0.1-1.3-0.1-2.1-0.1H251h-8.5l-17-0.1c-2.8-0.1-5.5,1.7-6.5,4.3c-0.3,0.6-0.4,1.3-0.5,2s0,1.4,0,2.1v4.3c0,2.8,0,5.7,0.1,8.5v2.1c0,0.7,0,1.4,0.2,2.1c0.3,1.3,1,2.6,2.1,3.5c1,0.9,2.3,1.5,3.6,1.7c0.7,0.1,1.4,0.1,2.1,0.1h2.1c2.8,0,5.7,0,8.5,0.1C242.8,206.3,248.5,206.4,254.2,206.4z"/></g><g><path d="M214.4,174.8c-7-0.5-13.9-1.1-20.8-1.8c-3.5-0.4-6.9-0.8-10.4-1.1s-7-0.5-10.4-0.6c-7-0.3-13.9-0.5-20.9-0.9c-7-0.3-13.9-0.7-20.9-1.2c0,0,0,0,0-0.1l0,0c7-0.1,13.9,0,20.9,0.3s13.9,0.7,20.9,1.3c3.5,0.3,6.9,0.6,10.4,0.8l10.4,0.6C200.6,172.8,207.5,173.6,214.4,174.8C214.4,174.8,214.5,174.8,214.4,174.8C214.4,174.8,214.4,174.9,214.4,174.8z"/></g><g><path d="M265.2,175c2.8,0,5.5,0.3,8.2,0.7c1.4,0.3,2.7,0.6,4,0.8c1.4,0.2,2.7,0.4,4.1,0.5c2.7,0.2,5.5,0.6,8.2,1.1s5.4,1.2,8,2.1c0,0,0,0,0,0.1c0,0,0,0-0.1,0c-2.7-0.3-5.4-0.7-8.1-1.2s-5.4-1-8.1-1.6c-1.3-0.3-2.7-0.6-4.1-0.7c-1.4-0.2-2.7-0.2-4.1-0.3C270.6,176.2,267.9,175.8,265.2,175L265.2,175L265.2,175z"/></g><g><path d="M263.6,208.2c1.7,2.6,3.3,5.3,4.7,8.1c0.7,1.4,1.3,2.8,2.1,4.2c0.8,1.4,1.6,2.7,2.5,4c1.8,2.6,3.4,5.2,5.1,7.9c1.6,2.7,3.2,5.3,4.7,8.1v0.1c0,0,0,0-0.1,0c-2-2.4-3.8-5-5.6-7.6c-1.7-2.6-3.3-5.4-4.7-8.1c-0.7-1.4-1.5-2.8-2.3-4.1s-1.7-2.6-2.5-4C266,214,264.7,211.2,263.6,208.2C263.5,208.2,263.6,208.2,263.6,208.2C263.6,208.1,263.6,208.2,263.6,208.2z"/></g><g><path d="M213.9,206.7c-5.8,2.8-11.7,5.2-17.7,7.4l-4.5,1.5c-1.5,0.5-3,1-4.5,1.5c-3,1-6,2.1-9,3.2c-6,2.2-12.1,4.1-18.2,5.8c-6.1,1.7-12.3,3.2-18.6,4.4h-0.1v-0.1l36.7-10.7c3.1-0.9,6.1-1.9,9.1-3s5.9-2.3,8.9-3.5C201.9,211,207.9,208.8,213.9,206.7C213.9,206.6,213.9,206.7,213.9,206.7C214,206.7,213.9,206.7,213.9,206.7z"/></g></g>'
+            );
+    }
+
+    /// @dev Mask N°16 => Heart
+    function item_16() public pure returns (string memory) {
+        return
+            base(
+                '<path id="Heart" d="M185,360.8c1.1-10.4,9.9-19.1,21.7-18c9.6,0.8,16.1,10.8,15,21.2c-1.1,10.4-11.2,18.3-20.9,17.3S183.8,371.2,185,360.8z"/>'
+            );
+    }
+
+    /// @dev Mask N°17 => Nihon
     function item_17() public pure returns (string memory) {
-        return base(horn("2A2C38"));
+        return
+            base(
+                '<path id="Nihon" display="inline" fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M175.3,307.1c0,0,21.5,15.8,85.9,0.3c0.3-0.1,0.4-0.3,0.4-0.5c0-2.7,0-17.9,4.6-46.5c0-0.1,0.1-0.2,0.1-0.3c1.1-1.6,13.5-17.6,15.9-20.6c0.2-0.3,0.1-0.6-0.2-0.8c-5.3-3.2-47.8-29-83-38c-1.1-0.3-3.1-0.7-4.2-0.2c-17.5,7.4-46.3,28.9-52.8,33.9c-0.8,0.6-0.9,1.7-0.7,2.7c1.5,5.3,8.2,19.9,10.2,21.8c1.8,1.7,23.1,18.5,23.1,18.5s0.7,0.2,0.7,0.3C175.8,278.6,177.7,287,175.3,307.1z" /><path display="inline" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M175.8,277.7c0,0,21.3,17.6,29.6,17.9s15.7-4,16.6-4.5c0.9-0.4,19-9.1,33.1-20.7 M267,259.4c-3.2,3.5-7.3,7.3-11.9,11" /><path display="inline" fill="#696969" d="M199.5,231.6l-8.2-3.6c-0.4-0.2-0.5-0.7-0.2-1.1l3.3-3.4c0.4-0.4,1-0.5,1.6-0.3l13.2,4.8c0.6,0.2,0.6,1.1-0.1,1.4l-9.1,2.5C199.8,231.7,199.5,231.7,199.5,231.6z M175.5,278.2c0,0,26.5,36.4,43.2,32c16.8-4.4,43.7-21.8,43.7-21.8c1.3-9.1,2.2-19.7,3.3-28.7c-4.8,4.9-13.3,13.8-21.8,19.1c-5.2,3.2-22.1,15.1-36.4,16.7C200,296.3,175.5,278.2,175.5,278.2z"  /><ellipse display="inline" opacity="0.87" fill="#FF0057" enable-background="new    " cx="239.4" cy="248.4" rx="14" ry="15.1"  />'
+            );
     }
 
-    /// @dev Mask N°18 => Power Sticks
+    /// @dev Mask N°18 => Bandage Tomoe White
     function item_18() public pure returns (string memory) {
-        return base(powerStick("000000"));
+        return base(blindfold("FFEDED", "B50D5E"));
     }
 
-    /// @dev Mask N°19 => Blood Uni Horn
+    /// @dev Mask N°19 => Power Sticks White
     function item_19() public pure returns (string memory) {
-        return base(horn("E31466"));
+        return base(powerStick("FFEDED"));
+    }
+
+    /// @dev Mask N°20 => ???
+    function item_20() public pure returns (string memory) {
+        return
+            base(
+                '<path display="inline" fill="#F5F4F3" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M290.1,166.9c0,71-20.4,132.3-81.2,133.3c-60.9,0.9-77.5-59.4-77.5-130.4s15-107.6,75.8-107.6C270.4,62.3,290.1,96,290.1,166.9z" /><path display="inline" opacity="8.000000e-02" enable-background="new    " d="M290,165.9c0,71-20.2,132.7-81.3,134.4c28.3-18.3,29.5-51.1,29.5-121.9S263,89,206.9,62.4C270.2,62.4,290,95,290,165.9z" /><ellipse display="inline" cx="245.9" cy="169.9" rx="17.6" ry="6.4" /><path display="inline" d="M233.7,266.5c0.3-7.5-12.6-6.4-28.3-6.4s-28.6-1.5-28.3,6.4c0.1,3.5,12.6,6.4,28.3,6.4S233.6,270,233.7,266.5z"  /><ellipse display="inline" cx="161.5" cy="169.7" rx="17" ry="6.3"  /><path display="inline" fill="#F2EDED" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M148.5,181c0,0,7,6,21.4,0.6"  /><path display="inline" fill="#F2EDED" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M235.2,180.9c0,0,6.9,5.9,21.3,0.6"  /><path display="inline" fill="#F2EDED" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M193.4,278.5c0,0,9.6,3.6,22.5,0"  /><path display="inline" fill="#996DAD" d="M149.8,190.5c1.6-3.8,17.9-3.5,19.6-0.4c1.9,3.3-5,47.5-6.9,47.8C159.2,238.6,146.9,201.5,149.8,190.5z"  /><path display="inline" fill="#996DAD" d="M236.3,189.8c1.6-3.8,18.8-2.8,20.5,0.3c3.9,6.7-6.8,47.3-9.7,47.2C243.6,237,233.4,200.8,236.3,189.8z"  /><path display="inline" fill="#996DAD" d="M233.6,149c1.4,2.4,15.3,2.2,16.8,0.2c1.7-2.1-4.3-28.8-7.5-29.3C239.4,119.5,231.1,142.3,233.6,149z"  /><path display="inline" fill="#996DAD" d="M151.9,151.7c1.4,2.4,15.3,2.2,16.8,0.2c1.7-2.1-4.3-28.8-7.5-29.3C157.8,122.1,149.5,144.9,151.9,151.7z"  />'
+            );
     }
 
     function powerStick(string memory color) private pure returns (string memory) {
@@ -220,43 +227,45 @@ library MaskDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "???";
+            name = "None";
         } else if (id == 2) {
-            name = "Power Sticks White";
-        } else if (id == 3) {
-            name = "Bandage Tomoe White";
-        } else if (id == 4) {
-            name = "Nihon";
-        } else if (id == 5) {
-            name = "Heart";
-        } else if (id == 6) {
-            name = "Eye Patch";
-        } else if (id == 7) {
-            name = "Strap White";
-        } else if (id == 8) {
-            name = "Bouc";
-        } else if (id == 9) {
-            name = "BlindFold Tomoe Black";
-        } else if (id == 10) {
-            name = "Strap Dark";
-        } else if (id == 11) {
-            name = "Horn White";
-        } else if (id == 12) {
-            name = "Sun Glasses";
-        } else if (id == 13) {
-            name = "Strap Red";
-        } else if (id == 14) {
-            name = "BlindFold Tomoe Red";
-        } else if (id == 15) {
-            name = "Stitch";
-        } else if (id == 16) {
-            name = "Power Neck";
-        } else if (id == 17) {
-            name = "Lunar Uni Horn";
-        } else if (id == 18) {
-            name = "Power Sticks";
-        } else if (id == 19) {
             name = "Blood Uni Horn";
+        } else if (id == 3) {
+            name = "Power Sticks";
+        } else if (id == 4) {
+            name = "Lunar Uni Horn";
+        } else if (id == 5) {
+            name = "Power Neck";
+        } else if (id == 6) {
+            name = "Stitch";
+        } else if (id == 7) {
+            name = "BlindFold Tomoe Red";
+        } else if (id == 8) {
+            name = "Strap Red";
+        } else if (id == 9) {
+            name = "Sun Glasses";
+        } else if (id == 10) {
+            name = "Horn White";
+        } else if (id == 11) {
+            name = "Strap Dark";
+        } else if (id == 12) {
+            name = "BlindFold Tomoe Black";
+        } else if (id == 13) {
+            name = "Bouc";
+        } else if (id == 14) {
+            name = "Strap White";
+        } else if (id == 15) {
+            name = "Eye Patch";
+        } else if (id == 16) {
+            name = "Heart";
+        } else if (id == 17) {
+            name = "Nihon";
+        } else if (id == 18) {
+            name = "Bandage Tomoe White";
+        } else if (id == 19) {
+            name = "Power Sticks White";
+        } else if (id == 20) {
+            name = "???";
         }
     }
 
