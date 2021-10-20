@@ -93,11 +93,6 @@ describe("Unit tests", function () {
       this.timeout(400000000); // Big timeout
       await svgTest(100, this.yokaiChain);
     });
-
-    it("Proba NFT", async function () {
-      this.timeout(400000000); // Big timeout
-      await svgCounter(8753, this.yokaiChain);
-    });
   });
 });
 
@@ -118,25 +113,4 @@ async function svgTest(loop: number, yokaiChain: Contract) {
     console.log("= > at ", detail.timestamp.toString());
     count++;
   }
-}
-
-async function svgCounter(loop: number, yokaiChain: Contract) {
-  let count = 1;
-  let svgCounter: number[] = [0, 0, 0, 0, 0, 0, 0, 0];
-  while (count <= loop) {
-    await network.provider.send("evm_increaseTime", [Math.floor(Math.random() * 10000000)]);
-    await network.provider.send("evm_mine");
-    await yokaiChain.create(1, { value: utils.parseEther("1") });
-    let bgId = await yokaiChain.getBackgroundIdFromTokenId(count);
-    svgCounter[bgId - 1]++;
-    count++;
-  }
-  console.log("Ordinary => ", svgCounter[0]);
-  console.log("Unusual => ", svgCounter[1]);
-  console.log("Surprising => ", svgCounter[2]);
-  console.log("Impressive => ", svgCounter[3]);
-  console.log("Bloody => ", svgCounter[4]);
-  console.log("Phenomenal => ", svgCounter[5]);
-  console.log("Artistic => ", svgCounter[6]);
-  console.log("Unreal => ", svgCounter[7]);
 }
