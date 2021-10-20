@@ -110,9 +110,9 @@ library HairDetail {
         return
             string(
                 abi.encodePacked(
-                    '<path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '<path d="M193.13,67.09c-6.5,21.1,3.05,50.31,6.55,63.91,0,0,5.74-44.45,32.94-64.68C221.82,63.52,201.13,64.09,193.13,67.09Z" transform="translate(0 0.5)" fill="#',
                     color,
-                    '" d="M192.8,68.6c-6.5,21.1,3.4,48.8,6.9,62.4c0,0,5-42.9,32.2-63.1C221.1,65.1,200.8,65.6,192.8,68.6z"/>'
+                    '" fill-rule="evenodd"/>'
                 )
             );
     }
