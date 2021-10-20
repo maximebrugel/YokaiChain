@@ -13,7 +13,7 @@ import "./interfaces/IYokaiChainDescriptor.sol";
 /// @notice On-chain generated NFTs
 contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
     /// @dev Price for one Yokai (at the beggining)
-    uint256 private constant _unitPrice = 48 ether;
+    uint256 private constant _unitPrice = 33 ether;
 
     /// @dev The token ID Yokai detail
     mapping(uint256 => Detail) private _detail;
