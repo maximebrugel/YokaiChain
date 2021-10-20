@@ -22,10 +22,7 @@ library MarkDetail {
 
     /// @dev Mark N°3 => Blood Akuma
     function item_3() public pure returns (string memory) {
-        return
-            base(
-                '<g id="Eye_Mark"> <g> <path fill="#B50D5E" d="M237.6,225c0-3.6,2.6-85.2,2.8-88.9c0.1-3.6-1.8-24.7-1.6-28.3c5.6-6.5,12.3-33.5,16.2-33.7 c-4.5,2.4-8.6,29.9-11.8,33.7l-0.2,31.1c0.1,4.7-2.5,81.1-2.2,86.2c-0.4,0.4-1.3,1.7-1.6,2.2C238.7,226.4,237.6,225,237.6,225z" /> </g> </g> <g id="Eye_Mark"> <g> <path fill="#B50D5E" d="M163.2,223.8c-0.1-3.6,0.1-88.4,0.2-92c0-3.6,1.8-21.8,2-25.4c5.5-6.6,14-34.9,18.5-34.8 c-5.3,2-11.9,33.2-15,37.2l-2.8,25.6c0.2,3.6,0,85.7,0.3,89.3l-1.7,3.1L163.2,223.8z"/> </g> </g>'
-            );
+        return base(akuma("b50d5e"));
     }
 
     /// @dev Mark N°4 => Brother
@@ -46,10 +43,7 @@ library MarkDetail {
 
     /// @dev Mark N°6 => Lunar Akuma
     function item_6() public pure returns (string memory) {
-        return
-            base(
-                '<g id="Eye Mark" display="inline" ><g><path d="M238.6,224c0-3.6,2.6-85.2,2.8-88.9c0.1-3.6-1.8-24.7-1.6-28.3c5.6-6.5,15.5-32.8,20.1-32.6c-4.6,2.3-12.5,28.8-15.7,32.6l-0.2,31.1c0.1,3.6-2.4,82.5-2.2,86.2c-0.4,0.4-1.3,1.7-1.6,2.2C239.7,225.4,238.6,224,238.6,224z" /></g></g><g id="Eye Mark" display="inline" ><g><path d="M160.6,222.7c-0.1-3.6-0.3-88.3-0.2-91.9c0-3.6,1.8-21.8,2-25.4c5.5-6.6,13.7-35,18.2-34.9c-5.3,2-11.6,33.3-14.7,37.3l-2.8,25.6c0.2,3.6,0.4,85.6,0.7,89.2l-1.7,3.1L160.6,222.7z" /></g></g>'
-            );
+        return base(akuma("000000"));
     }
 
     /// @dev Mark N°7 => Blood Full Moon
@@ -137,10 +131,7 @@ library MarkDetail {
 
     /// @dev Mark N°18 => Akuma White
     function item_18() public pure returns (string memory) {
-        return
-            base(
-                '<g id="Eye Mark" display="inline" ><g><path fill="#FFEDED" d="M238.6,224c0-3.6,2.6-85.2,2.8-88.9c0.1-3.6-1.8-24.7-1.6-28.3c5.6-6.5,15.5-32.8,20.1-32.6c-4.6,2.3-12.5,28.8-15.7,32.6l-0.2,31.1c0.1,3.6-2.4,82.5-2.2,86.2c-0.4,0.4-1.3,1.7-1.6,2.2C239.7,225.4,238.6,224,238.6,224z" /></g></g><g id="Eye Mark" display="inline" ><g><path fill="#FFEDED" d="M160.2,222.8c-0.1-3.6,0.1-88.4,0.2-92c0-3.6,1.8-21.8,2-25.4c5.5-6.6,13.7-35,18.2-34.9c-5.3,2-11.6,33.3-14.7,37.3l-2.8,25.6c0.2,3.6,0,85.7,0.3,89.3l-1.7,3.1L160.2,222.8z" /></g></g>'
-            );
+        return base(akuma("FFEDED"));
     }
 
     /// @dev Mark N°19 => Cheeks white
@@ -151,11 +142,11 @@ library MarkDetail {
             );
     }
 
-    /// @dev Mark N°20 => Fantom
+    /// @dev Mark N°20 => Eye
     function item_20() public pure returns (string memory) {
         return
             base(
-                '<g id="rounded-copy" display="inline" ><path id="Rectangle" fill="none" stroke="#B50D5E" stroke-width="2" d="M196.4,126l7.8,4.1c0.6,0.3,0.6,0.8,0,1.1l-7.8,4.1c-0.6,0.3-1.5,0.3-2.1,0l-7.8-4.1c-0.6-0.3-0.6-0.8,0-1.1l7.8-4.1C194.9,125.7,195.9,125.7,196.4,126z" /><path id="Rectangle-Copy" fill="none" stroke="#B50D5E" stroke-width="2" d="M196.4,136.1l7.8,4.1c0.6,0.3,0.6,0.8,0,1.1l-7.8,4.1c-0.6,0.3-1.5,0.3-2.1,0l-7.8-4.1c-0.6-0.3-0.6-0.8,0-1.1l7.8-4.1C194.9,135.8,195.9,135.8,196.4,136.1z" /><g id="Rectangle_00000037684157065402114730000001279879927719506092_"></g><path id="Rectangle-Copy-2" fill="none" stroke="#B50D5E" stroke-width="2" d="M196.4,146.6l7.8,4.1c0.6,0.3,0.6,0.8,0,1.1l-7.8,4.1c-0.6,0.3-1.5,0.3-2.1,0l-7.8-4.1c-0.6-0.3-0.6-0.8,0-1.1l7.8-4.1C194.9,146.3,195.9,146.3,196.4,146.6z" /><path id="Path-11" fill="none" stroke="#B50D5E" stroke-width="2" d="M205.6,127.1c1.5,0.9,2.3,1.3,2.3,3.6" /><path id="Path-11-Copy" fill="none" stroke="#B50D5E" stroke-width="2" d="M185,154.5c-1.5-0.9-2.3-1.3-2.3-3.6" /><line id="Line-2" fill="none" stroke="#B50D5E" stroke-width="2" stroke-linecap="square" x1="186" y1="151.2" x2="186" y2="130.8" /><line id="Line-2-Copy" fill="none" stroke="#B50D5E" stroke-width="2" stroke-linecap="square" x1="204.8" y1="151.2" x2="204.8" y2="130.8" /><line id="Line-2-Copy-2" fill="none" stroke="#B50D5E" stroke-width="2" stroke-linecap="square" x1="195.4" y1="145.4" x2="195.4" y2="135.9" /></g>'
+                '<path fill-rule="evenodd" clip-rule="evenodd" d="M203.3,344.4c0,0-16.4,12.2-7.2,35C196.3,379.3,212.5,366.2,203.3,344.4z"/> <g> <path d="M208.4,351.4c0.4,2.1,0.6,4.2,0.5,6.3c-0.1,2.1-0.3,4.2-0.7,6.3s-1.1,4.2-2.1,6.1c-0.8,1.9-2.2,3.7-3.5,5.3 c0.3-0.4,0.5-0.9,0.8-1.4l0.4-0.6l0.3-0.7l0.7-1.4l0.7-1.4c0.8-1.9,1.4-3.9,1.9-6c0.5-2,0.7-4.1,0.9-6.2c0.1-1,0.1-2.1,0.1-3.1 C208.4,353.5,208.4,352.4,208.4,351.4z"/> </g> <g> <path d="M191.5,362.4c-0.1,1.3-0.1,2.5-0.1,3.8c0,1.3,0,2.5,0.1,3.8c0,1.3,0.2,2.5,0.5,3.8c0.2,1.2,0.5,2.4,1,3.7 c-0.6-1-1.1-2.3-1.4-3.5c-0.3-1.2-0.4-2.5-0.6-3.8c0-1.3,0-2.5,0-3.8C191.1,364.8,191.2,363.6,191.5,362.4z"/> </g> <ellipse transform="matrix(3.212132e-02 -0.9995 0.9995 3.212132e-02 -158.675 548.08)" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" cx="203.7" cy="356" rx="2.9" ry="0.7"/>'
             );
     }
 
@@ -172,6 +163,19 @@ library MarkDetail {
         return
             base(
                 '<linearGradient id="Kin Moon Gradient" gradientUnits="userSpaceOnUse" x1="182.9962" y1="-417.0576" x2="218.2097" y2="-417.0576" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7EC94" /><stop offset="1" style="stop-color:#FF9121" /></linearGradient><path fill="url(#Kin_Moon_Gradient)" d="M218.2,146.2c0.2-6-2.7-11.5-7.2-14.7c2.3,2.5,3.8,5.7,3.6,9.4c-0.2,7.4-6.5,13.2-14.2,13s-13.7-6.4-13.5-13.8c0.1-3.5,1.7-6.9,4.1-9.2c-4.7,3.1-7.8,8.3-8,14.3c-0.2,9.7,7.5,17.8,17.2,18C209.7,163.6,217.9,156,218.2,146.2z"  />'
+            );
+    }
+
+    function akuma(string memory color) private pure returns (string memory) {
+        return
+            string(
+                abi.encodePacked(
+                    '<g id="Eye_Mark" > <path d="M237.6,223c0-3.6,2.6-85.2,2.8-88.9s-1.8-24.7-1.6-28.3c5.6-6.5,12-33.11,15.92-33.27-4.46,2.4-8.32,29.47-11.52,33.27l-.2,31.1c.13,4.65-2.48,81.07-2.2,86.2a17.68,17.68,0,0,0-1.6,2.2A23.4,23.4,0,0,0,237.6,223Z" transform="translate(0 0.5)" fill="#',
+                    color,
+                    '"/> </g> <g id="Eye_Mark-2"> <path d="M163.2,221.8c-.1-3.6.1-88.4.2-92s1.8-21.8,2-25.4c5.5-6.6,13.87-34.73,18.37-34.63-5.3,2-11.77,33-14.87,37l-2.8,25.6c.2,3.6,0,85.7.3,89.3l-1.7,3.1Z" transform="translate(0 0.5)" fill="#',
+                    color,
+                    '"/> </g>'
+                )
             );
     }
 
@@ -218,7 +222,7 @@ library MarkDetail {
         } else if (id == 19) {
             name = "Cheeks";
         } else if (id == 20) {
-            name = "Fantom";
+            name = "Eye";
         } else if (id == 21) {
             name = "TORI";
         } else if (id == 22) {
