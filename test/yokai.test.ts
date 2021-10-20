@@ -74,7 +74,7 @@ describe("Unit tests", function () {
       this.yokaiChain = await YokaiChain.deploy(YokaiChainDescriptor.address);
     });
 
-    it.skip("Mint specific Item", async function () {
+    it("Mint specific Item", async function () {
       this.timeout(4000000);
       await this.yokaiChain.createTest(17, 1, 1, 1, 14, 22, 10, 1, 6, 1);
       const detail = await this.yokaiChain.details(1);
@@ -88,29 +88,5 @@ describe("Unit tests", function () {
 
       console.log("= > at ", detail.timestamp.toString());
     });
-
-    it.skip("Mint one NFT", async function () {
-      this.timeout(400000000); // Big timeout
-      await svgTest(100, this.yokaiChain);
-    });
   });
 });
-
-async function svgTest(loop: number, yokaiChain: Contract) {
-  let count = 1;
-  while (count <= loop) {
-    await network.provider.send("evm_increaseTime", [Math.floor(Math.random() * 10000000)]);
-    await network.provider.send("evm_mine");
-    await yokaiChain.create(1, { value: utils.parseEther("1") });
-    const detail = await yokaiChain.details(count);
-    const nft = await yokaiChain.tokenURI(count);
-
-    const bufJson = Buffer.from(nft.substring(29), "base64");
-    const jsonObj = JSON.parse(bufJson.toString());
-    const bufSvg = Buffer.from(jsonObj.image.substring(26), "base64");
-    await fs.writeFileSync("yokais/" + count + "_yokai.svg", bufSvg.toString());
-
-    console.log("= > at ", detail.timestamp.toString());
-    count++;
-  }
-}
