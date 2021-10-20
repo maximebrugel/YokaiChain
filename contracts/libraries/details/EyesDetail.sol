@@ -89,9 +89,9 @@ library EyesDetail {
         return base(EyesParts1.item_5());
     }
 
-    /// @dev Eyes N°17 => 0-0
+    /// @dev Eyes N°17 => shock
     function item_17() public pure returns (string memory) {
-        return base(EyesParts2.item_2());
+        return base(EyesParts1.item_14());
     }
 
     /// @dev Eyes N°18 => Tomoe Red
@@ -161,7 +161,7 @@ library EyesDetail {
         } else if (id == 16) {
             name = "Shine";
         } else if (id == 17) {
-            name = "0-0";
+            name = "shock";
         } else if (id == 18) {
             name = "Tomoe Red";
         } else if (id == 19) {
