@@ -77,6 +77,8 @@
     "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"./test/**/*.ts\"",
     "deploy": "hardhat run scripts/deploy.ts",
     "generateScores": "hardhat run scripts/generate_scores.ts --network hardhat",
+    "generateJson": "hardhat run scripts/generate_json.ts --network hardhat",
+    "generateRepartition": "hardhat run scripts/generate_repartition.ts --network hardhat",
     "deploy:rinkeby": "hardhat run scripts/deploy.ts --network rinkeby",
     "lint": "yarn run lint:sol && yarn run lint:ts && yarn run prettier:check",
     "lint:sol": "solhint --config ./.solhint.json --max-warnings 0 \"contracts/**/*.sol\"",

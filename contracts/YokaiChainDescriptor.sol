@@ -39,7 +39,6 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
         9500,
         6000,
         2500,
-        1000,
         100,
         0
     ];

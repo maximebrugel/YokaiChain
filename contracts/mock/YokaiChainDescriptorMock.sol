@@ -39,7 +39,6 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         9500,
         6000,
         2500,
-        1000,
         100,
         0
     ];
@@ -187,6 +186,50 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         100,
         0
     ];
+
+    function getAccessoryItems() external view returns (uint256[] memory) {
+        return ACCESSORY_ITEMS;
+    }
+
+    function getBodyItems() external view returns (uint256[] memory) {
+        return SKIN_ITEMS;
+    }
+
+    function getNoseItems() external view returns (uint256[] memory) {
+        return NOSE_ITEMS;
+    }
+
+    function getMarkItems() external view returns (uint256[] memory) {
+        return MARK_ITEMS;
+    }
+
+    function getEyebrowItems() external view returns (uint256[] memory) {
+        return EYEBROW_ITEMS;
+    }
+
+    function getMaskItems() external view returns (uint256[] memory) {
+        return MASK_ITEMS;
+    }
+
+    function getEarringsItems() external view returns (uint256[] memory) {
+        return EARRINGS_ITEMS;
+    }
+
+    function getMouthItems() external view returns (uint256[] memory) {
+        return MOUTH_ITEMS;
+    }
+
+    function getHairItems() external view returns (uint256[] memory) {
+        return HAIR_ITEMS;
+    }
+
+    function getEyeItems() external view returns (uint256[] memory) {
+        return EYE_ITEMS;
+    }
+
+    function getBackgroundItems() external view returns (uint256[] memory) {
+        return BACKGROUND_ITEMS;
+    }
 
     /// @inheritdoc IYokaiChainDescriptor
     function tokenURI(IYokaiChain yokaiChain, uint256 tokenId) external view override returns (string memory) {
