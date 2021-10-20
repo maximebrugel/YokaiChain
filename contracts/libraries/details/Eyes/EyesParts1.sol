@@ -150,7 +150,7 @@ library EyesParts1 {
             );
     }
 
-    /// @edv Eyes N°17 => shock
+    /// @dev Eyes N°17 => shock
     function item_14() public pure returns (string memory) {
         return
             string(
