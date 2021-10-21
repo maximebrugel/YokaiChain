@@ -56,7 +56,9 @@ library MaskDetail {
     /// @dev Mask N°9 => Sun Glasses
     function item_9() public pure returns (string memory) {
         return
-            '<g display="inline" opacity="0.95"><ellipse stroke="#000000" stroke-miterlimit="10" cx="164.6" cy="189.5" rx="24.9" ry="24.8" /><ellipse stroke="#000000" stroke-miterlimit="10" cx="236.3" cy="188.5" rx="24.9" ry="24.8" /></g><path display="inline" fill="none" stroke="#000000" stroke-miterlimit="10" d="M261.1,188.6l32.2-3.6 M187,188.6c0,0,15.3-3.2,24.5,0 M140.6,189l-7.1-3" />';
+            base(
+                '<g display="inline" opacity="0.95"><ellipse stroke="#000000" stroke-miterlimit="10" cx="164.6" cy="189.5" rx="24.9" ry="24.8" /><ellipse stroke="#000000" stroke-miterlimit="10" cx="236.3" cy="188.5" rx="24.9" ry="24.8" /></g><path display="inline" fill="none" stroke="#000000" stroke-miterlimit="10" d="M261.1,188.6l32.2-3.6 M187,188.6c0,0,15.3-3.2,24.5,0 M140.6,189l-7.1-3" />'
+            );
     }
 
     /// @dev Mask N°10 => Horn White
@@ -93,11 +95,11 @@ library MaskDetail {
             );
     }
 
-    /// @dev Mask N°16 => Heart
+    /// @dev Mask N°16 => Eye
     function item_16() public pure returns (string memory) {
         return
             base(
-                '<path id="Heart" d="M185,360.8c1.1-10.4,9.9-19.1,21.7-18c9.6,0.8,16.1,10.8,15,21.2c-1.1,10.4-11.2,18.3-20.9,17.3S183.8,371.2,185,360.8z"/>'
+                '<path d="M199.9,132.9s-15.2,17-.1,39.9C199.9,172.7,214.8,154.7,199.9,132.9Z" transform="translate(0 0.5)" /> <path d="M207,139.4c3.51,8.76,3.82,19.26-1,27.6C209.59,158.25,209.25,148.47,207,139.4Z" transform="translate(0 0.5)"/> <path d="M190.9,155.2c.81,5.6,1.84,11.19,4.9,16.1C192.1,167,191,160.73,190.9,155.2Z" transform="translate(0 0.5)"/> <path d="M202.27,142.35c1-.3,2.1,6.26,1.07,6.31C202.34,149,201.23,142.4,202.27,142.35Z" transform="translate(0 0.5)" fill="#fff"/>'
             );
     }
 
@@ -257,7 +259,7 @@ library MaskDetail {
         } else if (id == 15) {
             name = "Eye Patch";
         } else if (id == 16) {
-            name = "Heart";
+            name = "Eye";
         } else if (id == 17) {
             name = "Nihon";
         } else if (id == 18) {

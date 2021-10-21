@@ -69,11 +69,11 @@ library AccessoryDetail {
         return base(small_horn("FFDAEA"));
     }
 
-    /// @dev Accessory N°12 => Eye
+    /// @dev Accessory N°12 => Heart
     function item_12() public pure returns (string memory) {
         return
             base(
-                '<g id="Eye"> <path fill-rule="evenodd" clip-rule="evenodd" d="M199.9,132.9c0,0-15.2,17-0.1,39.9C199.9,172.7,214.8,154.7,199.9,132.9z"/> <g> <path d="M207,139.4c0.9,2.2,1.6,4.5,2,6.8s0.6,4.7,0.6,7.1s-0.3,4.8-0.9,7.1c-0.5,2.3-1.6,4.5-2.7,6.6c0.2-0.5,0.4-1.1,0.6-1.7 l0.3-0.8l0.2-0.8l0.5-1.7l0.4-1.7c0.4-2.3,0.7-4.6,0.7-7c0.1-2.3-0.1-4.7-0.4-7c-0.1-1.1-0.3-2.3-0.6-3.4 C207.5,141.7,207.2,140.6,207,139.4z"/> </g> <g> <path d="M190.9,155.2c0.2,1.4,0.4,2.8,0.7,4.2s0.5,2.7,0.9,4.1c0.3,1.4,0.8,2.7,1.4,4c0.5,1.3,1.1,2.5,1.9,3.8 c-0.9-1-1.7-2.3-2.3-3.5c-0.6-1.3-1-2.6-1.5-4c-0.3-1.4-0.6-2.7-0.8-4.2C191,158,190.9,156.6,190.9,155.2z"/> </g> <ellipse transform="matrix(0.986 -0.1668 0.1668 0.986 -21.4284 35.8654)" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" cx="202.8" cy="145.5" rx="0.8" ry="3.2"/> </g>'
+                '<path id="Heart" d="M185,360.8c1.1-10.4,9.9-19.1,21.7-18c9.6,0.8,16.1,10.8,15,21.2c-1.1,10.4-11.2,18.3-20.9,17.3S183.8,371.2,185,360.8z"/>'
             );
     }
 
@@ -136,15 +136,15 @@ library AccessoryDetail {
         return
             string(
                 abi.encodePacked(
-                    '<g display="inline" ><path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '<g><path d="M255.6,94.5s36.9-18,49.2-42.8c0,0-1.8,38.5-25.6,68.6C267.8,114.5,259.6,105.9,255.6,94.5Z" transform="translate(0 0.5)" fill="#',
                     color,
-                    '" stroke="#000000" stroke-miterlimit="10" d="M255.6,94.5c0,0,36.9-18,49.2-42.8c0,0-1.8,38.5-25.6,68.6C267.8,114.5,259.6,105.9,255.6,94.5z" /><path fill="none" stroke="#',
+                    '" stroke="#000" stroke-miterlimit="10" fill-rule="evenodd"/> <path d="M256.7,94.8c-.1.2,4.3,18.1,22.8,24.4" transform="translate(0 0.5)" fill="none" stroke="#',
                     color,
-                    '" stroke-width="2" stroke-miterlimit="10" d="M256.7,94.8c-0.1,0.2,4.3,18.1,22.8,24.4" /></g><g display="inline" ><path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" stroke-miterlimit="10" stroke-width="2"/> </g> <g> <path d="M160.5,94s-36.9-18.1-49.2-43c0,0,1.8,38.6,25.6,68.9C148.3,114.1,156.5,105.4,160.5,94Z" transform="translate(0 0.5)" fill="#',
                     color,
-                    '" stroke="#000000" stroke-miterlimit="10" d="M162.5,94c0,0-36.9-18.1-49.2-43c0,0,1.8,38.6,25.6,68.9C150.3,114.1,158.5,105.4,162.5,94z" /><path fill="none" stroke="#',
+                    '" stroke="#000" stroke-miterlimit="10" fill-rule="evenodd"/> <path d="M159.7,94.1c.1.2-5.1,19-22.9,24.5" transform="translate(0 0.5)" fill="none" stroke="#',
                     color,
-                    '" stroke-width="2" stroke-miterlimit="10" d="M161.7,94.1c0.1,0.2-5.1,19-22.9,24.5" /></g>'
+                    '" stroke-miterlimit="10" stroke-width="2"/>'
                 )
             );
     }
@@ -211,7 +211,7 @@ library AccessoryDetail {
         } else if (id == 11) {
             name = "Small Horn White";
         } else if (id == 12) {
-            name = "Eye";
+            name = "Heart";
         } else if (id == 13) {
             name = "Monk White";
         } else if (id == 14) {
