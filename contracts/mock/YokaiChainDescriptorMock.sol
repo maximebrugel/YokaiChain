@@ -15,7 +15,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     /// @dev Max value for defining probabilities
     uint256 internal constant MAX = 100000;
 
-    uint256[] internal BACKGROUND_ITEMS = [5600, 5000, 4500, 4000, 3500, 3100, 2350, 0];
+    uint256[] internal BACKGROUND_ITEMS = [56000, 50000, 45000, 40000, 35000, 31000, 23500, 0];
     uint256[] internal SKIN_ITEMS = [52000, 26000, 200, 0];
     uint256[] internal NOSE_ITEMS = [75000, 55000, 39000, 26000, 15000, 5000, 200, 0];
     uint256[] internal MARK_ITEMS = [
@@ -368,15 +368,15 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     }
 
     /// @dev Get item score based on his probability
-    function itemScoreProba(uint8 item, uint256[] memory ITEMS) private pure returns (uint256) {
+    function itemScoreProba(uint8 item, uint256[] memory ITEMS) public pure returns (uint256) {
         uint256 raw = ((item == 1 ? MAX : ITEMS[item - 2]) - ITEMS[item - 1]);
-        return multiplicator(raw) / 1000;
+        return multiplicator(raw) / 100;
     }
 
     /// @dev Get item score based on his index
-    function itemScorePosition(uint8 item, uint256[] memory ITEMS) private pure returns (uint256) {
+    function itemScorePosition(uint8 item, uint256[] memory ITEMS) public pure returns (uint256) {
         uint256 raw = ITEMS[item - 1];
-        return multiplicator(raw) / 1000;
+        return multiplicator(raw) / 100;
     }
 
     /// @dev multiply score if rare

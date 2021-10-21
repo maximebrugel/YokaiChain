@@ -5,6 +5,7 @@ import fs from "fs";
 interface Item {
   name: string;
   proba: string;
+  score: string;
   svg: string;
 }
 
@@ -79,53 +80,53 @@ async function main(): Promise<void> {
   let jsonProba: Proba[] = [];
 
   let backgroundDetailItems = await YokaiChainDescriptor.getBackgroundItems();
-  let backgroundItems = await getItems(BackgroundDetail, backgroundDetailItems, false);
+  let backgroundItems = await getItems(YokaiChainDescriptor, BackgroundDetail, backgroundDetailItems, false, false);
   jsonProba.push({ name: "Background", items: backgroundItems });
 
   let accessoryDetailItems = await YokaiChainDescriptor.getAccessoryItems();
-  let accessoryItems = await getItems(AccessoryDetail, accessoryDetailItems, true);
+  let accessoryItems = await getItems(YokaiChainDescriptor, AccessoryDetail, accessoryDetailItems, true, false);
   jsonProba.push({ name: "Accessory", items: accessoryItems });
 
   let bodyDetailItems = await YokaiChainDescriptor.getBodyItems();
-  let bodyItems = await getItems(BodyDetail, bodyDetailItems, true);
+  let bodyItems = await getItems(YokaiChainDescriptor, BodyDetail, bodyDetailItems, true, true);
   jsonProba.push({ name: "Body", items: bodyItems });
 
   let earringsDetailItems = await YokaiChainDescriptor.getEarringsItems();
-  let earringsItems = await getItems(EarringsDetail, earringsDetailItems, true);
+  let earringsItems = await getItems(YokaiChainDescriptor, EarringsDetail, earringsDetailItems, true, false);
   jsonProba.push({ name: "Earrings", items: earringsItems });
 
   let maskDetailItems = await YokaiChainDescriptor.getMaskItems();
-  let maskItems = await getItems(MaskDetail, maskDetailItems, true);
+  let maskItems = await getItems(YokaiChainDescriptor, MaskDetail, maskDetailItems, true, false);
   jsonProba.push({ name: "Mask", items: maskItems });
 
   let eyebrowDetailItems = await YokaiChainDescriptor.getEyebrowItems();
-  let eyebrowItems = await getItems(EyebrowDetail, eyebrowDetailItems, true);
+  let eyebrowItems = await getItems(YokaiChainDescriptor, EyebrowDetail, eyebrowDetailItems, true, false);
   jsonProba.push({ name: "Eyebrow", items: eyebrowItems });
 
   let eyesDetailItems = await YokaiChainDescriptor.getEyeItems();
-  let eyesItems = await getItems(EyesDetail, eyesDetailItems, true);
+  let eyesItems = await getItems(YokaiChainDescriptor, EyesDetail, eyesDetailItems, true, false);
   jsonProba.push({ name: "Eyes", items: eyesItems });
 
   let hairDetailItems = await YokaiChainDescriptor.getHairItems();
-  let hairItems = await getItems(HairDetail, hairDetailItems, true);
+  let hairItems = await getItems(YokaiChainDescriptor, HairDetail, hairDetailItems, true, false);
   jsonProba.push({ name: "Hair", items: hairItems });
 
   let mouthDetailItems = await YokaiChainDescriptor.getMouthItems();
-  let mouthItems = await getItems(MouthDetail, mouthDetailItems, true);
+  let mouthItems = await getItems(YokaiChainDescriptor, MouthDetail, mouthDetailItems, true, false);
   jsonProba.push({ name: "Mouth", items: mouthItems });
 
   let noseDetailItems = await YokaiChainDescriptor.getNoseItems();
-  let noseItems = await getItems(NoseDetail, noseDetailItems, true);
+  let noseItems = await getItems(YokaiChainDescriptor, NoseDetail, noseDetailItems, true, true);
   jsonProba.push({ name: "Nose", items: noseItems });
 
   let markDetailItems = await YokaiChainDescriptor.getMarkItems();
-  let markItems = await getItems(MarkDetail, markDetailItems, true);
+  let markItems = await getItems(YokaiChainDescriptor, MarkDetail, markDetailItems, true, false);
   jsonProba.push({ name: "Mark", items: markItems });
 
   await fs.writeFileSync("yokais/" + "proba.json", JSON.stringify(jsonProba));
 }
 
-async function getItems(lib: Contract, contractItems: any[], isBody: boolean) {
+async function getItems(descriptor: Contract, lib: Contract, contractItems: any[], isBody: boolean, prob: boolean) {
   let items: Item[] = [];
 
   var numberItems = [];
@@ -136,6 +137,14 @@ async function getItems(lib: Contract, contractItems: any[], isBody: boolean) {
     let id = i + 1;
     let nameVal = await lib.getItemNameById(i + 1);
     let probaVal = (((i === 0 ? 100000 : numberItems[i - 1]) - numberItems[i]) / 1000).toString();
+
+    let score;
+    if (prob) {
+      score = await descriptor.itemScoreProba(i + 1, contractItems);
+    } else {
+      score = await descriptor.itemScorePosition(i + 1, contractItems);
+    }
+
     let svgVal =
       '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 420 420" style="enable-background:new 0 0 420 420;" xml:space="preserve">';
     if (isBody) {
@@ -143,7 +152,7 @@ async function getItems(lib: Contract, contractItems: any[], isBody: boolean) {
     }
     svgVal += await lib["item_" + id]();
     svgVal += "</svg>";
-    items.push({ name: nameVal, proba: probaVal, svg: svgVal });
+    items.push({ name: nameVal, proba: probaVal, svg: svgVal, score: score.toString() });
   }
 
   return items;
