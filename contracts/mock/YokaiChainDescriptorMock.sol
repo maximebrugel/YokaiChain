@@ -15,9 +15,9 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     /// @dev Max value for defining probabilities
     uint256 internal constant MAX = 100000;
 
-    uint256[] internal BACKGROUND_ITEMS = [2750, 2400, 2150, 1950, 1750, 1500, 1200, 0];
-    uint256[] internal SKIN_ITEMS = [52000, 26000, 1000, 0];
-    uint256[] internal NOSE_ITEMS = [75000, 55000, 39000, 26000, 15000, 5000, 100, 0];
+    uint256[] internal BACKGROUND_ITEMS = [5600, 5000, 4500, 4000, 3500, 3100, 2350, 0];
+    uint256[] internal SKIN_ITEMS = [52000, 26000, 200, 0];
+    uint256[] internal NOSE_ITEMS = [75000, 55000, 39000, 26000, 15000, 5000, 200, 0];
     uint256[] internal MARK_ITEMS = [
         94000,
         88000,
@@ -39,7 +39,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         9500,
         6000,
         2500,
-        100,
+        200,
         0
     ];
     uint256[] internal EYEBROW_ITEMS = [
@@ -62,7 +62,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         9100,
         6100,
         3100,
-        100,
+        200,
         0
     ];
     uint256[] internal MASK_ITEMS = [
@@ -101,7 +101,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         12100,
         8100,
         4100,
-        100,
+        200,
         0
     ];
     uint256[] internal ACCESSORY_ITEMS = [
@@ -119,7 +119,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         7000,
         2000,
         300,
-        100,
+        200,
         0
     ];
     uint256[] internal MOUTH_ITEMS = [
@@ -158,7 +158,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         12100,
         8100,
         4100,
-        100,
+        200,
         0
     ];
     uint256[] internal EYE_ITEMS = [
@@ -183,7 +183,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
         6000,
         3000,
         1000,
-        100,
+        200,
         0
     ];
 
@@ -370,13 +370,26 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     /// @dev Get item score based on his probability
     function itemScoreProba(uint8 item, uint256[] memory ITEMS) private pure returns (uint256) {
         uint256 raw = ((item == 1 ? MAX : ITEMS[item - 2]) - ITEMS[item - 1]);
-        return ((raw >= 1000) ? raw * 6 : raw) / 1000;
+        return multiplicator(raw) / 1000;
     }
 
     /// @dev Get item score based on his index
     function itemScorePosition(uint8 item, uint256[] memory ITEMS) private pure returns (uint256) {
         uint256 raw = ITEMS[item - 1];
-        return ((raw >= 1000) ? raw * 6 : raw) / 1000;
+        return multiplicator(raw) / 1000;
+    }
+
+    /// @dev multiply score if rare
+    function multiplicator(uint256 raw) private pure returns (uint256 result) {
+        if (raw > 10000) {
+            result = raw * 12;
+        } else if (raw > 2000) {
+            result = raw * 6;
+        } else if (raw > 1000) {
+            result = raw * 3;
+        } else {
+            result = raw;
+        }
     }
 
     /// TEST
