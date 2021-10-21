@@ -109,7 +109,7 @@ library MarkDetail {
     function item_15() public pure returns (string memory) {
         return
             base(
-                '<path id="YinYang" opacity="0.82" fill="#0A0A02" enable-background="new " d=" M217.1,149.5c0-8.5-7-15.5-15.5-15.5c-0.2,0-0.3,0-0.5,0l0,0H201c-0.1,0-0.2,0-0.2,0c-0.2,0-0.4,0-0.5,0 c-7.8,0.7-14.1,7.4-14.1,15.4c0,8.5,7,15.5,15.5,15.5C210.2,165.1,217.1,158.1,217.1,149.5z M203.4,142.4c0,1-0.8,2-2,2 c-1,0-2-0.8-2-2c0-1,0.8-2,2-2C202.5,140.4,203.4,141.2,203.4,142.4z M208.1,156.9c0,3.8-3.2,6.9-7.2,6.9l0,0 c-7.6-0.3-13.8-6.6-13.8-14.3c0-6.3,4.1-11.7,9.7-13.5c-2.1,1.4-3.5,3.8-3.5,6.5c0,4.2,3.4,7.6,7.6,7.6l0,0 C204.9,150.1,208.1,153.1,208.1,156.9z M201.5,159.1c-1,0-2-0.8-2-2c0-1,0.8-2,2-2c1,0,2,0.8,2,2 C203.4,158.3,202.5,159.1,201.5,159.1z"/>'
+                '<path d="M218.1,361.41a15.58,15.58,0,0,0-15.5-15.5h-1.3a15.48,15.48,0,0,0,1.4,30.9A15.22,15.22,0,0,0,218.1,361.41Zm-13.7-7.1a2,2,0,1,1-2-2A1.94,1.94,0,0,1,204.4,354.31Zm4.7,14.5a7,7,0,0,1-7.2,6.9h0a14.4,14.4,0,0,1-13.8-14.3,14.18,14.18,0,0,1,9.7-13.5,7.83,7.83,0,0,0-3.5,6.5,7.6,7.6,0,0,0,7.6,7.6h0A7,7,0,0,1,209.1,368.81Zm-6.6,2.2a2,2,0,1,1,2-2A2.07,2.07,0,0,1,202.5,371Z" transform="translate(0 0.5)" fill="#0a0a02" opacity="0.93" style="isolation: isolate"/> <circle cx="143.6" cy="355.84" r="6.81" fill="#0a0a02"/> <circle cx="263.68" cy="359.93" r="6.81" fill="none" stroke="#000"/>'
             );
     }
 
@@ -125,7 +125,7 @@ library MarkDetail {
     function item_17() public pure returns (string memory) {
         return
             base(
-                '<path fill="#FFEDED" d="M216.2,146.2c0.2-6-2.7-11.5-7.2-14.7c2.3,2.5,3.8,5.7,3.6,9.4c-0.2,7.4-6.5,13.2-14.2,13s-13.7-6.4-13.5-13.8c0.1-3.5,1.7-6.9,4.1-9.2c-4.7,3.1-7.8,8.3-8,14.3c-0.2,9.7,7.5,17.8,17.2,18C207.7,163.6,215.9,156,216.2,146.2z"  />'
+                '<path display="inline" fill="#FFEDED" d="M218.2,146.2c0.2-6-2.7-11.5-7.2-14.7c2.3,2.5,3.8,5.7,3.6,9.4c-0.2,7.4-6.5,13.2-14.2,13s-13.7-6.4-13.5-13.8c0.1-3.5,1.7-6.9,4.1-9.2c-4.7,3.1-7.8,8.3-8,14.3c-0.2,9.7,7.5,17.8,17.2,18C209.7,163.6,217.9,156,218.2,146.2z"  />'
             );
     }
 
@@ -154,7 +154,7 @@ library MarkDetail {
     function item_21() public pure returns (string memory) {
         return
             base(
-                '<line display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="234.4" y1="209.2" x2="234.4" y2="216.3"  /><path display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M231.8,208.8c0,0,3.3,0.4,5.7,0.2"  /><path display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M240.9,209.2c0,0-3.6,3.2,0,6.6S245.9,209.2,240.9,209.2z"  /><path display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M246.9,215.7l-1.3-6.7c0,0,9.1-2.1,1,2.9l3.3,3.1"  /><line display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="252.4" y1="208.6" x2="252.4" y2="215.4"  /><path display="inline" d="M258.4,213.8L258.4,213.8c0.1,0,0.2,0,0.2-0.1l1.4-2.3c0.5-0.9-0.2-2.3-1.3-2.1c-0.6,0.1-0.8,0.7-0.9,0.8c-0.1-0.1-0.5-0.5-1.1-0.4c-1,0.2-1.4,1.8-0.4,2.4L258.4,213.8z"  />'
+                '<line display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="234.4" y1="209.2" x2="234.4" y2="216.3"  /><path display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M231.8,208.8c0,0,3.3,0.4,5.7,0.2"  /><path display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M240.9,209.2c0,0-3.6,3.2,0,6.6S245.9,209.2,240.9,209.2z"  /><path display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M246.9,215.7l-1.3-6.7c0,0,9.1-2.1,1,2.9l3.3,3.1"  /><line display="inline" fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="252.4" y1="208.6" x2="252.4" y2="215.4"  />'
             );
     }
 
