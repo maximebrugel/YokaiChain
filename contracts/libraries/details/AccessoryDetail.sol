@@ -144,7 +144,7 @@ library AccessoryDetail {
                     color,
                     '" stroke="#000" stroke-miterlimit="10" fill-rule="evenodd"/> <path d="M159.7,94.1c.1.2-5.1,19-22.9,24.5" transform="translate(0 0.5)" fill="none" stroke="#',
                     color,
-                    '" stroke-miterlimit="10" stroke-width="2"/>'
+                    '" stroke-miterlimit="10" stroke-width="2"/></g>'
                 )
             );
     }
