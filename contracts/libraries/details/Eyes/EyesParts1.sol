@@ -7,7 +7,7 @@ import "base64-sol/base64.sol";
 
 /// @title Eyes SVG generator
 library EyesParts1 {
-    /// @dev Eyes N°1 => Moon Gold
+    /// @dev Eyes N°23 => Moon Gold
     function item_1() public pure returns (string memory) {
         return
             string(
@@ -18,7 +18,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°4 => Pupils White-Red
+    /// @dev Eyes N°21 => Pupils White-Red
     function item_2() public pure returns (string memory) {
         return
             string(
@@ -29,7 +29,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°5 => Tomoe White
+    /// @dev Eyes N°20 => Tomoe White
     function item_3() public pure returns (string memory) {
         return
             string(
@@ -40,7 +40,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°7 => Tomoe Red
+    /// @dev Eyes N°18 => Tomoe Red
     function item_4() public pure returns (string memory) {
         return
             string(
@@ -51,7 +51,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°8 => Shine
+    /// @dev Eyes N°16 => Shine
     function item_5() public pure returns (string memory) {
         return
             string(
@@ -73,7 +73,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°13 => Globes
+    /// @dev Eyes N°11 => Globes
     function item_7() public pure returns (string memory) {
         return
             string(
@@ -84,7 +84,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°16 => Akuma Eye
+    /// @dev Eyes N°8 => Akuma Eye
     function item_8() public pure returns (string memory) {
         return
             string(
@@ -106,7 +106,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°20 => Spiral
+    /// @dev Eyes N°4 => Spiral
     function item_10() public pure returns (string memory) {
         return
             string(
@@ -117,7 +117,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°21 => Pupils Red
+    /// @dev Eyes N°3 => Pupils Red
     function item_11() public pure returns (string memory) {
         return
             string(
@@ -128,7 +128,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°22 => Moon
+    /// @dev Eyes N°2 => Moon
     function item_12() public pure returns (string memory) {
         return
             string(
@@ -139,7 +139,7 @@ library EyesParts1 {
             );
     }
 
-    /// @dev Eyes N°23 => Kitsune Eye
+    /// @dev Eyes N°1 => Kitsune Eye
     function item_13() public pure returns (string memory) {
         return
             string(
