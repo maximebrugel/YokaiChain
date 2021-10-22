@@ -13,7 +13,10 @@ import "./interfaces/IYokaiChainDescriptor.sol";
 /// @notice On-chain generated NFTs
 contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
     /// @dev Price for one Yokai
-    uint256 public _unitPrice = 33 ether;
+    uint256 public unitPrice = 33 ether;
+
+    /// @dev if the mint is enabled
+    bool public mintEnabled = false;
 
     /// @dev The token ID Yokai detail
     mapping(uint256 => Detail) private _detail;
@@ -36,7 +39,8 @@ contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
     /// @notice Create randomly an Yokai
     /// @param qty The quantity to buy
     function create(uint256 qty) public payable nonReentrant {
-        require(msg.value >= _unitPrice * qty, "FTM sent is not correct");
+        require(mintEnabled, "Mint is not enabled");
+        require(msg.value >= unitPrice * qty, "FTM sent is not correct");
         require(totalSupply() + qty <= 8753, "Cant mint more than 8753 Yokai");
         require(qty <= 99, "Yokai max mintable quantity is 99");
 
@@ -74,8 +78,13 @@ contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
     }
 
     /// @notice Update the price of one Yokai
-    function updatePrice(uint256 newPrice) external onlyOwner {
-        require(newPrice <= 33 ether, "Cant be more than base price of 33 FTM");
-        _unitPrice = newPrice;
+    function updatePrice(uint256 _unitPrice) external onlyOwner {
+        require(_unitPrice <= 33 ether, "Cant be more than base price of 33 FTM");
+        unitPrice = _unitPrice;
+    }
+
+    /// @notice Enable users to mint
+    function enableMint() external onlyOwner {
+        mintEnabled = true;
     }
 }
