@@ -12,8 +12,8 @@ import "./interfaces/IYokaiChainDescriptor.sol";
 /// @title YokaiChain NFTs
 /// @notice On-chain generated NFTs
 contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
-    /// @dev Price for one Yokai (at the beggining)
-    uint256 private constant _unitPrice = 33 ether;
+    /// @dev Price for one Yokai
+    uint256 public _unitPrice = 33 ether;
 
     /// @dev The token ID Yokai detail
     mapping(uint256 => Detail) private _detail;
@@ -71,5 +71,11 @@ contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
     /// @inheritdoc IYokaiChain
     function details(uint256 tokenId) external view override returns (Detail memory detail) {
         detail = _detail[tokenId];
+    }
+
+    /// @notice Update the price of one Yokai
+    function updatePrice(uint256 newPrice) external onlyOwner {
+        require(newPrice <= 33 ether, "Cant be more than base price of 33 FTM");
+        _unitPrice = newPrice;
     }
 }
