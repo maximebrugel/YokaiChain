@@ -31,7 +31,7 @@ library EyebrowDetail {
     function item_5() public pure returns (string memory) {
         return
             base(
-                '<path display="inline" fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-miterlimit="10" d="M218,171.4c0,0,21.5-3.6,27.2-3.4c5.7,0.2,9.8,1.7,12.5,3.5c0,0-20.2,2.9-29.2,3.2C219.6,175.1,219.3,174.8,218,171.4z"  /><path display="inline" fill-rule="evenodd" clip-rule="evenodd" stroke="#000000" stroke-miterlimit="10" d="M183.1,171.4c0,0-20.9-3.8-26.6-3.5c-5.6,0.2-9.5,1.6-12.2,3.5c0,0,19.7,2.9,28.6,3.3C181.5,175.1,182.1,174.8,183.1,171.4z"  />'
+                '<path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M218,171.4c0,0,21.5-3.6,27.2-3.4c5.7,0.2,9.8,1.7,12.5,3.5c0,0-20.2,2.9-29.2,3.2C219.6,175.1,219.3,174.8,218,171.4z"  /><path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M183.1,171.4c0,0-20.9-3.8-26.6-3.5c-5.6,0.2-9.5,1.6-12.2,3.5c0,0,19.7,2.9,28.6,3.3C181.5,175.1,182.1,174.8,183.1,171.4z"  />'
             );
     }
 
@@ -114,7 +114,7 @@ library EyebrowDetail {
     function item_21() public pure returns (string memory) {
         return
             base(
-                '<linearGradient id="Tomoe_Gold_Gradient" gradientUnits="userSpaceOnUse" x1="215.6498" y1="-442.1553" x2="232" y2="-442.1553" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Tomoe_Gold_Gradient)" d="M232,168.9c-6.7-3.4-11.3-1.9-12.8-1.2c-0.1,0-0.3,0.1-0.4,0.1c-2.6,1-3.9,4.1-2.7,6.6c1,2.6,4.1,3.9,6.6,2.7c2.6-1,3.9-4.1,2.7-6.6c0-0.1-0.1-0.2-0.1-0.2C228.1,168.4,232,168.9,232,168.9z M221.4,174.1c-0.9,0.3-1.8,0-2.2-0.9c-0.3-0.9,0-1.8,0.9-2.2c0.9-0.3,1.8,0,2.2,0.9C222.7,172.7,222.2,173.7,221.4,174.1z"  /><linearGradient id="SVGID_00000169552172318176501370000006213919017808816827_" gradientUnits="userSpaceOnUse" x1="171" y1="-442.5519" x2="187.1496" y2="-442.5519" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="url(#SVGID_00000169552172318176501370000006213919017808816827_)" d="M184.2,168.3c-0.9-0.5-5.7-2.8-13.2,1c0,0,3.8-0.5,6.6,1.3c-0.1,0.1-0.1,0.2-0.2,0.3c-1.2,2.5,0.1,5.6,2.7,6.6c2.5,1.2,5.6-0.1,6.6-2.7C187.9,172.4,186.7,169.4,184.2,168.3z M183.8,173.6c-0.4,0.9-1.3,1.2-2.2,0.9c-0.9-0.4-1.4-1.4-0.9-2.2c0.4-0.9,1.3-1.2,2.2-0.9C183.8,171.8,184.1,172.7,183.8,173.6z"  />'
+                '<linearGradient id="Tomoe_Gold_Gradient" gradientUnits="userSpaceOnUse" x1="215.6498" y1="-442.1553" x2="232" y2="-442.1553" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline"  fill="url(#Tomoe_Gold_Gradient)" d="M232,168.9c-6.7-3.4-11.3-1.9-12.8-1.2c-0.1,0-0.3,0.1-0.4,0.1c-2.6,1-3.9,4.1-2.7,6.6c1,2.6,4.1,3.9,6.6,2.7c2.6-1,3.9-4.1,2.7-6.6c0-0.1-0.1-0.2-0.1-0.2C228.1,168.4,232,168.9,232,168.9z M221.4,174.1c-0.9,0.3-1.8,0-2.2-0.9c-0.3-0.9,0-1.8,0.9-2.2c0.9-0.3,1.8,0,2.2,0.9C222.7,172.7,222.2,173.7,221.4,174.1z"  /><linearGradient id="SVGID_00000169552172318176501370000006213919017808816827_" gradientUnits="userSpaceOnUse" x1="171" y1="-442.5519" x2="187.1496" y2="-442.5519" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline"  fill="url(#SVGID_00000169552172318176501370000006213919017808816827_)" d="M184.2,168.3c-0.9-0.5-5.7-2.8-13.2,1c0,0,3.8-0.5,6.6,1.3c-0.1,0.1-0.1,0.2-0.2,0.3c-1.2,2.5,0.1,5.6,2.7,6.6c2.5,1.2,5.6-0.1,6.6-2.7C187.9,172.4,186.7,169.4,184.2,168.3z M183.8,173.6c-0.4,0.9-1.3,1.2-2.2,0.9c-0.9-0.4-1.4-1.4-0.9-2.2c0.4-0.9,1.3-1.2,2.2-0.9C183.8,171.8,184.1,172.7,183.8,173.6z"  />'
             );
     }
 
@@ -122,9 +122,9 @@ library EyebrowDetail {
         return
             string(
                 abi.encodePacked(
-                    '<path display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '<path display="inline"  fill="#',
                     color,
-                    '" d="M216,176.7c14.2-2.2,47-5.6,50.4-6.6l-14.8-0.7l17.4-9.1c-17.8,7.7-37.5,12.9-56.3,13.3C213.1,174.8,214.6,176.1,216,176.7z"  /><path display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" d="M216,176.7c14.2-2.2,47-5.6,50.4-6.6l-14.8-0.7l17.4-9.1c-17.8,7.7-37.5,12.9-56.3,13.3C213.1,174.8,214.6,176.1,216,176.7z"  /><path display="inline"  fill="#',
                     color,
                     '" d="M186.7,176.7c-12.8-2.1-44.8-5.3-48-6.3l13.5-0.9l-15.4-8.8c15.9,7.4,33.7,11.9,49,13.2C186.1,175.2,186.5,175.5,186.7,176.7z"  />'
                 )
@@ -135,9 +135,9 @@ library EyebrowDetail {
         return
             string(
                 abi.encodePacked(
-                    '<circle display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '<circle display="inline"  fill="#',
                     color,
-                    '" cx="184.1" cy="170" r="5.5"  /><circle display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" cx="184.1" cy="170" r="5.5"  /><circle display="inline"  fill="#',
                     color,
                     '" cx="217" cy="169.8" r="5.5"  />'
                 )
@@ -148,9 +148,9 @@ library EyebrowDetail {
         return
             string(
                 abi.encodePacked(
-                    '<path display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '<path display="inline"  fill="#',
                     color,
-                    '" d="M238.3,166.9c-12.3-3.9-19-1.1-21.3,0.2c-0.1,0-0.2,0.1-0.3,0.2c-0.3,0.1-0.5,0.4-0.6,0.4l0,0l0,0l0,0c-0.9,0.8-1.6,2-1.6,3.3c-0.2,2.7,1.9,5,4.6,5.2c2.7,0.2,5-1.9,5.2-4.6c0.1-0.3,0-0.6,0-1C228.9,166.5,238.3,166.9,238.3,166.9z"  /><path display="inline" fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" d="M238.3,166.9c-12.3-3.9-19-1.1-21.3,0.2c-0.1,0-0.2,0.1-0.3,0.2c-0.3,0.1-0.5,0.4-0.6,0.4l0,0l0,0l0,0c-0.9,0.8-1.6,2-1.6,3.3c-0.2,2.7,1.9,5,4.6,5.2c2.7,0.2,5-1.9,5.2-4.6c0.1-0.3,0-0.6,0-1C228.9,166.5,238.3,166.9,238.3,166.9z"  /><path display="inline"  fill="#',
                     color,
                     '" d="M162.6,166.8c12.3-3.9,19-1,21.3,0.3c0.1,0,0.2,0.1,0.3,0.2c0.3,0.1,0.5,0.4,0.6,0.4l0,0l0,0l0,0c0.9,0.8,1.6,2,1.6,3.3c0.2,2.7-1.9,5-4.6,5.2c-2.7,0.2-5-1.9-5.2-4.6c-0.1-0.3,0-0.6,0-1C172,166.5,162.6,166.8,162.6,166.8z"  />'
                 )
@@ -174,13 +174,13 @@ library EyebrowDetail {
         return
             string(
                 abi.encodePacked(
-                    '<g display="inline"> <path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '<g display="inline"> <path  fill="#',
                     color,
-                    '" d="M218.6,168c0,0,5-3.3,13.4,0.9c0,0-4-0.5-6.8,1.4"/> <path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" d="M218.6,168c0,0,5-3.3,13.4,0.9c0,0-4-0.5-6.8,1.4"/> <path  fill="#',
                     color,
-                    '" d="M218.8,167.8c-2.6,1-3.9,4.1-2.7,6.6c1,2.6,4.1,3.9,6.6,2.7 c2.6-1,3.9-4.1,2.7-6.6C224.3,168.1,221.4,166.8,218.8,167.8z M221.4,174.1c-0.9,0.3-1.8,0-2.2-0.9c-0.3-0.9,0-1.8,0.9-2.2 c0.9-0.3,1.8,0,2.2,0.9C222.7,172.7,222.2,173.7,221.4,174.1z"/> </g> <g display="inline"> <path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" d="M218.8,167.8c-2.6,1-3.9,4.1-2.7,6.6c1,2.6,4.1,3.9,6.6,2.7 c2.6-1,3.9-4.1,2.7-6.6C224.3,168.1,221.4,166.8,218.8,167.8z M221.4,174.1c-0.9,0.3-1.8,0-2.2-0.9c-0.3-0.9,0-1.8,0.9-2.2 c0.9-0.3,1.8,0,2.2,0.9C222.7,172.7,222.2,173.7,221.4,174.1z"/> </g> <g display="inline"> <path  fill="#',
                     color,
-                    '" d="M184.4,168.4c0,0-5-3.3-13.4,0.9c0,0,4-0.5,6.8,1.4"/> <path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" d="M184.4,168.4c0,0-5-3.3-13.4,0.9c0,0,4-0.5,6.8,1.4"/> <path  fill="#',
                     color,
                     '" d="M184,168.2c2.6,1,3.9,4.1,2.7,6.6c-1,2.6-4.1,3.9-6.6,2.7 c-2.6-1-3.9-4.1-2.7-6.6C178.7,168.4,181.5,167.2,184,168.2z M181.6,174.5c0.9,0.3,1.8,0,2.2-0.9c0.3-0.9,0-1.8-0.9-2.2 c-0.9-0.3-1.8,0-2.2,0.9C180.2,173.1,180.7,174.1,181.6,174.5z"/> </g>'
                 )
@@ -191,9 +191,9 @@ library EyebrowDetail {
         return
             string(
                 abi.encodePacked(
-                    '<g id="Thick_L" > <path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '<g id="Thick_L" > <path  fill="#',
                     color,
-                    '" d="M213.7,173.6c-0.6-1.4,0.1-3.1,1.6-3.5c1.7-0.5,4.3-1.2,7.5-1.7 c1.5-0.3,13.2-4.2,14.4-4.9c0.2,0.9-6.2,4.1-4.9,3.9c7.3-1.2,14.7-2.2,18.1-2c3.6,0.1,6.4,0.4,9,1.2c0.6,0.2,5.3,1.1,5.9,1.4 c0.4,0.2-3-0.1-2.6,0.1c1.9,0.9,3.6,1.9,5.1,3c0,0-28,4.7-40.5,5.3C217.3,176.8,215,176.6,213.7,173.6z"/> </g> <g id="Thick_R" > <path fill-rule="evenodd" clip-rule="evenodd" fill="#',
+                    '" d="M213.7,173.6c-0.6-1.4,0.1-3.1,1.6-3.5c1.7-0.5,4.3-1.2,7.5-1.7 c1.5-0.3,13.2-4.2,14.4-4.9c0.2,0.9-6.2,4.1-4.9,3.9c7.3-1.2,14.7-2.2,18.1-2c3.6,0.1,6.4,0.4,9,1.2c0.6,0.2,5.3,1.1,5.9,1.4 c0.4,0.2-3-0.1-2.6,0.1c1.9,0.9,3.6,1.9,5.1,3c0,0-28,4.7-40.5,5.3C217.3,176.8,215,176.6,213.7,173.6z"/> </g> <g id="Thick_R" > <path  fill="#',
                     color,
                     '" d="M187.1,173.7c0.6-1.4-0.1-3.1-1.6-3.5c-6.2-1.9-8.9-2-7.3-1.7 c-1.5-0.3-12.4-4.7-13.7-5.3c-0.2,0.9,5.6,4.6,4.5,4.4c-7.1-1.2-14.2-2.2-17.5-2c-3.5,0.1-6.2,0.4-8.7,1.2 c-0.6,0.2-5.1,1.1-5.7,1.4c-0.4,0.2,2.9-0.1,2.5,0.1c-1.8,0.9-3.5,1.9-4.9,3c0,0,27.1,4.7,39.3,5.3 C183.6,176.9,185.9,176.7,187.1,173.7z"/> </g>'
                 )
