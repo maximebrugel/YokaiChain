@@ -9,59 +9,60 @@ import "base64-sol/base64.sol";
 library HairDetail {
     /// @dev Hair N°1 => No Hair
     function item_1() public pure returns (string memory) {
-        return base("");
+        return base("", "None");
     }
 
-    /// @dev Hair N°2 => Tattoo Red
+    /// @dev Hair N°2 => Tattoo Blood
     function item_2() public pure returns (string memory) {
-        return base(tattoo("B50D5E"));
+        return base(tattoo("B50D5E"), "Tattoo Blood");
     }
 
-    /// @dev Hair N°3 => Tattoo Black
+    /// @dev Hair N°3 => Tattoo Moon
     function item_3() public pure returns (string memory) {
-        return base(tattoo("000000"));
+        return base(tattoo("000000"), "Tattoo Moon");
     }
 
-    /// @dev Hair N°4 => Tattoo White
+    /// @dev Hair N°4 => Tattoo Pure
     function item_4() public pure returns (string memory) {
-        return base(tattoo("FFEDED"));
+        return base(tattoo("FFEDED"), "Tattoo Pure");
     }
 
-    /// @dev Hair N°5 => Short Red
+    /// @dev Hair N°5 => Short Hair Blood
     function item_5() public pure returns (string memory) {
-        return base(shortHair("B50D5E"));
+        return base(shortHair("B50D5E"), "Short Hair Blood");
     }
 
-    /// @dev Hair N°6 => Short Black
+    /// @dev Hair N°6 => Short Hair Moon
     function item_6() public pure returns (string memory) {
-        return base(shortHair("001015"));
+        return base(shortHair("001015"), "Short Hair Moon");
     }
 
-    /// @dev Hair N°7 => Short White
+    /// @dev Hair N°7 => Short Hair Pure
     function item_7() public pure returns (string memory) {
-        return base(shortHair("FFEDED"));
+        return base(shortHair("FFEDED"), "Short Hair Pure");
     }
 
-    /// @dev Hair N°8 => Flame Red
+    /// @dev Hair N°8 => Flame Blood
     function item_8() public pure returns (string memory) {
-        return base(flame("E31466"));
+        return base(flame("E31466"), "Flame Blood");
     }
 
-    /// @dev Hair N°9 => Flame Black
+    /// @dev Hair N°9 => Flame Moon
     function item_9() public pure returns (string memory) {
-        return base(flame("2A2C38"));
+        return base(flame("2A2C38"), "Flame Moon");
     }
 
-    /// @dev Hair N°10 => Flame White
+    /// @dev Hair N°10 => Flame Pure
     function item_10() public pure returns (string memory) {
-        return base(flame("FFDAEA"));
+        return base(flame("FFDAEA"), "Flame Pure");
     }
 
     /// @dev Hair N°11 => Top eyes
     function item_11() public pure returns (string memory) {
         return
             base(
-                '<path d="M212.26,68.64S205.37,71,201.72,84c-1.28,4.6-.79,11.21,1.45,18a30.33,30.33,0,0,0,9.55-16.12C213.83,81.08,213.79,75.34,212.26,68.64Z" transform="translate(0 0.5)" /> <path d="M215.93,75.57a28.82,28.82,0,0,1,.15,6.15A36.91,36.91,0,0,1,215,87.81a24.33,24.33,0,0,1-2.36,5.75,23.15,23.15,0,0,1-3.74,4.93c.28-.37.58-.83.88-1.29l.43-.6.35-.63.8-1.31.72-1.34a35.55,35.55,0,0,0,2.16-5.71,36.25,36.25,0,0,0,1.24-6,18.25,18.25,0,0,0,.26-3C215.83,77.61,215.83,76.62,215.93,75.57Z" transform="translate(0 0.5)"/> <path d="M199,85.3c0,1.23-.07,2.45,0,3.69s0,2.39.17,3.64a16.5,16.5,0,0,0,.61,3.63,20,20,0,0,0,1.07,3.53,14.31,14.31,0,0,1-1.45-3.33c-.32-1.2-.48-2.37-.7-3.64,0-1.24-.12-2.4-.07-3.71A32.65,32.65,0,0,1,199,85.3Z" transform="translate(0 0.5)"/> <ellipse cx="211.04" cy="79.75" rx="2.78" ry="0.69" transform="matrix(0.09, -1, 1, 0.09, 111.76, 282.83)" fill="#fff"/>'
+                '<path d="M212.26,68.64S205.37,71,201.72,84c-1.28,4.6-.79,11.21,1.45,18a30.33,30.33,0,0,0,9.55-16.12C213.83,81.08,213.79,75.34,212.26,68.64Z" transform="translate(0 0.5)" /> <path d="M215.93,75.57a28.82,28.82,0,0,1,.15,6.15A36.91,36.91,0,0,1,215,87.81a24.33,24.33,0,0,1-2.36,5.75,23.15,23.15,0,0,1-3.74,4.93c.28-.37.58-.83.88-1.29l.43-.6.35-.63.8-1.31.72-1.34a35.55,35.55,0,0,0,2.16-5.71,36.25,36.25,0,0,0,1.24-6,18.25,18.25,0,0,0,.26-3C215.83,77.61,215.83,76.62,215.93,75.57Z" transform="translate(0 0.5)"/> <path d="M199,85.3c0,1.23-.07,2.45,0,3.69s0,2.39.17,3.64a16.5,16.5,0,0,0,.61,3.63,20,20,0,0,0,1.07,3.53,14.31,14.31,0,0,1-1.45-3.33c-.32-1.2-.48-2.37-.7-3.64,0-1.24-.12-2.4-.07-3.71A32.65,32.65,0,0,1,199,85.3Z" transform="translate(0 0.5)"/> <ellipse cx="211.04" cy="79.75" rx="2.78" ry="0.69" transform="matrix(0.09, -1, 1, 0.09, 111.76, 282.83)" fill="#fff"/>',
+                "Top Eyes"
             );
     }
 
@@ -69,7 +70,8 @@ library HairDetail {
     function item_12() public pure returns (string memory) {
         return
             base(
-                '<path d="M213,104.52s-10.09,8.91-23.55-.09C189.55,104.37,200.24,95.64,213,104.52Z" transform="translate(0 0.5)" /> <path d="M211.51,101.33a16.75,16.75,0,0,0-3.14-1.5A23.51,23.51,0,0,0,205,98.9a16.16,16.16,0,0,0-3.53-.27,14.89,14.89,0,0,0-3.43.56c.26,0,.57-.07.88-.1l.41,0,.41,0,.87-.06h.85a21.36,21.36,0,0,1,3.46.35,23,23,0,0,1,3.37.82,12.29,12.29,0,0,1,1.6.58C210.44,100.9,210.94,101.13,211.51,101.33Z" transform="translate(0 0.5)"/> <path d="M199.85,109.75c-.83-.13-1.65-.25-2.48-.43s-1.59-.31-2.42-.55a11,11,0,0,1-2.35-.84,13.15,13.15,0,0,1-2.24-1.14,9.12,9.12,0,0,0,2.06,1.37c.76.36,1.53.6,2.35.91s1.6.36,2.48.48A20.38,20.38,0,0,0,199.85,109.75Z" transform="translate(0 0.5)"/> <ellipse cx="205.62" cy="102.76" rx="0.47" ry="1.89" transform="translate(68.77 287.95) rotate(-80.02)" fill="#fff"/>'
+                '<path d="M213,104.52s-10.09,8.91-23.55-.09C189.55,104.37,200.24,95.64,213,104.52Z" transform="translate(0 0.5)" /> <path d="M211.51,101.33a16.75,16.75,0,0,0-3.14-1.5A23.51,23.51,0,0,0,205,98.9a16.16,16.16,0,0,0-3.53-.27,14.89,14.89,0,0,0-3.43.56c.26,0,.57-.07.88-.1l.41,0,.41,0,.87-.06h.85a21.36,21.36,0,0,1,3.46.35,23,23,0,0,1,3.37.82,12.29,12.29,0,0,1,1.6.58C210.44,100.9,210.94,101.13,211.51,101.33Z" transform="translate(0 0.5)"/> <path d="M199.85,109.75c-.83-.13-1.65-.25-2.48-.43s-1.59-.31-2.42-.55a11,11,0,0,1-2.35-.84,13.15,13.15,0,0,1-2.24-1.14,9.12,9.12,0,0,0,2.06,1.37c.76.36,1.53.6,2.35.91s1.6.36,2.48.48A20.38,20.38,0,0,0,199.85,109.75Z" transform="translate(0 0.5)"/> <ellipse cx="205.62" cy="102.76" rx="0.47" ry="1.89" transform="translate(68.77 287.95) rotate(-80.02)" fill="#fff"/>',
+                "Middle Eyes"
             );
     }
 
@@ -77,30 +79,32 @@ library HairDetail {
     function item_13() public pure returns (string memory) {
         return
             base(
-                '<g id="Eye"> <path d="M289,147.2s-10.34-8.61-3.5-23.28C285.51,124,295.77,133.19,289,147.2Z" transform="translate(0 0.5)" /> <path d="M281.77,135c0-.83,0-1.67.05-2.51s.06-1.62.17-2.47a10.81,10.81,0,0,1,.47-2.46,13.76,13.76,0,0,1,.78-2.38,9.71,9.71,0,0,0-1,2.24c-.24.81-.36,1.6-.53,2.46s-.12,1.63-.1,2.53A20.5,20.5,0,0,0,281.77,135Z" transform="translate(0 0.5)"/> <ellipse cx="287.94" cy="130.66" rx="0.47" ry="1.89" transform="translate(-26.21 95.24) rotate(-17.88)" fill="#fff"/> </g> <g id="Eye-2" > <path d="M137,147.2s7.8-8.61,2.65-23.28C139.6,124,131.86,133.19,137,147.2Z" transform="translate(0 0.5)" /> <path d="M142.42,135c0-.83,0-1.67,0-2.51s0-1.62-.13-2.47a14.29,14.29,0,0,0-.35-2.46,16.86,16.86,0,0,0-.59-2.38,11,11,0,0,1,.78,2.24c.18.81.28,1.6.4,2.46s.09,1.63.08,2.53A25.66,25.66,0,0,1,142.42,135Z" transform="translate(0 0.5)"/> <ellipse cx="137.95" cy="129.7" rx="1.89" ry="0.36" transform="translate(-25.79 225.29) rotate(-73.38)" fill="#fff"/></g>'
+                '<g id="Eye"> <path d="M289,147.2s-10.34-8.61-3.5-23.28C285.51,124,295.77,133.19,289,147.2Z" transform="translate(0 0.5)" /> <path d="M281.77,135c0-.83,0-1.67.05-2.51s.06-1.62.17-2.47a10.81,10.81,0,0,1,.47-2.46,13.76,13.76,0,0,1,.78-2.38,9.71,9.71,0,0,0-1,2.24c-.24.81-.36,1.6-.53,2.46s-.12,1.63-.1,2.53A20.5,20.5,0,0,0,281.77,135Z" transform="translate(0 0.5)"/> <ellipse cx="287.94" cy="130.66" rx="0.47" ry="1.89" transform="translate(-26.21 95.24) rotate(-17.88)" fill="#fff"/> </g> <g id="Eye-2" > <path d="M137,147.2s7.8-8.61,2.65-23.28C139.6,124,131.86,133.19,137,147.2Z" transform="translate(0 0.5)" /> <path d="M142.42,135c0-.83,0-1.67,0-2.51s0-1.62-.13-2.47a14.29,14.29,0,0,0-.35-2.46,16.86,16.86,0,0,0-.59-2.38,11,11,0,0,1,.78,2.24c.18.81.28,1.6.4,2.46s.09,1.63.08,2.53A25.66,25.66,0,0,1,142.42,135Z" transform="translate(0 0.5)"/> <ellipse cx="137.95" cy="129.7" rx="1.89" ry="0.36" transform="translate(-25.79 225.29) rotate(-73.38)" fill="#fff"/></g>',
+                "Side Eyes"
             );
     }
 
-    /// @dev Hair N°14 => Blood Long Hair
+    /// @dev Hair N°14 => Long Hair Blood
     function item_14() public pure returns (string memory) {
-        return base(longHair("B50D5E"));
+        return base(longHair("B50D5E"), "Long Hair Blood");
     }
 
-    /// @dev Hair N°15 => Long Hair
+    /// @dev Hair N°15 => Long Hair Moon
     function item_15() public pure returns (string memory) {
-        return base(longHair("33333D"));
+        return base(longHair("33333D"), "Long Hair Moon");
     }
 
-    /// @dev Hair N°16 => White Long Hair
+    /// @dev Hair N°16 => Long Hair Pure
     function item_16() public pure returns (string memory) {
-        return base(longHair("FFEDED"));
+        return base(longHair("FFEDED"), "Long Hair Pure");
     }
 
     /// @dev Hair N°17 => Tattoo kin
     function item_17() public pure returns (string memory) {
         return
             base(
-                '<g id="Tattoo_kin" display="inline" ><linearGradient id="SVGID_00000011722690206770933430000008680616382255612556_" gradientUnits="userSpaceOnUse" x1="210.6601" y1="-54.3" x2="210.6601" y2="11.1777" gradientTransform="matrix(1 0 0 -1 0 76)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.4231" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path  fill="url(#SVGID_00000011722690206770933430000008680616382255612556_)" d="M192.1,67.4c-6.5,21.1,2,49.3,5.5,62.9c0,0,6.9-39.2,34-63.9C220.8,63.6,198.1,64.9,192.1,67.4z" /></g>'
+                '<g id="Tattoo_kin" display="inline" ><linearGradient id="SVGID_00000011722690206770933430000008680616382255612556_" gradientUnits="userSpaceOnUse" x1="210.6601" y1="-54.3" x2="210.6601" y2="11.1777" gradientTransform="matrix(1 0 0 -1 0 76)"><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.4231" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path  fill="url(#SVGID_00000011722690206770933430000008680616382255612556_)" d="M192.1,67.4c-6.5,21.1,2,49.3,5.5,62.9c0,0,6.9-39.2,34-63.9C220.8,63.6,198.1,64.9,192.1,67.4z" /></g>',
+                "Tattoo kin"
             );
     }
 
@@ -171,23 +175,23 @@ library HairDetail {
         if (id == 1) {
             name = "No Hair";
         } else if (id == 2) {
-            name = "Tattoo Red";
+            name = "Tattoo Blood";
         } else if (id == 3) {
-            name = "Tattoo Black";
+            name = "Tattoo Moon";
         } else if (id == 4) {
-            name = "Tattoo White";
+            name = "Tattoo Pure";
         } else if (id == 5) {
-            name = "Short Red";
+            name = "Short Hair Blood";
         } else if (id == 6) {
-            name = "Short Black";
+            name = "Short Hair Moon";
         } else if (id == 7) {
-            name = "Short White";
+            name = "Short Hair Pure";
         } else if (id == 8) {
-            name = "Flame Red";
+            name = "Flame Blood";
         } else if (id == 9) {
-            name = "Flame Black";
+            name = "Flame Moon";
         } else if (id == 10) {
-            name = "Flame White";
+            name = "Flame Pure";
         } else if (id == 11) {
             name = "Top eyes";
         } else if (id == 12) {
@@ -195,18 +199,18 @@ library HairDetail {
         } else if (id == 13) {
             name = "Side eyes";
         } else if (id == 14) {
-            name = "Blood Long Hair";
+            name = "Long Hair Blood";
         } else if (id == 15) {
-            name = "Long Hair";
+            name = "Long Hair Moon";
         } else if (id == 16) {
-            name = "White Long Hair";
+            name = "Long Hair Pure";
         } else if (id == 17) {
             name = "Tatoo Kin";
         }
     }
 
     /// @dev The base SVG for the body
-    function base(string memory children) private pure returns (string memory) {
-        return string(abi.encodePacked('<g id="hair">', children, "</g>"));
+    function base(string memory children, string memory name) private pure returns (string memory) {
+        return string(abi.encodePacked('<g id="hair"><g id="', name, '">', children, "</g></g>"));
     }
 }

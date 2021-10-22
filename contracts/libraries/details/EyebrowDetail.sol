@@ -7,114 +7,116 @@ import "base64-sol/base64.sol";
 
 /// @title Eyebrow SVG generator
 library EyebrowDetail {
-    /// @dev Eyebrow N°1 => Kitsune Aka
+    /// @dev Eyebrow N°1 => Kitsune Blood
     function item_1() public pure returns (string memory) {
-        return base(kitsune("B50D5E"));
+        return base(kitsune("B50D5E"), "Kitsune Blood");
     }
 
-    /// @dev Eyebrow N°2 => Kitsune Kuro
+    /// @dev Eyebrow N°2 => Kitsune Moon
     function item_2() public pure returns (string memory) {
-        return base(kitsune("000000"));
+        return base(kitsune("000000"), "Kitsune Moon");
     }
 
-    /// @dev Eyebrow N°3 => Slayer Red
+    /// @dev Eyebrow N°3 => Slayer Blood
     function item_3() public pure returns (string memory) {
-        return base(slayer("B50D5E"));
+        return base(slayer("B50D5E"), "Slayer Blood");
     }
 
-    /// @dev Eyebrow N°4 => Slayer Black
+    /// @dev Eyebrow N°4 => Slayer Moon
     function item_4() public pure returns (string memory) {
-        return base(slayer("000000"));
+        return base(slayer("000000"), "Slayer Moon");
     }
 
     /// @dev Eyebrow N°5 => Shaved
     function item_5() public pure returns (string memory) {
         return
             base(
-                '<path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M218,171.4c0,0,21.5-3.6,27.2-3.4c5.7,0.2,9.8,1.7,12.5,3.5c0,0-20.2,2.9-29.2,3.2C219.6,175.1,219.3,174.8,218,171.4z"  /><path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M183.1,171.4c0,0-20.9-3.8-26.6-3.5c-5.6,0.2-9.5,1.6-12.2,3.5c0,0,19.7,2.9,28.6,3.3C181.5,175.1,182.1,174.8,183.1,171.4z"  />'
+                '<path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M218,171.4c0,0,21.5-3.6,27.2-3.4c5.7,0.2,9.8,1.7,12.5,3.5c0,0-20.2,2.9-29.2,3.2C219.6,175.1,219.3,174.8,218,171.4z"  /><path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M183.1,171.4c0,0-20.9-3.8-26.6-3.5c-5.6,0.2-9.5,1.6-12.2,3.5c0,0,19.7,2.9,28.6,3.3C181.5,175.1,182.1,174.8,183.1,171.4z"  />',
+                "Shaved"
             );
     }
 
-    /// @dev Eyebrow N°6 => Thick Red
+    /// @dev Eyebrow N°6 => Thick Blood
     function item_6() public pure returns (string memory) {
-        return base(thick("B50D5E"));
+        return base(thick("B50D5E"), "Thick Blood");
     }
 
-    /// @dev Eyebrow N°7 => Thick Black
+    /// @dev Eyebrow N°7 => Thick Moon
     function item_7() public pure returns (string memory) {
-        return base(thick("000000"));
+        return base(thick("000000"), "Thick Moon");
     }
 
     /// @dev Eyebrow N°8 => None
     function item_8() public pure returns (string memory) {
-        return base("");
+        return base("", "None");
     }
 
-    /// @dev Eyebrow N°9 => Electric Red
+    /// @dev Eyebrow N°9 => Electric Blood
     function item_9() public pure returns (string memory) {
-        return base(electric("B50D5E"));
+        return base(electric("B50D5E"), "Electric Blood");
     }
 
-    /// @dev Eyebrow N°10 => Electric Black
+    /// @dev Eyebrow N°10 => Electric Moon
     function item_10() public pure returns (string memory) {
-        return base(electric("000000"));
+        return base(electric("000000"), "Electric Moon");
     }
 
-    /// @dev Eyebrow N°11 => Yokai Red
+    /// @dev Eyebrow N°11 => Yokai Blood
     function item_11() public pure returns (string memory) {
-        return base(yokai("B50D5E"));
+        return base(yokai("B50D5E"), "Yokai Blood");
     }
 
-    /// @dev Eyebrow N°12 => Yokai Black
+    /// @dev Eyebrow N°12 => Yokai Moon
     function item_12() public pure returns (string memory) {
-        return base(yokai("000000"));
+        return base(yokai("000000"), "Yokai Moon");
     }
 
-    /// @dev Eyebrow N°13 => Tomoe Red
+    /// @dev Eyebrow N°13 => Tomoe Blood
     function item_13() public pure returns (string memory) {
-        return base(tomoe("B50D5E"));
+        return base(tomoe("B50D5E"), "Tomoe Blood");
     }
 
-    /// @dev Eyebrow N°14 => Tomoe Black
+    /// @dev Eyebrow N°14 => Tomoe Moon
     function item_14() public pure returns (string memory) {
-        return base(tomoe("000000"));
+        return base(tomoe("000000"), "Tomoe Moon");
     }
 
-    /// @dev Eyebrow N°15 => Kitsune White
+    /// @dev Eyebrow N°15 => Kitsune Pure
     function item_15() public pure returns (string memory) {
-        return base(kitsune("FFEDED"));
+        return base(kitsune("FFEDED"), "Kitsune Pure");
     }
 
-    /// @dev Eyebrow N°16 => Slayer White
+    /// @dev Eyebrow N°16 => Slayer Pure
     function item_16() public pure returns (string memory) {
-        return base(slayer("FFEDED"));
+        return base(slayer("FFEDED"), "Slayer Pure");
     }
 
-    /// @dev Eyebrow N°17 => Thick White
+    /// @dev Eyebrow N°17 => Thick Pure
     function item_17() public pure returns (string memory) {
-        return base(thick("FFEDED"));
+        return base(thick("FFEDED"), "Thick Pure");
     }
 
-    /// @dev Eyebrow N°18 => Electric White
+    /// @dev Eyebrow N°18 => Electric Pure
     function item_18() public pure returns (string memory) {
-        return base(electric("FFEDED"));
+        return base(electric("FFEDED"), "Electric Pure");
     }
 
-    /// @dev Eyebrow N°19 => Yokai White
+    /// @dev Eyebrow N°19 => Yokai Pure
     function item_19() public pure returns (string memory) {
-        return base(yokai("FFEDED"));
+        return base(yokai("FFEDED"), "Yokai Pure");
     }
 
-    /// @dev Eyebrow N°20 => Tomoe White
+    /// @dev Eyebrow N°20 => Tomoe Pure
     function item_20() public pure returns (string memory) {
-        return base(tomoe("FFEDED"));
+        return base(tomoe("FFEDED"), "Tomoe Pure");
     }
 
-    /// @dev Eyebrow N°21 => Tomoe Gold
+    /// @dev Eyebrow N°21 => Tomoe Kin
     function item_21() public pure returns (string memory) {
         return
             base(
-                '<linearGradient id="Tomoe_Gold_Gradient" gradientUnits="userSpaceOnUse" x1="215.6498" y1="-442.1553" x2="232" y2="-442.1553" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline"  fill="url(#Tomoe_Gold_Gradient)" d="M232,168.9c-6.7-3.4-11.3-1.9-12.8-1.2c-0.1,0-0.3,0.1-0.4,0.1c-2.6,1-3.9,4.1-2.7,6.6c1,2.6,4.1,3.9,6.6,2.7c2.6-1,3.9-4.1,2.7-6.6c0-0.1-0.1-0.2-0.1-0.2C228.1,168.4,232,168.9,232,168.9z M221.4,174.1c-0.9,0.3-1.8,0-2.2-0.9c-0.3-0.9,0-1.8,0.9-2.2c0.9-0.3,1.8,0,2.2,0.9C222.7,172.7,222.2,173.7,221.4,174.1z"  /><linearGradient id="SVGID_00000169552172318176501370000006213919017808816827_" gradientUnits="userSpaceOnUse" x1="171" y1="-442.5519" x2="187.1496" y2="-442.5519" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline"  fill="url(#SVGID_00000169552172318176501370000006213919017808816827_)" d="M184.2,168.3c-0.9-0.5-5.7-2.8-13.2,1c0,0,3.8-0.5,6.6,1.3c-0.1,0.1-0.1,0.2-0.2,0.3c-1.2,2.5,0.1,5.6,2.7,6.6c2.5,1.2,5.6-0.1,6.6-2.7C187.9,172.4,186.7,169.4,184.2,168.3z M183.8,173.6c-0.4,0.9-1.3,1.2-2.2,0.9c-0.9-0.4-1.4-1.4-0.9-2.2c0.4-0.9,1.3-1.2,2.2-0.9C183.8,171.8,184.1,172.7,183.8,173.6z"  />'
+                '<linearGradient id="Tomoe_Gold_Gradient" gradientUnits="userSpaceOnUse" x1="215.6498" y1="-442.1553" x2="232" y2="-442.1553" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline"  fill="url(#Tomoe_Gold_Gradient)" d="M232,168.9c-6.7-3.4-11.3-1.9-12.8-1.2c-0.1,0-0.3,0.1-0.4,0.1c-2.6,1-3.9,4.1-2.7,6.6c1,2.6,4.1,3.9,6.6,2.7c2.6-1,3.9-4.1,2.7-6.6c0-0.1-0.1-0.2-0.1-0.2C228.1,168.4,232,168.9,232,168.9z M221.4,174.1c-0.9,0.3-1.8,0-2.2-0.9c-0.3-0.9,0-1.8,0.9-2.2c0.9-0.3,1.8,0,2.2,0.9C222.7,172.7,222.2,173.7,221.4,174.1z"  /><linearGradient id="SVGID_00000169552172318176501370000006213919017808816827_" gradientUnits="userSpaceOnUse" x1="171" y1="-442.5519" x2="187.1496" y2="-442.5519" gradientTransform="matrix(1 0 0 -1 0 -270)" ><stop offset="0" style="stop-color:#FFB451" /><stop offset="0.5259" style="stop-color:#F7E394" /><stop offset="1" style="stop-color:#FF9B43" /></linearGradient><path display="inline"  fill="url(#SVGID_00000169552172318176501370000006213919017808816827_)" d="M184.2,168.3c-0.9-0.5-5.7-2.8-13.2,1c0,0,3.8-0.5,6.6,1.3c-0.1,0.1-0.1,0.2-0.2,0.3c-1.2,2.5,0.1,5.6,2.7,6.6c2.5,1.2,5.6-0.1,6.6-2.7C187.9,172.4,186.7,169.4,184.2,168.3z M183.8,173.6c-0.4,0.9-1.3,1.2-2.2,0.9c-0.9-0.4-1.4-1.4-0.9-2.2c0.4-0.9,1.3-1.2,2.2-0.9C183.8,171.8,184.1,172.7,183.8,173.6z"  />',
+                "Tomoe Kin"
             );
     }
 
@@ -205,52 +207,52 @@ library EyebrowDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "Kitsune Aka";
+            name = "Kitsune Blood";
         } else if (id == 2) {
-            name = "Kitsune Kuro";
+            name = "Kitsune Moon";
         } else if (id == 3) {
-            name = "Slayer Red";
+            name = "Slayer Blood";
         } else if (id == 4) {
-            name = "Slayer Black";
+            name = "Slayer Moon";
         } else if (id == 5) {
             name = "Shaved";
         } else if (id == 6) {
-            name = "Thick Red";
+            name = "Thick Blood";
         } else if (id == 7) {
-            name = "Thick Black";
+            name = "Thick Moon";
         } else if (id == 8) {
             name = "None";
         } else if (id == 9) {
-            name = "Electric Red";
+            name = "Electric Blood";
         } else if (id == 10) {
-            name = "Electric Black";
+            name = "Electric Moon";
         } else if (id == 11) {
-            name = "Yokai Red";
+            name = "Yokai Blood";
         } else if (id == 12) {
-            name = "Yokai Black";
+            name = "Yokai Moon";
         } else if (id == 13) {
-            name = "Tomoe Red";
+            name = "Tomoe Blood";
         } else if (id == 14) {
-            name = "Tomoe Black";
+            name = "Tomoe Moon";
         } else if (id == 15) {
-            name = "Kitsune White";
+            name = "Kitsune Pure";
         } else if (id == 16) {
-            name = "Slayer White";
+            name = "Slayer Pure";
         } else if (id == 17) {
-            name = "Thick White";
+            name = "Thick Pure";
         } else if (id == 18) {
-            name = "Electric White";
+            name = "Electric Pure";
         } else if (id == 19) {
-            name = "Yokai White";
+            name = "Yokai Pure";
         } else if (id == 20) {
-            name = "Tomoe White";
+            name = "Tomoe Pure";
         } else if (id == 21) {
-            name = "Tomoe Gold";
+            name = "Tomoe Kin";
         }
     }
 
     /// @dev The base SVG for the body
-    function base(string memory children) private pure returns (string memory) {
-        return string(abi.encodePacked('<g id="eyebrow">', children, "</g>"));
+    function base(string memory children, string memory name) private pure returns (string memory) {
+        return string(abi.encodePacked('<g id="eyebrow"><g id="', name, '">', children, "</g></g>"));
     }
 }
