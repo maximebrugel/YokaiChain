@@ -15,8 +15,8 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     /// @dev Max value for defining probabilities
     uint256 internal constant MAX = 100000;
 
-    uint256[] internal BACKGROUND_ITEMS = [56000, 50000, 45000, 40000, 35000, 31000, 23500, 0];
-    uint256[] internal SKIN_ITEMS = [52000, 26000, 200, 0];
+    uint256[] internal BACKGROUND_ITEMS = [9900, 9100, 8500, 7800, 7300, 6500, 5750, 0];
+    uint256[] internal SKIN_ITEMS = [60000, 25000, 200, 0];
     uint256[] internal NOSE_ITEMS = [75000, 55000, 39000, 26000, 15000, 5000, 200, 0];
     uint256[] internal MARK_ITEMS = [
         94000,
@@ -340,31 +340,31 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     }
 
     function getBackgroundId(NFTDescriptor.SVGParams memory params) private view returns (uint8) {
-        uint256 score = itemScorePosition(params.hair, HAIR_ITEMS) +
-            itemScorePosition(params.accessory, ACCESSORY_ITEMS) +
-            itemScorePosition(params.earring, EARRINGS_ITEMS) +
-            itemScorePosition(params.mask, MASK_ITEMS) +
-            itemScorePosition(params.mouth, MOUTH_ITEMS) +
+        uint256 score = itemScoreProba(params.hair, HAIR_ITEMS) +
+            itemScoreProba(params.accessory, ACCESSORY_ITEMS) +
+            itemScoreProba(params.earring, EARRINGS_ITEMS) +
+            itemScoreProba(params.mask, MASK_ITEMS) +
+            itemScoreProba(params.mouth, MOUTH_ITEMS) +
             itemScoreProba(params.skin, SKIN_ITEMS) +
             itemScoreProba(params.nose, NOSE_ITEMS) +
-            itemScorePosition(params.mark, MARK_ITEMS) +
-            itemScorePosition(params.eye, EYE_ITEMS) +
-            itemScorePosition(params.eyebrow, EYEBROW_ITEMS);
+            itemScoreProba(params.mark, MARK_ITEMS) +
+            itemScoreProba(params.eye, EYE_ITEMS) +
+            itemScoreProba(params.eyebrow, EYEBROW_ITEMS);
         return DetailHelper.pickItems(score, BACKGROUND_ITEMS);
     }
 
     function getScore(NFTDescriptor.SVGParams memory params) external view returns (uint256) {
         return
-            itemScorePosition(params.hair, HAIR_ITEMS) +
-            itemScorePosition(params.accessory, ACCESSORY_ITEMS) +
-            itemScorePosition(params.earring, EARRINGS_ITEMS) +
-            itemScorePosition(params.mask, MASK_ITEMS) +
-            itemScorePosition(params.mouth, MOUTH_ITEMS) +
+            itemScoreProba(params.hair, HAIR_ITEMS) +
+            itemScoreProba(params.accessory, ACCESSORY_ITEMS) +
+            itemScoreProba(params.earring, EARRINGS_ITEMS) +
+            itemScoreProba(params.mask, MASK_ITEMS) +
+            itemScoreProba(params.mouth, MOUTH_ITEMS) +
             itemScoreProba(params.skin, SKIN_ITEMS) +
             itemScoreProba(params.nose, NOSE_ITEMS) +
-            itemScorePosition(params.mark, MARK_ITEMS) +
-            itemScorePosition(params.eye, EYE_ITEMS) +
-            itemScorePosition(params.eyebrow, EYEBROW_ITEMS);
+            itemScoreProba(params.mark, MARK_ITEMS) +
+            itemScoreProba(params.eye, EYE_ITEMS) +
+            itemScoreProba(params.eyebrow, EYEBROW_ITEMS);
     }
 
     /// @dev Get item score based on his probability

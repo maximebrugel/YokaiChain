@@ -7,19 +7,19 @@ import "base64-sol/base64.sol";
 
 /// @title Body SVG generator
 library BodyDetail {
-    /// @dev Body N°1 => Yokai
+    /// @dev Body N°1 => Blood Yokai
     function item_1() public pure returns (string memory) {
-        return base(body("FFDAEA"), "Yokai");
-    }
-
-    /// @dev Body N°2 => Blood Yokai
-    function item_2() public pure returns (string memory) {
         return base(body("E31466"), "Yokai Blood");
     }
 
-    /// @dev Body N°3 => Moon Yokai
-    function item_3() public pure returns (string memory) {
+    /// @dev Body N°2 => Moon Yokai
+    function item_2() public pure returns (string memory) {
         return base(body("2A2C38"), "Yokai Moon");
+    }
+
+    /// @dev Body N°3 => Yokai
+    function item_3() public pure returns (string memory) {
+        return base(body("FFDAEA"), "Yokai");
     }
 
     /// @dev Body N°4 => Kintaro
@@ -51,11 +51,11 @@ library BodyDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "Yokai";
-        } else if (id == 2) {
             name = "Yokai Blood";
-        } else if (id == 3) {
+        } else if (id == 2) {
             name = "Yokai Moon";
+        } else if (id == 3) {
+            name = "Yokai";
         } else if (id == 4) {
             name = "Kintaro";
         }
