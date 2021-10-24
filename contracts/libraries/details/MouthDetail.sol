@@ -70,13 +70,9 @@ library MouthDetail {
             );
     }
 
-    /// @dev Mouth N°8 => Pantin
+    /// @dev Mouth N°8 => None
     function item_8() public pure returns (string memory) {
-        return
-            base(
-                '<path display="inline"  d="M227.4,254h-46.7c-0.5,0-0.9-0.4-0.9-0.9v-2c0-0.5,0.4-0.9,0.9-0.9h46.7c0.5,0,0.9,0.4,0.9,0.9v2C228.2,253.7,228,254,227.4,254z"  /><path display="inline"  stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M180.4,251.1c-0.9,9.5-0.5,18.8,0.5,29.7"  /><path display="inline"  stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M227.7,251c0.5,10.5,0.1,22.5-0.7,35.3"  />',
-                "Pantin"
-            );
+        return base("", "None");
     }
 
     /// @dev Mouth N°9 => Fantom
@@ -106,12 +102,12 @@ library MouthDetail {
             );
     }
 
-    /// @dev Mouth N°12 => Stitch
+    /// @dev Mouth N°12 => Drool
     function item_12() public pure returns (string memory) {
         return
             base(
-                '<g display="inline" ><path d="M146.7,249c10.6,1.8,21.4,2.9,32.1,3.9c2.7,0.2,5.3,0.5,8,0.7s5.4,0.3,8,0.5c5.4,0.2,10.7,0.2,16.2,0.1c5.4-0.1,10.7-0.5,16.2-0.7l8-0.6c1.4-0.1,2.7-0.2,4.1-0.3l4-0.4c10.7-1,21.3-2.9,31.9-4.8v0.1l-7.9,1.9l-4,0.8c-1.4,0.3-2.6,0.5-4,0.7l-8,1.4c-2.7,0.4-5.3,0.6-8,1c-5.3,0.7-10.7,0.9-16.2,1.4c-5.4,0.2-10.7,0.4-16.2,0.3c-10.7-0.1-21.6-0.3-32.3-0.9C167.9,252.9,157.1,251.5,146.7,249L146.7,249z" /></g><path display="inline" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M192.9,254.2c0,0,7.8-2.1,17.5,0.2C210.4,254.4,201.6,257.3,192.9,254.2z"  /><g display="inline" ><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M215.2,250.7c0,0,1.1-3.4,2.8-1c0,0,0.5,5.3-0.7,9.9c0,0-1,2.2-1.6-0.6C215.2,256.2,216.3,255.9,215.2,250.7z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M223.3,250.9c0,0,1-3.1,2.5-0.9c0,0,0.5,4.7-0.6,8.9c0,0-0.9,1.9-1.4-0.5C223.3,255.8,224.2,255.5,223.3,250.9z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M229.7,250.8c0,0,0.9-2.7,2.2-0.8c0,0,0.4,4.1-0.5,7.7c0,0-0.8,1.7-1.1-0.4C229.7,255,230.6,254.8,229.7,250.8z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M235.2,250.5c0,0,0.8-2.4,2-0.7c0,0,0.4,3.6-0.5,6.9c0,0-0.7,1.5-1-0.4C235.4,254.3,236,254.1,235.2,250.5z" /></g><g display="inline" ><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M188.4,250.3c0,0-1.1-3.4-2.8-1c0,0-0.5,5.3,0.7,9.9c0,0,1,2.2,1.6-0.6S187.1,255.5,188.4,250.3z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M180.4,250.5c0,0-1-3.1-2.5-0.9c0,0-0.5,4.7,0.6,8.9c0,0,0.9,1.9,1.4-0.5C180.3,255.5,179.4,255,180.4,250.5z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M173.8,250.4c0,0-0.9-2.7-2.2-0.8c0,0-0.4,4.1,0.5,7.7c0,0,0.8,1.7,1.1-0.4C173.6,254.7,172.9,254.4,173.8,250.4z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M168.2,250c0,0-0.8-2.4-2-0.7c0,0-0.4,3.6,0.5,6.9c0,0,0.7,1.5,1-0.4C168.2,253.9,167.5,253.7,168.2,250z" /></g>',
-                "Stitch"
+                '<path display="inline" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M191.1,248c2.8,0.6,7.8,1.6,10.9,1.2l17.1-2.7c0,0,13.1-2.3,13.3,3.9c-1,6.3-2.3,10.5-5.5,11.2c0,0,3.7,10.8-3.2,10.2c-4.2-0.4-2.8-8.6-2.8-8.6s-19.9,5-40.1-1.9c-3.4-1.5-8.4-10-5.2-14.5C177.6,245.4,181.5,244.9,191.1,248z"  />',
+                "Drool"
             );
     }
 
@@ -124,18 +120,22 @@ library MouthDetail {
             );
     }
 
-    /// @dev Mouth N°14 => Drool
+    /// @dev Mouth N°14 => Stitch
     function item_14() public pure returns (string memory) {
         return
             base(
-                '<path display="inline" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M191.1,248c2.8,0.6,7.8,1.6,10.9,1.2l17.1-2.7c0,0,13.1-2.3,13.3,3.9c-1,6.3-2.3,10.5-5.5,11.2c0,0,3.7,10.8-3.2,10.2c-4.2-0.4-2.8-8.6-2.8-8.6s-19.9,5-40.1-1.9c-3.4-1.5-8.4-10-5.2-14.5C177.6,245.4,181.5,244.9,191.1,248z"  />',
-                "Drool"
+                '<g display="inline" ><path d="M146.7,249c10.6,1.8,21.4,2.9,32.1,3.9c2.7,0.2,5.3,0.5,8,0.7s5.4,0.3,8,0.5c5.4,0.2,10.7,0.2,16.2,0.1c5.4-0.1,10.7-0.5,16.2-0.7l8-0.6c1.4-0.1,2.7-0.2,4.1-0.3l4-0.4c10.7-1,21.3-2.9,31.9-4.8v0.1l-7.9,1.9l-4,0.8c-1.4,0.3-2.6,0.5-4,0.7l-8,1.4c-2.7,0.4-5.3,0.6-8,1c-5.3,0.7-10.7,0.9-16.2,1.4c-5.4,0.2-10.7,0.4-16.2,0.3c-10.7-0.1-21.6-0.3-32.3-0.9C167.9,252.9,157.1,251.5,146.7,249L146.7,249z" /></g><path display="inline" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M192.9,254.2c0,0,7.8-2.1,17.5,0.2C210.4,254.4,201.6,257.3,192.9,254.2z"  /><g display="inline" ><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M215.2,250.7c0,0,1.1-3.4,2.8-1c0,0,0.5,5.3-0.7,9.9c0,0-1,2.2-1.6-0.6C215.2,256.2,216.3,255.9,215.2,250.7z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M223.3,250.9c0,0,1-3.1,2.5-0.9c0,0,0.5,4.7-0.6,8.9c0,0-0.9,1.9-1.4-0.5C223.3,255.8,224.2,255.5,223.3,250.9z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M229.7,250.8c0,0,0.9-2.7,2.2-0.8c0,0,0.4,4.1-0.5,7.7c0,0-0.8,1.7-1.1-0.4C229.7,255,230.6,254.8,229.7,250.8z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M235.2,250.5c0,0,0.8-2.4,2-0.7c0,0,0.4,3.6-0.5,6.9c0,0-0.7,1.5-1-0.4C235.4,254.3,236,254.1,235.2,250.5z" /></g><g display="inline" ><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M188.4,250.3c0,0-1.1-3.4-2.8-1c0,0-0.5,5.3,0.7,9.9c0,0,1,2.2,1.6-0.6S187.1,255.5,188.4,250.3z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M180.4,250.5c0,0-1-3.1-2.5-0.9c0,0-0.5,4.7,0.6,8.9c0,0,0.9,1.9,1.4-0.5C180.3,255.5,179.4,255,180.4,250.5z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M173.8,250.4c0,0-0.9-2.7-2.2-0.8c0,0-0.4,4.1,0.5,7.7c0,0,0.8,1.7,1.1-0.4C173.6,254.7,172.9,254.4,173.8,250.4z" /><path fill="#FFFFFF" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M168.2,250c0,0-0.8-2.4-2-0.7c0,0-0.4,3.6,0.5,6.9c0,0,0.7,1.5,1-0.4C168.2,253.9,167.5,253.7,168.2,250z" /></g>',
+                "Stitch"
             );
     }
 
-    /// @dev Mouth N°15 => None
+    /// @dev Mouth N°15 => Pantin
     function item_15() public pure returns (string memory) {
-        return base("", "None");
+        return
+            base(
+                '<path display="inline"  d="M227.4,254h-46.7c-0.5,0-0.9-0.4-0.9-0.9v-2c0-0.5,0.4-0.9,0.9-0.9h46.7c0.5,0,0.9,0.4,0.9,0.9v2C228.2,253.7,228,254,227.4,254z"  /><path display="inline"  stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M180.4,251.1c-0.9,9.5-0.5,18.8,0.5,29.7"  /><path display="inline"  stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M227.7,251c0.5,10.5,0.1,22.5-0.7,35.3"  />',
+                "Pantin"
+            );
     }
 
     /// @dev Mouth N°16 => Akuma
@@ -184,7 +184,7 @@ library MouthDetail {
         } else if (id == 7) {
             name = "Evil";
         } else if (id == 8) {
-            name = "Pantin";
+            name = "None";
         } else if (id == 9) {
             name = "Akuma";
         } else if (id == 10) {
@@ -192,13 +192,13 @@ library MouthDetail {
         } else if (id == 11) {
             name = "Monster";
         } else if (id == 12) {
-            name = "Stitch";
+            name = "Drool";
         } else if (id == 13) {
             name = "UwU Kitsune";
         } else if (id == 14) {
-            name = "Drool";
+            name = "Stitch";
         } else if (id == 15) {
-            name = "None";
+            name = "Pantin";
         } else if (id == 16) {
             name = "Fantom";
         } else if (id == 17) {
