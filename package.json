@@ -76,6 +76,7 @@
     "compile": "hardhat compile",
     "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp artifacts --testfiles \"./test/**/*.ts\"",
     "deploy": "hardhat run scripts/deploy.ts",
+    "deployFantomTestnet": "hardhat run scripts/deploy_no_etherscan.ts --network fantomTest",
     "generateScores": "hardhat run scripts/generate_scores.ts --network hardhat",
     "generateJson": "hardhat run scripts/generate_json.ts --network hardhat",
     "generateRepartition": "hardhat run scripts/generate_repartition.ts --network hardhat",
