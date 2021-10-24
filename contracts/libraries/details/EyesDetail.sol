@@ -9,14 +9,14 @@ import "./Eyes/EyesParts2.sol";
 
 /// @title Eyes SVG generator
 library EyesDetail {
-    /// @dev Eyes N°1 => Kitsune
+    /// @dev Eyes N°1 => Happy
     function item_1() public pure returns (string memory) {
-        return base(EyesParts1.item_13(), "Kitsune");
+        return base(EyesParts2.item_5(), "Happy");
     }
 
-    /// @dev Eyes N°2 => Moon
+    /// @dev Eyes N°2 => Feels
     function item_2() public pure returns (string memory) {
-        return base(EyesParts1.item_12(), "Moon");
+        return base(EyesParts2.item_4(), "Feels");
     }
 
     /// @dev Eyes N°3 => Pupils Blood
@@ -36,12 +36,12 @@ library EyesDetail {
 
     /// @dev Eyes N°6 => Rip
     function item_6() public pure returns (string memory) {
-        return base(EyesParts2.item_10(), "Rip");
+        return base(EyesParts2.item_9(), "Rip");
     }
 
-    /// @dev Eyes N°7 => Annoyed
+    /// @dev Eyes N°7 => Pupils pure
     function item_7() public pure returns (string memory) {
-        return base(EyesParts2.item_9(), "Annoyed");
+        return base(EyesParts1.item_2(), "Pupils Pure");
     }
 
     /// @dev Eyes N°8 => Akuma
@@ -74,14 +74,14 @@ library EyesDetail {
         return base(EyesParts2.item_6(), "Closed");
     }
 
-    /// @dev Eyes N°14 => Happy
+    /// @dev Eyes N°14 => Kitsune
     function item_14() public pure returns (string memory) {
-        return base(EyesParts2.item_5(), "Happy");
+        return base(EyesParts1.item_13(), "Kitsune");
     }
 
-    /// @dev Eyes N°15 => Feels
+    /// @dev Eyes N°15 => Moon
     function item_15() public pure returns (string memory) {
-        return base(EyesParts2.item_4(), "Feels");
+        return base(EyesParts1.item_12(), "Moon");
     }
 
     /// @dev Eyes N°16 => Shine
@@ -129,9 +129,9 @@ library EyesDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "Kitsune";
+            name = "Happy";
         } else if (id == 2) {
-            name = "Moon";
+            name = "Feels";
         } else if (id == 3) {
             name = "Pupils Blood";
         } else if (id == 4) {
@@ -155,9 +155,9 @@ library EyesDetail {
         } else if (id == 13) {
             name = "Closed";
         } else if (id == 14) {
-            name = "Happy";
+            name = "Kitsune";
         } else if (id == 15) {
-            name = "Feels";
+            name = "Moon";
         } else if (id == 16) {
             name = "Shine";
         } else if (id == 17) {

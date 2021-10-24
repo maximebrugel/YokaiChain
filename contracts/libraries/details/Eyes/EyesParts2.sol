@@ -49,14 +49,8 @@ library EyesParts2 {
             '<polyline display="inline" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" points="225.3,188.1 256.3,188.1 225.3,192.5 254.5,192.5 226.9,196 251.4,196 "  /><polyline display="inline" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" points="148.1,188.1 179,188.1 148.1,192.5 177.3,192.5 149.5,196 174,196 "  />';
     }
 
-    /// @dev Eyes N°7 => Annoyed
-    function item_9() public pure returns (string memory) {
-        return
-            '<line display="inline" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" x1="220.7" y1="186" x2="260.4" y2="186"  /><path display="inline" stroke="#000000" stroke-miterlimit="10" d="M237.3,186.3c0,5.3,4.3,9.6,9.6,9.6s9.6-4.3,9.6-9.6"  /><line display="inline" fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" x1="142.9" y1="186.5" x2="182.3" y2="186.5"  /><path display="inline" stroke="#000000" stroke-miterlimit="10" d="M159,186.9c0,5.3,4.3,9.6,9.6,9.6s9.6-4.3,9.6-9.6"  />';
-    }
-
     /// @dev Eyes N°6 => Rip
-    function item_10() public pure returns (string memory) {
+    function item_9() public pure returns (string memory) {
         return
             '<line x1="230.98" y1="182.49" x2="248.68" y2="200.19" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3"/> <line x1="230.47" y1="200.87" x2="248.67" y2="183.17" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3"/> <line x1="155.53" y1="182.66" x2="173.23" y2="200.36" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3"/> <line x1="154" y1="200.7" x2="172.2" y2="183" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width="3"/>';
     }
