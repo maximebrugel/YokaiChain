@@ -80,11 +80,11 @@ async function main(): Promise<void> {
   let jsonProba: Proba[] = [];
 
   let backgroundDetailItems = await YokaiChainDescriptor.getBackgroundItems();
-  let backgroundItems = await getItems(YokaiChainDescriptor, BackgroundDetail, backgroundDetailItems, false, false);
+  let backgroundItems = await getItems(YokaiChainDescriptor, BackgroundDetail, backgroundDetailItems, false, true);
   jsonProba.push({ name: "Background", items: backgroundItems });
 
   let accessoryDetailItems = await YokaiChainDescriptor.getAccessoryItems();
-  let accessoryItems = await getItems(YokaiChainDescriptor, AccessoryDetail, accessoryDetailItems, true, false);
+  let accessoryItems = await getItems(YokaiChainDescriptor, AccessoryDetail, accessoryDetailItems, true, true);
   jsonProba.push({ name: "Accessory", items: accessoryItems });
 
   let bodyDetailItems = await YokaiChainDescriptor.getBodyItems();
@@ -92,27 +92,27 @@ async function main(): Promise<void> {
   jsonProba.push({ name: "Body", items: bodyItems });
 
   let earringsDetailItems = await YokaiChainDescriptor.getEarringsItems();
-  let earringsItems = await getItems(YokaiChainDescriptor, EarringsDetail, earringsDetailItems, true, false);
+  let earringsItems = await getItems(YokaiChainDescriptor, EarringsDetail, earringsDetailItems, true, true);
   jsonProba.push({ name: "Earrings", items: earringsItems });
 
   let maskDetailItems = await YokaiChainDescriptor.getMaskItems();
-  let maskItems = await getItems(YokaiChainDescriptor, MaskDetail, maskDetailItems, true, false);
+  let maskItems = await getItems(YokaiChainDescriptor, MaskDetail, maskDetailItems, true, true);
   jsonProba.push({ name: "Mask", items: maskItems });
 
   let eyebrowDetailItems = await YokaiChainDescriptor.getEyebrowItems();
-  let eyebrowItems = await getItems(YokaiChainDescriptor, EyebrowDetail, eyebrowDetailItems, true, false);
+  let eyebrowItems = await getItems(YokaiChainDescriptor, EyebrowDetail, eyebrowDetailItems, true, true);
   jsonProba.push({ name: "Eyebrow", items: eyebrowItems });
 
   let eyesDetailItems = await YokaiChainDescriptor.getEyeItems();
-  let eyesItems = await getItems(YokaiChainDescriptor, EyesDetail, eyesDetailItems, true, false);
+  let eyesItems = await getItems(YokaiChainDescriptor, EyesDetail, eyesDetailItems, true, true);
   jsonProba.push({ name: "Eyes", items: eyesItems });
 
   let hairDetailItems = await YokaiChainDescriptor.getHairItems();
-  let hairItems = await getItems(YokaiChainDescriptor, HairDetail, hairDetailItems, true, false);
+  let hairItems = await getItems(YokaiChainDescriptor, HairDetail, hairDetailItems, true, true);
   jsonProba.push({ name: "Hair", items: hairItems });
 
   let mouthDetailItems = await YokaiChainDescriptor.getMouthItems();
-  let mouthItems = await getItems(YokaiChainDescriptor, MouthDetail, mouthDetailItems, true, false);
+  let mouthItems = await getItems(YokaiChainDescriptor, MouthDetail, mouthDetailItems, true, true);
   jsonProba.push({ name: "Mouth", items: mouthItems });
 
   let noseDetailItems = await YokaiChainDescriptor.getNoseItems();
@@ -120,7 +120,7 @@ async function main(): Promise<void> {
   jsonProba.push({ name: "Nose", items: noseItems });
 
   let markDetailItems = await YokaiChainDescriptor.getMarkItems();
-  let markItems = await getItems(YokaiChainDescriptor, MarkDetail, markDetailItems, true, false);
+  let markItems = await getItems(YokaiChainDescriptor, MarkDetail, markDetailItems, true, true);
   jsonProba.push({ name: "Mark", items: markItems });
 
   await fs.writeFileSync("yokais/" + "proba.json", JSON.stringify(jsonProba));
