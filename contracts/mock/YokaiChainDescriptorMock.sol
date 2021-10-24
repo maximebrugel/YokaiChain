@@ -106,20 +106,20 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     ];
     uint256[] internal ACCESSORY_ITEMS = [
         86000,
-        77000,
-        68000,
+        76750,
+        67750,
         59000,
-        51000,
-        43000,
+        50750,
+        42750,
         35000,
         28000,
         22000,
-        17000,
-        12000,
-        7000,
+        16500,
+        11250,
+        6500,
         2000,
         300,
-        200,
+        100,
         0
     ];
     uint256[] internal MOUTH_ITEMS = [
