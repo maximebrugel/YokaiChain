@@ -15,7 +15,7 @@ contract YokaiChainDescriptorMock is IYokaiChainDescriptor {
     /// @dev Max value for defining probabilities
     uint256 internal constant MAX = 100000;
 
-    uint256[] internal BACKGROUND_ITEMS = [9900, 9100, 8500, 7800, 7300, 6500, 5750, 0];
+    uint256[] internal BACKGROUND_ITEMS = [9150, 8800, 8550, 8300, 8050, 7800, 7000, 0];
     uint256[] internal SKIN_ITEMS = [63900, 30900, 200, 0];
     uint256[] internal NOSE_ITEMS = [82000, 66000, 51000, 37000, 24000, 12000, 200, 0];
     uint256[] internal MARK_ITEMS = [
