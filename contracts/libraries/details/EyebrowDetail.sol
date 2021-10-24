@@ -31,7 +31,7 @@ library EyebrowDetail {
     function item_5() public pure returns (string memory) {
         return
             base(
-                '<path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M218,171.4c0,0,21.5-3.6,27.2-3.4c5.7,0.2,9.8,1.7,12.5,3.5c0,0-20.2,2.9-29.2,3.2C219.6,175.1,219.3,174.8,218,171.4z"  /><path display="inline"  stroke="#000000" stroke-miterlimit="10" d="M183.1,171.4c0,0-20.9-3.8-26.6-3.5c-5.6,0.2-9.5,1.6-12.2,3.5c0,0,19.7,2.9,28.6,3.3C181.5,175.1,182.1,174.8,183.1,171.4z"  />',
+                '<g opacity="0.06"><path d="M218.3,173s24.22-3.6,30.64-3.4,11,1.7,14.08,3.5c0,0-22.75,2.9-32.89,3.2S219.77,176.44,218.3,173Z" transform="translate(-0.4)" stroke="#000" stroke-miterlimit="10" fill-rule="evenodd"/> <path d="M187,173.34s-23.54-3.8-30-3.5-10.7,1.6-13.74,3.5c0,0,22.19,2.9,32.21,3.3C185.24,177,185.91,176.74,187,173.34Z" transform="translate(-0.4)" stroke="#000" stroke-miterlimit="10" fill-rule="evenodd"/></g>',
                 "Shaved"
             );
     }
