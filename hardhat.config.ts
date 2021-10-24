@@ -62,6 +62,20 @@ const config: HardhatUserConfig = {
       },
       chainId: chainIds.hardhat,
     },
+    fantomTest: {
+      accounts: {
+        mnemonic,
+      },
+      chainId: 4002,
+      url: "https://rpc.testnet.fantom.network/",
+    },
+    fantomMainnet: {
+      accounts: {
+        mnemonic,
+      },
+      chainId: 250,
+      url: "https://rpc.ftm.tools/",
+    },
     goerli: createTestnetConfig("goerli"),
     kovan: createTestnetConfig("kovan"),
     rinkeby: createTestnetConfig("rinkeby"),
@@ -96,7 +110,7 @@ const config: HardhatUserConfig = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "DB6Y5NIZG8EWA2BKXJKCNMK67AQMVQ3HX7",
+    apiKey: "",
   },
 };
 
