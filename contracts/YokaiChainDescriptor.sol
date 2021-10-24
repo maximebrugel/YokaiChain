@@ -16,7 +16,7 @@ contract YokaiChainDescriptor is IYokaiChainDescriptor {
     uint256 internal constant MAX = 100000;
 
     uint256[] internal BACKGROUND_ITEMS = [9900, 9100, 8500, 7800, 7300, 6500, 5750, 0];
-    uint256[] internal SKIN_ITEMS = [60000, 25000, 200, 0];
+    uint256[] internal SKIN_ITEMS = [63900, 30900, 200, 0];
     uint256[] internal NOSE_ITEMS = [75000, 55000, 39000, 26000, 15000, 5000, 200, 0];
     uint256[] internal MARK_ITEMS = [
         94000,
