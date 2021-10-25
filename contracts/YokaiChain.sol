@@ -42,7 +42,7 @@ contract YokaiChain is ERC721Enumerable, Ownable, IYokaiChain, ReentrancyGuard {
         require(mintEnabled, "Mint is not enabled");
         require(msg.value >= unitPrice * qty, "FTM sent is not correct");
         require(totalSupply() + qty <= 8753, "Cant mint more than 8753 Yokai");
-        require(qty <= 99, "Yokai max mintable quantity is 99");
+        require(qty <= 10, "Yokai max mintable quantity is 10");
 
         for (uint256 i; i < qty; i++) {
             uint256 seed = block.timestamp << (i + 1);
