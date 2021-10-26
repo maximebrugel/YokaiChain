@@ -41,7 +41,7 @@ library EyesDetail {
 
     /// @dev Eyes N°7 => Pupils pure
     function item_7() public pure returns (string memory) {
-        return base(EyesParts1.item_2(), "Pupils Pure");
+        return base(EyesParts1.item_15(), "Pupils Pure");
     }
 
     /// @dev Eyes N°8 => Akuma
