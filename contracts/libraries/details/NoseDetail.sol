@@ -25,26 +25,13 @@ library NoseDetail {
             );
     }
 
-    /// @dev Nose N°3 => Human
+    // @dev Nose N°3 => None
     function item_3() public pure returns (string memory) {
-        return
-            base(
-                '<g display="inline" ><path d="M193.5,190.1c1.5,9,1.7,18.4-0.7,27.3h-0.1C193.2,208.2,194.4,199.2,193.5,190.1L193.5,190.1z" /></g><path display="inline" opacity="0.56" enable-background="new    " d="M198.6,231.3l-8.2-3.6c-0.4-0.2-0.5-0.7-0.2-1.1l3.3-3.4c0.4-0.4,1-0.5,1.6-0.3l13.2,4.8c0.6,0.2,0.6,1.1-0.1,1.4l-9.1,2.5C199,231.5,198.8,231.5,198.6,231.3z"  />',
-                "Human"
-            );
+        return base("", "None");
     }
 
-    /// @dev Nose N°4 => Akuma
+    /// @dev Nose N°4 => Kitsune Pure
     function item_4() public pure returns (string memory) {
-        return
-            base(
-                '<path opacity="0.5" stroke="#000000" stroke-miterlimit="10" enable-background="new    " d="M191.6,224.5c6.1,1,12.2,1.7,19.8,0.4l-8.9,6.8c-0.5,0.4-1.3,0.4-1.8,0L191.6,224.5z"  /><path stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M196.4,229.2c-0.4,0.3-2.1-0.9-4.1-2.5c-1.9-1.6-3-2.7-2.6-2.9c0.4-0.3,2.5,0,4.2,1.8C195.4,227.2,196.8,228.8,196.4,229.2z"  /><path stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M206.5,228.7c0.3,0.4,2.2-0.3,4.2-1.7c2-1.5,3.5-2,3.2-2.4s-2.5-0.7-4.5,0.7C207.4,226.9,206.1,228.2,206.5,228.7z"  />',
-                "Akuma"
-            );
-    }
-
-    /// @dev Nose N°5 => Kitsune Pure
-    function item_5() public pure returns (string memory) {
         return
             base(
                 '<path display="inline" fill="#FFEDED" stroke="#FFEDED" stroke-miterlimit="10" d="M193.2,224.9c5.1,0.6,10.3,1,16.4,0c0.4-0.1,0.7,0.5,0.3,0.8l-7.4,5.9c-0.5,0.4-1.3,0.4-1.8,0l-7.9-6C192.5,225.4,192.7,224.8,193.2,224.9z"  />',
@@ -52,8 +39,8 @@ library NoseDetail {
             );
     }
 
-    /// @dev Nose N°6 => Nosetril
-    function item_6() public pure returns (string memory) {
+    /// @dev Nose N°5 => Nosetril
+    function item_5() public pure returns (string memory) {
         return
             base(
                 '<path display="inline" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M196.4,229.2c-0.4,0.3-2.1-0.9-4.1-2.5c-1.9-1.6-3-2.7-2.6-2.9c0.4-0.3,2.5,0,4.2,1.8C195.4,227.2,196.8,228.8,196.4,229.2z"  /><path display="inline" stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M206.5,228.7c0.3,0.4,2.2-0.3,4.2-1.7c2-1.5,3.5-2,3.2-2.4s-2.5-0.7-4.5,0.7C207.4,226.9,206.1,228.2,206.5,228.7z"  />',
@@ -61,9 +48,22 @@ library NoseDetail {
             );
     }
 
-    // @dev Nose N°7 => None
+    /// @dev Nose N°6 => Akuma
+    function item_6() public pure returns (string memory) {
+        return
+            base(
+                '<path opacity="0.5" stroke="#000000" stroke-miterlimit="10" enable-background="new    " d="M191.6,224.5c6.1,1,12.2,1.7,19.8,0.4l-8.9,6.8c-0.5,0.4-1.3,0.4-1.8,0L191.6,224.5z"  /><path stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M196.4,229.2c-0.4,0.3-2.1-0.9-4.1-2.5c-1.9-1.6-3-2.7-2.6-2.9c0.4-0.3,2.5,0,4.2,1.8C195.4,227.2,196.8,228.8,196.4,229.2z"  /><path stroke="#000000" stroke-width="0.75" stroke-miterlimit="10" d="M206.5,228.7c0.3,0.4,2.2-0.3,4.2-1.7c2-1.5,3.5-2,3.2-2.4s-2.5-0.7-4.5,0.7C207.4,226.9,206.1,228.2,206.5,228.7z"  />',
+                "Akuma"
+            );
+    }
+
+    /// @dev Nose N°7 => Human
     function item_7() public pure returns (string memory) {
-        return base("", "None");
+        return
+            base(
+                '<g display="inline" ><path d="M193.5,190.1c1.5,9,1.7,18.4-0.7,27.3h-0.1C193.2,208.2,194.4,199.2,193.5,190.1L193.5,190.1z" /></g><path display="inline" opacity="0.56" enable-background="new    " d="M198.6,231.3l-8.2-3.6c-0.4-0.2-0.5-0.7-0.2-1.1l3.3-3.4c0.4-0.4,1-0.5,1.6-0.3l13.2,4.8c0.6,0.2,0.6,1.1-0.1,1.4l-9.1,2.5C199,231.5,198.8,231.5,198.6,231.3z"  />',
+                "Human"
+            );
     }
 
     /// @dev Nose N°8 => Bleeding
