@@ -7,9 +7,9 @@ import "base64-sol/base64.sol";
 
 /// @title Hair SVG generator
 library HairDetail {
-    /// @dev Hair N°1 => No Hair
+    /// @dev Hair N°1 => Hair Blood
     function item_1() public pure returns (string memory) {
-        return base("", "None");
+        return base(longHair("E31466"), "Hair Blood");
     }
 
     /// @dev Hair N°2 => Tattoo Blood
@@ -27,19 +27,19 @@ library HairDetail {
         return base(tattoo("FFEDED"), "Tattoo Pure");
     }
 
-    /// @dev Hair N°5 => Short Hair Blood
+    /// @dev Hair N°5 => Monk Blood
     function item_5() public pure returns (string memory) {
-        return base(shortHair("B50D5E"), "Short Hair Blood");
+        return base(shortHair("B50D5E"), "Monk Blood");
     }
 
-    /// @dev Hair N°6 => Short Hair Moon
+    /// @dev Hair N°6 => Monk Moon
     function item_6() public pure returns (string memory) {
-        return base(shortHair("001015"), "Short Hair Moon");
+        return base(shortHair("001015"), "Monk Moon");
     }
 
-    /// @dev Hair N°7 => Short Hair Pure
+    /// @dev Hair N°7 => Monk Pure
     function item_7() public pure returns (string memory) {
-        return base(shortHair("FFEDED"), "Short Hair Pure");
+        return base(shortHair("FFEDED"), "Monk Pure");
     }
 
     /// @dev Hair N°8 => Flame Blood
@@ -84,19 +84,19 @@ library HairDetail {
             );
     }
 
-    /// @dev Hair N°14 => Long Hair Blood
+    /// @dev Hair N°14 => Akuma
     function item_14() public pure returns (string memory) {
-        return base(longHair("E31466"), "Long Hair Blood");
+        return base("", "Akuma");
     }
 
-    /// @dev Hair N°15 => Long Hair Moon
+    /// @dev Hair N°15 => Hair Moon
     function item_15() public pure returns (string memory) {
-        return base(longHair("2A2C38"), "Long Hair Moon");
+        return base(longHair("2A2C38"), "Hair Moon");
     }
 
-    /// @dev Hair N°16 => Long Hair Pure
+    /// @dev Hair N°16 => Hair Pure
     function item_16() public pure returns (string memory) {
-        return base(longHair("FFDAEA"), "Long Hair Pure");
+        return base(longHair("FFDAEA"), "Hair Pure");
     }
 
     /// @dev Hair N°17 => Tattoo kin
@@ -173,7 +173,7 @@ library HairDetail {
     function getItemNameById(uint8 id) public pure returns (string memory name) {
         name = "";
         if (id == 1) {
-            name = "No Hair";
+            name = "Hair Blood";
         } else if (id == 2) {
             name = "Tattoo Blood";
         } else if (id == 3) {
@@ -181,11 +181,11 @@ library HairDetail {
         } else if (id == 4) {
             name = "Tattoo Pure";
         } else if (id == 5) {
-            name = "Short Hair Blood";
+            name = "Monk Blood";
         } else if (id == 6) {
-            name = "Short Hair Moon";
+            name = "Monk Moon";
         } else if (id == 7) {
-            name = "Short Hair Pure";
+            name = "Monk Pure";
         } else if (id == 8) {
             name = "Flame Blood";
         } else if (id == 9) {
@@ -199,11 +199,11 @@ library HairDetail {
         } else if (id == 13) {
             name = "Side eyes";
         } else if (id == 14) {
-            name = "Long Hair Blood";
+            name = "Akuma";
         } else if (id == 15) {
-            name = "Long Hair Moon";
+            name = "Hair Moon";
         } else if (id == 16) {
-            name = "Long Hair Pure";
+            name = "Hair Pure";
         } else if (id == 17) {
             name = "Tatoo Kin";
         }
