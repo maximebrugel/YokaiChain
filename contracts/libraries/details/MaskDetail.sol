@@ -249,7 +249,7 @@ library MaskDetail {
         } else if (id == 5) {
             name = "Power Neck";
         } else if (id == 6) {
-            name = "Stitch";
+            name = "Bouc";
         } else if (id == 7) {
             name = "BlindFold Tomoe Blood";
         } else if (id == 8) {
@@ -263,7 +263,7 @@ library MaskDetail {
         } else if (id == 12) {
             name = "BlindFold Tomoe Moon";
         } else if (id == 13) {
-            name = "Bouc";
+            name = "Stitch";
         } else if (id == 14) {
             name = "Strap Pure";
         } else if (id == 15) {
