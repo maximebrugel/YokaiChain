@@ -186,7 +186,7 @@ library MouthDetail {
         } else if (id == 8) {
             name = "None";
         } else if (id == 9) {
-            name = "Akuma";
+            name = "Fantom";
         } else if (id == 10) {
             name = "Evil";
         } else if (id == 11) {
@@ -200,7 +200,7 @@ library MouthDetail {
         } else if (id == 15) {
             name = "Pantin";
         } else if (id == 16) {
-            name = "Fantom";
+            name = "Akuma";
         } else if (id == 17) {
             name = "Monster Teeth";
         } else if (id == 18) {
