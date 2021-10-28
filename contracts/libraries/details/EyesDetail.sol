@@ -141,7 +141,7 @@ library EyesDetail {
         } else if (id == 6) {
             name = "Rip";
         } else if (id == 7) {
-            name = "Annoyed";
+            name = "Pupils Pure";
         } else if (id == 8) {
             name = "Akuma";
         } else if (id == 9) {
