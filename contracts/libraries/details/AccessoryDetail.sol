@@ -10,7 +10,7 @@ import "./constants/Colors.sol";
 library AccessoryDetail {
     /// @dev Accessory N°1 => None
     function item_1() public pure returns (string memory) {
-        return base(horn("E31466"), "None");
+        return base("", "None");
     }
 
     /// @dev Accessory N°2 => Horn Blood
