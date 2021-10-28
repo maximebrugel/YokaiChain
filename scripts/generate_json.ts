@@ -146,7 +146,7 @@ async function getItems(descriptor: Contract, lib: Contract, contractItems: any[
     }
 
     let svgVal =
-      '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 420 420" style="enable-background:new 0 0 420 420;" xml:space="preserve">';
+      '<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 420 420" style="enable-background:new 0 0 420 420;" xml:space="preserve">';
     if (isBody) {
       svgVal += await bodyDetailConst.item_1();
     }
